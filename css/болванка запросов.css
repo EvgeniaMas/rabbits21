@@ -1,0 +1,22 @@
+@media screen and (max-width: 1918px) { 
+.navbar-default .navbar-nav > li > a {  
+  font-size: 1rem;
+  margin-right: 4.875rem;
+  margin-top: 1.25rem;  
+  text-align: center; 
+  color: #000;
+  }
+}
+
+@media screen and (max-width: 1024px) { 
+
+}
+
+
+@media screen and (max-width: 768px) { 
+
+}
+
+@media screen and (max-width: 300px) { 
+
+}

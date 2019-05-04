@@ -52,9 +52,7 @@ audio:not([controls]) {
 template {
   display: none;
 }
-a {
-  background-color: transparent;
-}
+
 a:active,
 a:hover {
   outline: 0;
@@ -228,12 +226,11 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+ 
   text-decoration: underline;
 }
 a:focus {
@@ -1532,11 +1529,11 @@ tbody.collapse.in {
   position: relative;
   display: block;
 }
-.nav > li > a {
+/*.nav > li > a {
   position: relative;
   display: block;
   padding: 0 15px;
-}
+}*/
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
@@ -1552,12 +1549,12 @@ tbody.collapse.in {
   background-color: transparent;
   cursor: not-allowed;
 }
-.nav .open > a,
+/*.nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
   border-color: #428bca;
-}
+}*/
 .nav .nav-divider {
   height: 1px;
   margin: 9px 0;
@@ -1802,12 +1799,12 @@ tbody.collapse.in {
     border-radius: 0;
   }
 }
-.navbar-fixed-top,
-.navbar-fixed-bottom {
+.navbar-fixed-top {
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 100;
+  background-color:#fff!important;
 }
 @media (min-width: 768px) {
   .navbar-fixed-top,
@@ -1838,9 +1835,8 @@ tbody.collapse.in {
 }
 
 .navbar-brand> span{
-  font-family: Futura;
-  font-size: 9px;
-  font-weight: bold;
+  font-family: 'Futura';
+  font-size: 9px;  
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -1886,16 +1882,14 @@ tbody.collapse.in {
     display: none;
   }
 }
-.navbar-nav {
-  margin: 7.5px -15px;
-}
-.navbar-nav > li > a {
+
+/*.navbar-nav > li > a {
   
   padding-bottom: 10px;
   line-height: 20px;
-}
+}*/
 @media (max-width: 767px) {
-  .navbar-nav .open .dropdown-menu {
+/*  .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
     width: auto;
@@ -1904,8 +1898,8 @@ tbody.collapse.in {
     border: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
-  }
-  .navbar-nav .open .dropdown-menu > li > a,
+  }*/
+/*  .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
@@ -1915,20 +1909,20 @@ tbody.collapse.in {
   .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none;
-  }
+  }*/
 }
 @media (min-width: 768px) {
-  .navbar-nav {
+/*  .navbar-nav {
     float: left;
     margin: 0;
-  }
-  .navbar-nav > li {
+  }*/
+/*  .navbar-nav > li {
     float: left;
-  }
-  .navbar-nav > li > a {
+  }*/
+/*  .navbar-nav > li > a {
    
     padding-bottom: 15px;
-  }
+  }*/
 }
 .navbar-form {
   margin-left: -15px;
@@ -2083,14 +2077,14 @@ tbody.collapse.in {
   background-color: #000;
 }
 
-.navbar-default .navbar-nav > .open > a,
+/*.navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   
   color: #555555;
-}
+}*/
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  /*.navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777777;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -2109,7 +2103,7 @@ tbody.collapse.in {
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #cccccc;
     background-color: transparent;
-  }
+  }*/
 }
 .navbar-default .navbar-link {
   color: #777777;
@@ -2132,7 +2126,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 
 @media (max-width: 767px) {
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+  /*.navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #080808;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
@@ -2157,9 +2151,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #444444;
     background-color: transparent;
-  }
+  }*/
 }
-.navbar-inverse .navbar-link {
+/*.navbar-inverse .navbar-link {
   color: #999999;
 }
 .navbar-inverse .navbar-link:hover {
@@ -2177,7 +2171,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444444;
-}
+}*/
 .embed-responsive {
   position: relative;
   display: block;

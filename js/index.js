@@ -20,8 +20,24 @@ $('.multi-item-carousel .item').each(function(){
 });
 
 
-  var margin_wrapper = $('.header_top').height();
-  $('.wrapper').css('margin-top', margin_wrapper);
+$(window).resize(function() {
+  if(document.documentElement.clientWidth > 768) {
+    var margin_wrapper = $('#header').height(); 
+    $('.wrapper').css('margin-top', margin_wrapper);
+    $('#main_page_content').css('margin-top', margin_wrapper);
+    
+  }
+});
+
+
+  
+
+
+     var margin_footer = $('.footer').height();
+    $('.wrapper').css('margin-bottom', -margin_footer);
+
+
+
 
    $('#carousel_slider').carousel({
          interval : false
