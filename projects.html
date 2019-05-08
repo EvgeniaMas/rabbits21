@@ -14,9 +14,42 @@
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 </head>
 <body>
-<header class="container-fluid header_top">
-<nav class="navbar navbar-default fixed-top" role="navigation">
+<header id="header">
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <span class="mobile_menu_page">Проекты</span>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span id="up_panel" class="icon-bar"></span>
+            <span id="down_panel" class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img class="black_white_logo" src="img/logo.svg">
+         <img class="white_black_logo" src="img/logo_moble.png"><span>21Rabbits</span></a> 
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+            <li class="menus"><a href="index.html">Главная</a>
+            </li>
+            <li><a href="about.html">О нас</a>              
+            </li>                
+            <li><a  href="service.html">Наши услуги</a>              
+            </li>                 
+            <li><a class="active_page"href="projects.html">Проекты</a>
+            <span class="underlined_menu project_page"></span>              
+            </li>                 
+            <li><a href="contacts.html">Контакты</a>
+            </li>      
+      </ul>
+    </div>
+    </nav>
+  </div>
+</header>
+
+
+
+<!-- <header class="container-fluid header_top">
+<nav class="navbar navbar-default fixed-top" role="navigation">
+      <span class="mobile_menu_page">Проекты</span> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span id="up_panel" class="icon-bar"></span>
             <span id="down_panel" class="icon-bar"></span>        
       </button>
@@ -33,39 +66,39 @@
             <li><a href="service.html">Наши услуги</a>
             </li>                 
             <li><a class="active_page" href="projects.html">Проекты</a>
-              <span class="underlined_menu project_page"></span>
+              
             </li>                 
             <li><a href="contacts.html">Контакты</a>
             </li>      
       </ul>
     </div>
 </nav>
-</header>
+</header> -->
 
 
 
 
 
-
-<!-- <div class="row project_slider">
+<div id="slider_wrapper">
+<!-- <div id="project_cover" class="row project_slider">
     <div class="col-md-12">
       <div class="carousel slide multi-item-carousel" id="theCarousel">
         <div class="carousel-inner">
           <div class="item ">
             <div class="col-xs-4">
               <a href="#1">
-                <img class="projects_slides" src="img/fluger_case.png" class="img-responsive">
+                <img id="fluger" class="projects_slides" src="img/fluger_case.png" class="img-responsive">
               </a>
             </div>
           </div>
           <div class="item active">
-            <div class="col-xs-4"><a href="#1"><img class="projects_slides" src="img/green_case.png" class="img-responsive"></a></div>
+            <div class="col-xs-4"><a href="#1"><img id="green" class="projects_slides " src="img/green_case.png" class="img-responsive"></a></div>
           </div>
-          <div class="item">
-            <div class="col-xs-4"><a href="#1"><img class="projects_slides" src="img/river_case.png" class="img-responsive"></a></div>
+          <div class="item ">
+            <div class="col-xs-4"><a href="#1"><img id="river" class="projects_slides" src="img/river_case.png" class="img-responsive"></a></div>
           </div>
            <div class="item">
-            <div class="col-xs-4"><a href="#1"><img class="projects_slides" src="img/pure_case.png" class="img-responsive"></a></div>
+            <div class="col-xs-4"><a href="#1"><img id="pure" class="projects_slides" src="img/pure_case.png" class="img-responsive"></a></div>
           </div>
         </div>
         <a class="left carousel-control" href="#theCarousel" data-slide="prev"><</a>
@@ -78,15 +111,15 @@
 <!-- opened_slider-->
 <div id="carousel_slider" class="carousel slide wrapper" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="item active">
-      <div class="container grey_bg river_first_block">
+    <div id="river_case" class="item">
+      <div class="container grey_bg green_first_block">
       <p class="project_logo river_logo animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">River Line</p>
       <p class="logo_vertical">Mobile app</p>
       <p class="project_short_description">Разработка мобильного приложения для судоходной компании для быстрого и удобного заказа экскурсии или оформления аренды.</p>
       </div>
 
       <div class="container-fluid">
-        <p class="river_project_description">Судоходная компания, которая предоставляет услуги экскурсий по Санкт-Петербургу, а также предлагает теплоходы в аренду для проведения различных мероприятий (корпоративы, свадьбы, дни рождения)</p>
+        <p class="green_project_description">Судоходная компания, которая предоставляет услуги экскурсий по Санкт-Петербургу, а также предлагает теплоходы в аренду для проведения различных мероприятий (корпоративы, свадьбы, дни рождения)</p>
       </div>
       <div class="container-fluid river_second_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
 
@@ -97,19 +130,152 @@
       <div class="container-fluid river_fourth_block">
 
       </div>
-    <div class="container-fluid river_fifth_block">
+      <div class="container-fluid river_fifth_block">
+
+     </div>
+   </div><!-- end active_item -->
+    <div id="green_case" class="item active">
+       <div class="container pure_first_block">
+         
+        <div class="slider_content_part">
+         <div class="green_logo" ></div>
+        <p class="project_logo animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">Зеленый сад</p>
+        <p class="logo_vertical">website</p>
+        <p class="project_short_description">Дизайн сайта в приятных тонах для ресторана здорового питания. Задачей было рассказать о ресторане, выделить  его особенности. Выбранное стилистическое решение подчеркивает концепцию ресторана — лёгкое и здоровое питание, а также тесную связь человека с природой.</p>
+          </div>
+      </div>
+      
+      <div class="container green_second_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
+      </div>
+
+      <div class="container-fluid">
+        <p class="river_project_description">В атмосфере спокойствия и комфорта можно насладиться вкусными и легкими растительными блюдами, сбалансированными и без термической обработки.</p>
+      </div>
+       <div class="container">
+         <img src="img/green/4items_bg.jpg" alt="Зеленый сад">
+      </div>
+
+
+      <div class="container-fluid green_third_block">
+        <img src="img/green/green_bg3_squres.svg" alt="Зеленый сад">
+        <div class="container">
+        <img src="img/green/green_bg3_1.jpg" alt="Зеленый сад">
+        <img src="img/green/green_bg3_2.jpg" alt="Зеленый сад">
+        <img src="img/green/green_bg3_3.jpg" alt="Зеленый сад">
+
+        </div>        
+      </div>
+
+      <div class="container-fluid green_fourth_block">
+
+      </div>
+
+    <div class="container-fluid green_fifth_block">
 
    </div>
-</div><!-- end active_item -->
-    <div class="item">
 
-      <img src="img/green_case.png" alt="...">
-    </div>
+ 
+      
+    </div><!-- end item -->
 
-    <div class="item">
+  <div id="pure_case" class="item">
+      <div class="container pure_first_block">
+         <img class="pure_logo" src="img/pure/pure-logo.png" alt="Логотип">
+        <div class="slider_content_part">
+       
+        <p class="project_logo animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">Pure/Pure</p>
+        <p class="logo_vertical">website</p>
+        <p class="project_short_description">Разработка интернет-магазина молодёжной одежды в минималистичном стиле. После изучения состояния рынка и анализа конкурентов, мы сегментировали целевую аудиторию магазина.</p>
+          </div>
+      </div>
+      
+      <div class="container pure_second_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
+      </div>
 
-      <img src="img/pure_case.png" alt="...">
-    </div>
+      <div class="container-fluid">
+        <p class="river_project_description">Бренд представляет большой ассортимент одежды в стиле минимализма. Основной задачей элементов оформления являлась передача ощущения чистоты и комфорта. </p>
+      </div>
+
+
+      <div class="container pure_third_block">
+        <div class="pure_dark_grey_bg"></div>
+        <div class="pure_main_block_bg"></div>
+      </div>
+      <div class="container pure_fourth_block">
+        
+      </div>
+      <div class="container pure_fifth_block">
+        <div class="slider_content_part">
+        <p class="pure_fifth_block_text">Одежда девушек с хорошим вкусом, которые ценят лаконичность и качество. Хотят быть в тренде, но не быть "жертвами моды". Бренд, одежда которого подчеркивает свободу, стиль и женственность.</p>
+      </div>
+     </div>
+
+      <div class="container pure_six_block">
+        <div class="pure_dark_grey_bg"></div>
+        <img src="img/pure/flower.png" class="pure_six_block_flower"  alt="Каталог">
+        <img src="img/pure/pure4.jpg" class="pure_main_block_bg"  alt="Каталог">
+      </div>
+
+      <div class="container pure_seven_block">
+       
+        <img src="img/pure/ball.png" class="pure_six_block_ball"  alt="Каталог">
+        <img src="img/pure/pure5.jpg" class="pure_main_block_bg"  alt="Каталог">
+         <div class="pure_dark_grey_bg"></div>
+      </div>
+
+      <div class="container pure_eight_block">
+        <div class="slider_content_part">
+        <p class="pure_fifth_block_text">Компания заботится о своих клиентах выстраивая уникальную цепочку взаимодействия с пользователями, персонализируя каждого за счёт проработанного личного кабинета. Это позволяет создать более тесную связь между компанией и покупателями.</p>
+
+        <img src="img/pure/pure6.jpg" class="pure_main_block_bg"  alt="Каталог">
+        <div class="pure_dark_grey_bg"></div>
+
+      </div>
+     </div>
+
+
+      
+    </div><!-- end item -->
+
+    <div id="fluger_case" class="item">
+
+       <div class="container pure_first_block">
+         
+        <div class="slider_content_part">
+         <img class="fluger_logo" src="img/fluger/fluger_logo.png" alt="Логотип">
+        <p class="project_logo animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">Флюгер</p>
+        <p class="logo_vertical">landing <br>page</p>
+        <p class="project_short_description">Продающая страница для компании, предоставляющей услуги групповых экскурсий. В дизайне мы отразили яркость и современность, создали интересное и динамичное стилистическое решение, вызывающее положительные эмоции. Сайт адаптирован под мобильные устройства.</p>
+          </div>
+      </div>
+      
+      <div class="container fluger_second_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
+      </div>
+
+      <div class="container-fluid">
+        <p class="river_project_description">Флюгер - компания, занимающаяся предоставлением групповых экскурсий. Их отличительной особенностью является наличие уникальных маршрутов, что позволило им стать ведущим бюро групповых экскурсий в Санкт-Петербурге.</p>
+      </div>
+
+
+      <div class="container-fluid fluger_third_block">
+        <div class="slider_content_part">
+        <img src="img/fluger/fluger_bg1.png" alt="Сайт для Флюгера">
+        <p class="fluger_third_block_text">Основной задачей главной страницы является возможность погрузиться будущим потенциальным клиентам в атмосферу выходного дня. </p>
+        </div>
+      </div>
+
+      <div class="container-fluid fluger_fourth_block">
+        <img class="img-responsive" src="img/fluger/fluger_bg4.png" alt="Флюгер">
+      </div>
+
+    <div class="container-fluid fluger_fifth_block">
+       <div class="slider_content_part">
+               <p class="fluger_fifth_block_text">Лендинг адаптирован под мобильные устройства и планшеты, что позволяет легко и удобно ознакомиться со всей необходимой информацией с любых устройств. </p>
+        </div>
+        <img class="img-responsive" src="img/fluger/fluger_bg5.png"  alt="Флюгер">
+   </div>
+
+    </div><!-- end item -->
 
   </div>
   <!-- Элементы управления -->
@@ -124,7 +290,7 @@
 </div>
 
 
-
+</div><!-- slider_wrapper -->
 
 
 

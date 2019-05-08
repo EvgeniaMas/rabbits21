@@ -517,7 +517,8 @@ if (typeof jQuery === 'undefined') {
 
   function clearMenus(e) {
 $('#up_panel').toggleClass('open_menu');
-        $('#down_panel').toggleClass('open_menu');
+$('#down_panel').toggleClass('open_menu');
+
     if (e && e.which === 3) return
     $(backdrop).remove()
     $(toggle).each(function () {
@@ -534,6 +535,7 @@ $('#up_panel').toggleClass('open_menu');
       if (e.isDefaultPrevented()) return
 
       $this.attr('aria-expanded', 'false')
+
       $parent.removeClass('open').trigger($.Event('hidden.bs.dropdown', relatedTarget))
     })
   }
@@ -2385,5 +2387,4 @@ $('#up_panel').toggleClass('open_menu');
 
 
 
-  var margin_wrapper = $('.header_top').height();
-  $('.wrapper').css('margin-top', margin_wrapper);
+ 
