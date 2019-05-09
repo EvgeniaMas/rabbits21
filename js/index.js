@@ -63,10 +63,30 @@ function relocate(){
    window.location.href='contacts.html';
 }
 
-$('.projects_slides').click(function(e) {
-  var clickId = $(e.target).attr('id');
- full_item_case(clickId);  
-});
+// $('.projects_slides').click(function(e) {
+//   var clickId = $(e.target).attr('id');
+//  full_item_case(clickId);  
+// });
+
+
+   
+         $(document).ready(function() {
+
+            $(".target").click(function(){
+               $(".target").hide( "explode", {pieces: 150}, 3000 );
+            });
+
+            $(".target").click(function(){
+               $(".target").show(2500);
+            });
+        
+         });
+      
+
+
+
+
+
 
 function full_item_case(clickId){
 if(clickId=='pure'){

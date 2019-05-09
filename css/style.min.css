@@ -1,66 +1,67 @@
 @font-face{font-family:"Futura";
 src:url("../fonts/Futura/Futura.eot");
-src:url('../fonts/Futura/Futura.eot?#iefix') format('embeddededopentype'),
+src:url("../fonts/Futura/Futura.eot?#iefix") format("embeddededopentype"),
 url("../fonts/Futura/Futura.woff2") format("woff2"),
 url("../fonts/Futura/Futura-Bold.woff") format("woff"),
 url("../fonts/Futura/Futura-Bold.ttf") format("truetype"),
 url("../fonts/Futura/Futura-Bold.otf") format("opentype"),
-url("../fonts/Futura/Futura-Bold.svg#svgFutura-Bold") format('svg');
+url("../fonts/Futura/Futura-Bold.svg#svgFutura-Bold") format("svg");
 font-style:normal;
 font-weight:normal;
 }
 @font-face{font-family:"Avenir-Heavy";
 src:url("../fonts/Avenir-Heavy/Avenir-Heavy.eot");
-src:url('../fonts/Avenir-Heavy/Avenir-Heavy.eot?#iefix') format('embeddedopentype'),
+src:url("../fonts/Avenir-Heavy/Avenir-Heavy.eot?#iefix") format("embeddedopentype"),
 url("../fonts/Avenir-Heavy/Avenir-Heavy.woff2") format("woff2"),
 url("../fonts/Avenir-Heavy/Avenir-Heavy.woff") format("woff"),
 url("../fonts/Avenir-Heavy/Avenir-Heavy.ttf") format("truetype"),
 url("../fonts/Avenir-Heavy/Avenir-Heavy.otf") format("opentype"),
-url('../fonts/Avenir-Heavy/Avenir-Heavy.svg#svgAvenir-Heavy') format('svg');
+url("../fonts/Avenir-Heavy/Avenir-Heavy.svg#svgAvenir-Heavy") format("svg");
 font-style:normal;
 font-weight:normal;
 }
 @font-face{font-family:"Avenir-Next";
 src:url("../fonts/Avenir-Next/Avenir-Next.eot");
-src:url('../fonts/Avenir-Next/Avenir-Next.eot?#iefix') format('embeddedopentype'),
+src:url("../fonts/Avenir-Next/Avenir-Next.eot?#iefix") format("embeddedopentype"),
 url("../fonts/Avenir-Next/Avenir-Next.woff2") format("woff2"),
 url("../fonts/Avenir-Next/AvenirNextCyr-Medium.woff") format("woff"),
 url("../fonts/Avenir-Next/Avenir-Next.ttf") format("truetype"),
 url("../fonts/Avenir-Next/AvenirNextCyr-Medium.otf") format("opentype"),
-url('../fonts/Avenir-Next/AvenirNextCyr-Medium.svg#svgAvenirNextCyr-Medium') format('svg');
+url("../fonts/Avenir-Next/AvenirNextCyr-Medium.svg#svgAvenirNextCyr-Medium") format("svg");
 font-style:normal;
 font-weight:normal;
 }
 @font-face{font-family:"Avenir-Next-Bold";
 src:url("../fonts/Avenir-Next-Bold/Avenir-Next-Bold.eot");
-src:url('../fonts/Avenir-Next-Bold/Avenir-Next-Bold.eot?#iefix') format('embeddedopentype'),
+src:url("../fonts/Avenir-Next-Bold/Avenir-Next-Bold.eot?#iefix") format("embeddedopentype"),
 url("../fonts/Avenir-Next-Bold/Avenir-Next-Bold.woff2") format("woff2"),
 url("../fonts/Avenir-Next-Bold/AvenirNext-Bold.woff") format("woff"),
 url("../fonts/Avenir-Next-Bold/Avenir-Next-Bold.ttf") format("truetype"),
 url("../fonts/Avenir-Next-Bold/AvenirNext-Bold.otf") format("opentype"),
-url('../fonts/Avenir-Next-Bold/AvenirNext-Bold.svg#svgAvenirNext-Bold') format('svg');
+url("../fonts/Avenir-Next-Bold/AvenirNext-Bold.svg#svgAvenirNext-Bold") format("svg");
 font-style:normal;
 font-weight:normal;
 }
+
 @font-face{font-family:"Montserrat-Bold";
 src:url("../fonts/Montserrat-Bold/Montserrat-Bold.eot");
-src:url('../fonts/Montserrat-Bold/Montserrat-Bold.eot?#iefix') format('embeddedopentype'),
+src:url("../fonts/Montserrat-Bold/Montserrat-Bold.eot?#iefix") format('embeddedopentype'),
 url("../fonts/Montserrat-Bold/Montserrat-Bold.woff2") format("woff2"),
 url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff"),
 url("../fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("truetype"),
 url("../fonts/Montserrat-Bold/Montserrat-Bold.otf") format("opentype"),
-url('../fonts/Montserrat-Bold/Montserrat-Bold.svg#svgMontserrat-Bold') format('svg');
+url("../fonts/Montserrat-Bold/Montserrat-Bold.svg#svgMontserrat-Bold") format("svg");
 font-style:normal;
 font-weight:normal;
 }
 @font-face{font-family:"Montserrat-Light";
 src:url("../fonts/Montserrat-Light/Montserrat_Light.eot");
-src:url('../fonts/Montserrat-Light/Montserrat-Light.eot?#iefix') format('embeddedopentype'),
+src:url("../fonts/Montserrat-Light/Montserrat-Light.eot?#iefix") format("embeddedopentype"),
 url("../fonts/Montserrat-Light/Montserrat-Light.woff2") format("woff2"),
 url("../fonts/Montserrat-Light/Montserrat-Light.woff") format("woff"),
 url("../fonts/Montserrat-Light/Montserrat-Light.ttf") format("truetype"),
 url("../fonts/Montserrat-Light/Montserrat-Light.otf") format("opentype"),
-url('../fonts/Montserrat-Light/Montserrat-Light.svg#svgMontserrat-Light') format('svg');
+url("../fonts/Montserrat-Light/Montserrat-Light.svg#svgMontserrat-Light") format("svg");
 font-style:normal;
 font-weight:normal;
 }
@@ -76,6 +77,7 @@ url("../fonts/Montserrat-Light-Lat/Montserrat-Light.svg#svgMontserrat-Light") fo
 font-style:normal;
 font-weight:normal;
 }
+
 
 
 a{color: #000;
@@ -539,7 +541,7 @@ z-index: 1;
 }
 
 .grey_block{
-width: 90%;
+width: 90vw;
 position: absolute;
 top: 0;
 right: 0;
@@ -827,7 +829,6 @@ background-position : center ;
 background-repeat: no-repeat;
 background-size: cover; 
 position: relative;
-
 }
 
 .service_container_content {
@@ -903,13 +904,44 @@ margin:auto;
 
 }
 .schema_block{
-height: 700px;
+height: 50rem;
 background-image: url('../img/job_schema.png');
-background-position : center ;
+background-position : center top ;
 background-repeat: no-repeat;
-background-size: cover;  
+background-size: contain;  
 position: relative;
 }
+
+.stage.fourth_stage{
+margin-bottom: 4rem;
+}
+
+.stage.second_stage{
+ float: left;
+ margin-top: 7.625rem;
+ margin-left: 3rem;
+
+}
+.stage.six_stage{
+ float: right;
+ margin-top: 7.6875rem;
+ margin-right: 3rem;
+}
+
+.stage.first_stage{
+ float: left;
+ margin-top: 4.6875rem;
+ }
+
+.stage.seven_stage{
+ float: right;
+ margin-top: 4.6875rem;
+ 
+}
+
+
+
+
 .marked_text{
 text-transform: uppercase;
 text-align: center;
@@ -1019,6 +1051,13 @@ font-family: 'Montserrat-Bold';
 font-size: 20px;
 text-align: center;   
 }
+
+.stage.first_stage>p.service_stage_title{
+color:#02eeda;  
+}
+
+
+
 p.service_stage_description{
 font-family: 'Montserrat-Light';
 font-size: 20px;
@@ -1134,11 +1173,23 @@ margin-bottom: 84px;
 
 h2.page_headline{
 font-family: 'Avenir-Heavy';
-font-size: 64px;
+font-size: 4rem;
 text-align: left; 
 color: #000;
 padding-top: 100px;
 }
+
+h2.page_headline.take_design{
+margin-left: 11%;
+}
+
+
+
+.page_headline.jobs_stages{
+ padding-top: 0;   
+}
+
+
 
 h2.page_headline.centered{
 text-align: center;
@@ -1162,23 +1213,26 @@ background-color: transparent;
 display: block;
 margin:auto;
 padding: 1rem;
+box-sizing: border-box;
 min-width: 200px;
 width: 100%;
 outline: none;
 }
+
 input.contacts_input.contacts_small_input_right{
-width: 90%;
 float: right;
-padding-right:0; 
+width: 94%;
+display: inline-block;
+
 }
 input.contacts_input.contacts_small_input_left{
-width: 90%;
+
 float: left;
+width: 94%;
+display: inline-block;
+
+
 }
-
-
-
-
 p.contacts_title_left,
 p.contacts_title_right{
 font-family: 'Montserrat-Light';
@@ -1186,7 +1240,6 @@ font-size: 24px;
 text-align: center;
 line-height: 32px;
 margin-bottom: 21px; 
-
 }
 
 p.contacts_title_left{
@@ -1219,6 +1272,12 @@ height: 2px;
 color: #000;
 background-color: #000;
 }
+hr.contact_data_line_right.invisible_line, 
+hr.contact_data_line_left.invisible_line{
+display: none;
+}
+
+
 hr.contact_data_line_left{
 margin-right: 42px;
 }
@@ -1322,6 +1381,24 @@ background-image: url('../img/icons-dribble.jpg');
 }
 
 /*project*/
+p.close_full_slider{
+font-size: 1.25rem;
+font-family: 'Avenir-Heavy';
+text-decoration: underline;
+position: absolute;
+top: 0;
+/*right: 12%;*/
+cursor: pointer;
+}
+
+#carousel_management p.close_full_slider{
+  font-size: 1.2rem;
+text-decoration: underline;
+position: relative;
+text-align: center;
+ 
+}
+
 
 #slider_wrapper{
 position: relative;
@@ -1338,7 +1415,7 @@ height: 100%;
 opacity: 1;
 }
 #project_cover{
-opacity: 1;
+opacity: 0;
 z-index: 23;
 }
 .item.opened_slider{
@@ -1360,6 +1437,11 @@ position: relative;
 width: 80%;
 margin:auto;
 }
+#carousel_management{
+min-height: 200px;
+position: relative;
+}
+
 /*project*/
 /*river*/
 .project_logo{
@@ -1641,6 +1723,10 @@ min-height: 20rem;
 }
 
 /*green_case */
+
+/*Фон светло зеленый #eff7e5*/
+
+
 .green_logo {
 width: 0; 
 height: 0;
@@ -1669,6 +1755,20 @@ border-top-color: #87985d;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
+}
+
+.green_fourth_block{
+  position: relative;
+    height: 29.25rem;
+    /*background-image: url('../img/green/green_bg1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  */ 
+}
+
+.green_fifth_block{
+    position: relative;
+    height: 29.25rem;  
 }
 
 
