@@ -48,17 +48,45 @@
   <h2 class="page_headline take_design">Заберите у нас свой стильный и<bg>  эффективно продающий дизайн</h2>
 
     <p id="sent_message">Спасибо за заявку! Мы скоро с Вами свяжемся!</p>
-<form id="contacts_form" class="contacts__form"  method="POST">
-    <input class="contacts_input required_data" placeholder="Имя" name="user_name" type="text" required="required" />
-    <div class="col-md-12">
+   <form id="contacts_form" class="contacts__form"  method="POST">
+
+<!--   <label>
+    <input type="text" required />
+    <div class="label-text">First name</div>
+  </label>
+  <label>
+    <input type="text" required />
+    <div class="label-text">Last name</div>
+  </label> -->
+  
+
+    <label>
+    <input class="contacts_input required_data" name="user_name" type="text" required="required" />
+    <div class="label-text">Имя</div>
+    </label>
+    
+   <!--  <div class="col-md-12"> -->
       <div class="col-md-6">
-    <input class="contacts_input contacts_small_input_left" placeholder="Email" name="user_mail" type="email" required="required" /> 
+         <label>
+         <input class="contacts_input contacts_small_input_left" name="user_mail" type="email" required="required" /> 
+          <div class="label-text">Email</div>
+           </label>
+        </div>
+       <div class="col-md-6">
+        <label> 
+         <input class="contacts_input contacts_small_input_right"  name="user_phone" type="tel" required="required" />
+          <div class="label-text">Телефон</div>
+        </label>
        </div>
-       <div class="col-md-6"> 
-    <input class="contacts_input contacts_small_input_right" placeholder="Телефон" name="user_phone" type="tel" required="required" />
-       </div>
-     </div>
-    <input class="contacts_input" placeholder="Комментарий" name="comments" type="text"/>
+    <!--  </div> -->
+
+         <label>
+          <input class="contacts_input required_data" name="comments" type="text" required="required" />
+          <div class="label-text">Комментарий</div>
+        </label>
+     
+
+
     <button class="contacts_form_submit draw maker service_form" type="submit">Отправить</button>           
 </form> 
 <div class="error"></div>
@@ -94,6 +122,10 @@
     </div>  
    </div> <!-- wrapper -->   
 </div>
+
+
+
+
 <footer class="container-fluid footer">
   <div class="container footer_block">
      <div class="col-md-4 col-xs-4">
