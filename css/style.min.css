@@ -1791,15 +1791,138 @@ background-repeat: no-repeat;
 background-size: cover;   
 }
 
+.green_third_block{
+/*height: 216.375rem;*/
+position: relative;
+background-color: #fff;
+
+/*background-image: url('../img/green/green_bg3_back.svg');
+background-position: top 300px center;
+background-repeat: no-repeat;
+background-size: 90%; */
+}
+.green_block_squares{
+    max-width: 50%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+/*.pale_left_square_bg{
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: -10%;   
+}
+*/
+.pale_down_square_bg{
+      width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;      
+}
+
+
+
+.pale_green{
+    height: 80%;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #eff7e5;
+
+background-image: url('../img/green/2.svg');
+background-position: top 300px left;
+background-repeat: no-repeat;
+background-size: 90%; 
+}
+.pale_green_first_leaf{
+display: block;
+position: absolute;
+right: 0;
+top: -2rem;
+}
+
+.pale_green_second_leaf{
+display: block;
+position: absolute;
+right: 30%;
+top: 4rem;
+}
+
+
+
+
+
+img.four_items{
+display: block;
+width: 45%;
+margin-left: 20%;
+}
+
+.third_block_first_item{
+    margin-top: 8rem;
+    width: 100%;
+}
+
+
+.third_block_second_item,
+.third_block_third_item{
+display: block;
+width: 90%;
+margin-top:13rem;
+}
+
+.third_block_third_item{
+    float: right;
+}
+.third_block_second_item{
+    float: left;
+}
+
 .green_fourth_block{
 position: relative;
-height: 29.25rem;
+height: 47.5625rem;
 }
+
+img.green_fourth_block{
+   display: block;
+position: absolute;
+bottom:0;
+max-height: 8.9375rem;
+right: 0;
+z-index: 1; 
+}
+img.green_fourth_block_bg{
+display: block;
+width: 100%;
+z-index: 2;
+}
+
 
 .green_fifth_block{
 position: relative;
-height: 29.25rem;  
+height: 47.5625rem;  
 }
+
+img.green_fifth_block_grid{
+display: block;
+position: absolute;
+top:0;
+left: 40px;
+z-index: 1;
+}
+
+img.green_fifth_block_bg{
+display: block;
+width: 100%;
+z-index: 2;
+position: relative;
+}
+
+
+
 
 
 #up_panel,
