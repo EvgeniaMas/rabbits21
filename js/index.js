@@ -4,6 +4,10 @@ $('.multi-item-carousel').carousel({
 $('#carousel_slider').carousel({
          interval : false
 });
+$('#carousel_cases_mobile').carousel({
+         interval : false
+});
+
 $('.multi-item-carousel .item').each(function(){
   var next = $(this).next();
 

@@ -44,41 +44,6 @@
     </nav>
   </div>
 </header>
-
-
-
-<!-- <header class="container-fluid header_top">
-<nav class="navbar navbar-default fixed-top" role="navigation">
-      <span class="mobile_menu_page">Проекты</span> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span id="up_panel" class="icon-bar"></span>
-            <span id="down_panel" class="icon-bar"></span>        
-      </button>
-     <a class="navbar-brand" href="index.html">
-        <img class="black_white_logo" src="img/logo.svg">
-         <img class="white_black_logo" src="img/logo_moble.png"><span>21Rabbits</span></a> 
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-            <li class="menus"><a href="index.html">Главная</a>
-            </li>
-            <li><a href="about.html">О нас</a>              
-            </li>                
-            <li><a href="service.html">Наши услуги</a>
-            </li>                 
-            <li><a class="active_page" href="projects.html">Проекты</a>
-              
-            </li>                 
-            <li><a href="contacts.html">Контакты</a>
-            </li>      
-      </ul>
-    </div>
-</nav>
-</header> -->
-
-
-
-
-
 <div id="slider_wrapper">
 <div  id="project_cover" class="row project_slider">
     <div class="col-md-12">
@@ -102,8 +67,12 @@
           </div>
         </div>
         </div> 
+        <div class="container">
+          <div class="manage_container">
         <a class="left carousel-control" href="#theCarousel" data-slide="prev"><</a>
-        <a class="right carousel-control" href="#theCarousel" data-slide="next">></a>     
+        <a class="right carousel-control" href="#theCarousel" data-slide="next">></a>
+          </div>
+        </div>     
     </div>
 </div>
 
@@ -313,6 +282,7 @@
   </div>
 
   <div id="carousel_management">
+    <div class="manage_container">
     <p class="close_full_slider">Обратно к проектам</p>
   <!-- Элементы управления -->
   <a class="left carousel-control" href="#carousel_slider" role="button" data-slide="prev">
@@ -325,17 +295,17 @@
   </a>
   </div>
 </div>
-
+</div>
 
 </div><!-- slider_wrapper -->
 
 
-
+<div id="mobile_cases" class="container">
 <div id="carousel_cases_mobile" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
+  <div id="carousel_cases_mobile_inner" class="carousel-inner">
     <div class="item active">
-      <p class="project_logo">Флюгер</p>
-        <p class="logo_vertical">website</p>
+      <p class="project_logo__cover_mobile">Флюгер</p>
+        <p class="logo_vertical_cover_mobile">website</p>
       <img class="mobile_slider_covers" src="img/fluger_case.png" alt="Примеры работ">
        <p class="carousel_cases_description">Флюгер - компания, занимающаяся предоставлением групповых экскурсий. Их отличительной особенностью является наличие уникальных маршрутов, что позволило им стать ведущим бюро групповых экскурсий в Санкт-Петербурге. </p>
 
@@ -343,38 +313,47 @@
 
     </div>
     <div class="item">
-    	<p class="project_logo">Pure/Pure</p>
-        <p class="logo_vertical">website</p>
+    	<p class="project_logo_cover_mobile">Pure/Pure</p>
+        <p class="logo_vertical_cover_mobile">website</p>
        <img class="mobile_slider_covers" src="img/pure_case.png" alt="Примеры работ">
         <p class="carousel_cases_description">Бренд представляет большой ассортимент одежды в стиле минимализма. Основной задачей элементов оформления являлась передача ощущения чистоты и комфорта. </p>
+
+        <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
+
     </div>
     <div class="item">
-    	<p class="project_logo">Зеленый сад</p>
-        <p class="logo_vertical">website</p>
+    	<p class="project_logo_cover_mobile">Зеленый сад</p>
+        <p class="logo_vertical_cover_mobile">website</p>
       <img class="mobile_slider_covers" src="img/green_case.png" alt="Примеры работ">
        <p class="carousel_cases_description">В атмосфере спокойствия и комфорта можно насладиться вкусными и легкими растительными блюдами, сбалансированными и без термической обработки.</p>
+
+       <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
     </div>
 
     <div class="item">
-    	<p class="project_logo">River Line</p>
-        <p class="logo_vertical">website</p>
+    	<p class="project_logo_cover_mobile">River Line</p>
+        <p class="logo_vertical_cover_mobile">website</p>
       <img class="mobile_slider_covers" src="img/river_case.png" alt="Примеры работ">
        <p class="carousel_cases_description">Судоходная компания, которая предоствляет услуги экскурсий по Санкт-Петербургу, а также предлагает теплоходы в аренду для проведения различных мероприятий (корпоративы, свадьбы, дни рождения)</p>
+
+       <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
     </div>
 
   </div>
-  
-  <a class="left carousel-control" href="carousel_cases_mobile" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Предыдущий</span>
+  </div>
+
+  <div class="col-md-12">
+    <div class="manage_container">
+    <a class="left carousel-control" href="#carousel_cases_mobile" role="button" data-slide="prev"><  
+    </a>
+    <a class="right carousel-control" href="#carousel_cases_mobile" role="button" data-slide="next">
+    >    
   </a>
-  <a class="right carousel-control" href="#carousel_cases_mobile" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Следующий</span>
-  </a>
+  </div>
 </div>
 
 
+</div><!-- container -->
 
 
 

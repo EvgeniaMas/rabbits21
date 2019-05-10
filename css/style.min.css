@@ -92,6 +92,7 @@ html{
 font-size:16px;
 height: 100%;
 overflow-x: hidden;
+cursor: default;
 }
 body
 { 
@@ -114,7 +115,19 @@ margin:auto;
 display: block;
 float: none;
 max-width: 400px;
+transition: all 800ms ease-out;
 }
+
+img.projects_slides:hover{
+-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);	
+}
+
+
+
 div.project_slider{
 margin-top: 10%;
 }
@@ -185,9 +198,17 @@ span.mobile_menu_page{
 display: none;
 }
 
+.navbar.navbar-default.navbar-fixed-top{
+	max-width: 120rem;
+	margin: auto;	
+}
+
+
 .footer{
 background-color: #2f3b44;
 max-height: 8.125rem;
+position: relative;
+z-index: 7;
 }
 .footer_block{
 height:8.125rem;
@@ -215,6 +236,27 @@ width: 7.1875rem;
 margin:auto;
 margin-top: 0.9375rem;
 }
+
+/*общие стили управления слайдером*/
+.manage_container{
+	width: 70%;
+	min-width: 250px;
+	
+	min-height: 100px;
+	position: relative;
+	margin:auto;
+}
+
+a.carousel-control{
+font-size: 1rem;
+font-family: 'Avenir-Next-Bold';
+height: 50px;
+width: 50px;
+line-height: 50px;
+border-radius: 50%;
+border: 1px solid rgb(213, 213, 213);
+}
+
 
 @media screen and (max-width: 1918px) { 
 img.black_white_logo{
@@ -386,7 +428,9 @@ right: 0;
 left: 0;
 top: 0;
 z-index: 99;
-padding-top: 20px;    
+padding-top: 20px;   
+max-width: 120rem;
+margin: auto; 
 }
 
 
@@ -534,15 +578,31 @@ background-size: cover;
 background-image: url('../img/about_team.jpg');
 background-position : center;
 background-repeat: no-repeat;
+z-index: 7;
+position: relative;
 }
 
 .white_container{
 width: 100%;
 margin:auto;
-background-color: #fff;
 position: relative;
-z-index: 1;
+z-index: 7;
 }
+
+.grey_bg{
+height: 100%;
+max-width: 1748px;
+background-color: #fafafa;
+position: absolute;
+width: 90%;
+top:0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+z-index: 4;
+}
+
 
 .grey_block{
 width: 90%;
@@ -552,20 +612,30 @@ right: 0;
 left: 0;
 bottom: 0;
 margin:auto;
-background-color: #fafafa;
+/*background-color: green;*/
+/*background-color: #fafafa;*/
 background-image: url('../img/about_grey_bg.png');   
 background-size: 100%;
 background-position: bottom 2rem center;
 background-repeat: no-repeat;
-z-index: 2;
+z-index: 9;
 }
 .about_content_block{
 color: #fff;
 position: relative;
-z-index: 3;
+z-index: 9;
 width: 76%;
 margin: auto;  
 }
+/*
+.about_contents_data{
+position: relative;
+z-index: 9;
+min-height: 400px;
+background-color: red;
+}*/
+
+
 
 .slogan{
 font-family: 'Avenir-Next-Bold';
@@ -656,7 +726,6 @@ width: 90%;
 margin:auto!important;
 float: none;
 text-align: center;
-background-color: #fafafa;padding
 }
 
 
@@ -796,7 +865,10 @@ font-size: 13.125rem;
 display: block;
 }
 #mobile_service_slider,
-.footer.footer_mobile{
+.footer.footer_mobile,
+#carousel_slider,
+#mobile_cases
+{
 display: none;
 }
 
@@ -1210,7 +1282,7 @@ border-top: none;
 background-color: transparent;
 display: block;
 margin:auto;
-padding: 1rem;
+padding: 0.6rem;
 box-sizing: border-box;
 min-width: 200px;
 width: 96%;
@@ -1449,7 +1521,7 @@ left:0;
 opacity: 1;
 }
 #project_cover{
-opacity: 0;
+opacity: 1;
 z-index: 23;
 }
 .item.opened_slider{
@@ -1922,7 +1994,16 @@ position: relative;
 }
 
 
+/*обложки проектов в мобильной версии*/
 
+img.mobile_slider_covers{
+	display: block;
+	margin: auto;
+}
+#carousel_cases_mobile_inner{
+	background-color: pink;
+	min-height: 800px;
+}
 
 
 #up_panel,
@@ -2041,7 +2122,6 @@ text-align: center;
 
 label {
 display: block;
-letter-spacing: 4px;
 /*padding-top: 30px;*/
 text-align: center;
 }
@@ -2057,7 +2137,7 @@ font-family: 'Montserrat-Light';
 -webkit-transform: translateY(-34px);
 transform: translateY(-34px);
 transition: all 0.3s;
-max-height: 2rem;
+max-height: 1rem;
 }
 label input {
 background-color: transparent;
@@ -2109,6 +2189,7 @@ background-color: white;
 color: #333333;
 outline: 0;
 }*/
+
 
 
 
