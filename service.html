@@ -15,7 +15,7 @@
 <body>
 <header id="header">
   <div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="navbar_main" class="navbar navbar-default navbar-fixed-top">
       <span class="mobile_menu_page">Услуги</span>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span id="up_panel" class="icon-bar"></span>
@@ -45,8 +45,6 @@
     </nav>
   </div>
 </header> 
-
-
 <div id="desktop_service" class="wrapper">
 <div class="container service_bg">
   <div class="service_container_content">
@@ -54,9 +52,9 @@
     <div class="service_mark">
       *  
    </div>
-<div class="description">
+   <div class="description">
   <p class="sub_text">Cнижает отказы, увеличивает конверсию, эффектно презентует компанию, выглядит понятно, привлекает внимание и вызывает интерес у пользователей.</p>
-</div>
+   </div>
   <div class="row">
    <div class="col-md-12 vertical-tab-container">
    <div class="col-md-6 vertical-tab-menu">
@@ -73,8 +71,9 @@
      <a href="#" class="list-group-item text-center"> 
         Брендинг
      </a>
- </div>
- </div>
+    </div><!-- list -->
+   </div><!-- 6 column -->
+ 
  <div class="col-md-6 vertical-tab">
      <div class="vertical-tab-content active text-center">
         <p class="service_description">Создаём современные площадки для решения маркетинговых задач, которые удобны, имеют приятный и вовлекающий дизайн для посетителей. Наши сайты показывают хорошую конверсию, быстро продвигаются, отличаются уникальной визуализацией.</p>
@@ -106,12 +105,15 @@
             <li>- Типографика </li>
             <li>- Маркетинговая продукция</li>
             </ul>
-      </div>
-   </div><!-- /.vertical-tab -->
-  </div><!-- /.vertical-tab-container -->
-  </div>
-</div><!-- /.container&row -->
-</div>
+        </div>
+
+       </div><!-- /.vertical-tab -->
+      </div><!-- /.vertical-tab-container -->
+     </div> <!-- 12 column -->
+    </div><!-- service_container_content -->
+ </div><!-- service_bg -->
+
+
 <div class="container-fluid">
   <div class="container">
     <div class="service_container_content">
@@ -167,10 +169,10 @@
             <p class="service_stage_description">Доводим проект до реакции "вау",<br> наша задача удивить даже самых<br> притязательных клиентов.</p>
           </div>
        </div>
+     </div>
     </div>
   </div>
- </div>
-<div class="container-fluid service_form_block">
+  <div class="container-fluid service_form_block">
   <p class="marked_text">21 Rabbits</p> 
    <div class="container order_block">
     <div class="col-md-12">
@@ -181,9 +183,84 @@
      <div class="col-md-4"><hr class="order_button_lines right_line">
        </div>
       </div>
-    </div> 
-  </div>  
+    </div>
+  </div>
+ </div><!-- wrapper -->
 </div>
+<div id="mobile_service_slider" class="mobile_wrapper">
+<div  class="container">
+ <div class="product-slider">
+  <div id="carousel_swipe" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active"> 
+         <p class="service_description">Создаём современные площадки для решения маркетинговых задач, которые удобны, имеют приятный и вовлекающий дизайн для посетителей. Наши сайты показывают хорошую конверсию, быстро продвигаются, отличаются уникальной визуализацией.</p>
+            <ul class="service_list">
+            <li>- Интернет-магазины</li>
+            <li>- Корпоративные сайты</li>
+            <li>- Сайты-визитки</li> 
+            <li>- Мобильные приложения</li>
+          </ul>
+     </div>
+      <div class="item"> <p class="service_description">Мы уделяем большое внимание каждому этапу: выбору стилистического оформления, основных тонов, динамичности лендинга, текстовому наполнению. Применяем инновационные идеи для разработки заметных проектов, эффективных с маркетинговой стороны. Каждый лендинг создаётся с учётом специфики компании, целевой аудитории и конкретных задач.</p>
+     </div>
+      <div class="item"> 
+        <p class="service_description">Сначала мы изучаем Ваших клиентов, их чувства и потребности, а затем создаём айдентику, вызывающую нужные эмоции. Каждая наша разработка – это кропотливый труд дизайнеров, маркетологов и директоров студии.</p>
+            <ul class="service_list">
+                  <li>- Разработка нейминга </li>
+                  <li>- Дизайн логотипа</li> 
+                  <li>- Фирменный стиль</li>
+            </ul>
+        </div>
+      <div class="item"> 
+      <p class="service_description">Абсолютно свежие подходы и идеи, которые выделят Ваш бизнес. Мы прислушиваемся ко всем пожеланиям, учитываем интересы Ваших потенциальных клиентов и применяем свои инновации. Создаём яркие, работающие брендинги для смелых людей. Заказывайте брендинг вместе с разработкой веб-сайта или отдельно.</p>
+            <ul class="service_list">
+            <li>- Айдентика</li> 
+            <li>- Типографика </li>
+            <li>- Маркетинговая продукция</li>
+            </ul>
+     </div>      
+    </div>
+  </div>
+  <div class="clearfix">
+    <div id="thumbcarousel" class="carousel slide" data-interval="false">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div data-target="#carousel_swipe" data-slide-to="0" class="thumb"><p class="">Разработка сайта</p>
+          </div>
+          <div data-target="#carousel_swipe" data-slide-to="1" class="thumb"><p class=""> Разработка лендинга</p>
+          </div>
+          <div data-target="#carousel_swipe" data-slide-to="2" class="thumb"><p class="">Айдентинка</p>
+          </div>
+          <div data-target="#carousel_swipe" data-slide-to="3" class="thumb"><p class="">Брендинг</p>
+          </div>          
+        </div>       
+      </div>
+      <!-- /carousel-inner -->      
+    </div>
+    <!-- /thumbcarousel -->     
+    </div>   <!--  clearfix  -->
+  </div>
+  <div id="service_slider_manage_block" class="col-md-12">
+     <a class="left carousel-control" href="#carousel_swipe" role="button" data-slide="prev"><  </a> <a class="right carousel-control" href="#carousel_swipe" role="button" data-slide="next"> ></i> </a> 
+  </div>
+</div>
+
+  <div class="container-fluid service_form_block">  
+   <div class="container">
+    <div class="col-md-12">
+      <button id="send_order" class="draw maker service_form" onclick="relocate();">Оставить заявку</button> 
+    </div>
+  </div>
+</div>
+      </div><!-- swipe -->
+    </div><!-- slider -->
+   </div><!-- container -->
+ </div> <!-- wrapper -->
+
+
+
+
+
 <footer class="container-fluid footer">
   <div class="container footer_block">
      <div class="col-md-4 col-xs-4">
@@ -197,6 +274,16 @@
     </div>
  </div>
 </footer> 
+
+
+
+
+
+
+
+
+
+
 
 
 
