@@ -8,6 +8,7 @@ $('#carousel_cases_mobile').carousel({
          interval : false
 });
 
+var clickiId="green";
 $('.multi-item-carousel .item').each(function(){
   var next = $(this).next();
 
@@ -27,8 +28,8 @@ $('.multi-item-carousel .item').each(function(){
   //  
   }
 
-      $(this).children(':nth-child(1)').find('img').css('margin-right', '113px');
-      $(this).children(':nth-child(3)').find('img').css('margin-left', '113px');
+      $(this).children(':nth-child(1)').find('img').css('margin-right', '50%');
+      $(this).children(':nth-child(3)').find('img').css('margin-left', '80%');
       $(this).children(':nth-child(2)').find('img').css('margin', 'auto');
 });
 
@@ -85,11 +86,13 @@ function relocate(){
 
             $(".target").click(function(){
                $(".target").hide( "explode", {pieces: 150}, 3000 );
+               full_item_case(clickId);
+
             });
 
-            $(".target").click(function(){
-               $(".target").show(2500);
-            });
+            // $(".target").click(function(){
+            //    $(".target").show(2500);
+            // });
         
          });
       

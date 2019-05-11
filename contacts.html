@@ -12,10 +12,10 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
-<body>
+<body class="page_of_contacts">
 <header id="header">
   <div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top mobile_grey">
       <span class="mobile_menu_page">Контакты</span>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span id="up_panel" class="icon-bar"></span>
@@ -43,7 +43,7 @@
     </nav>
   </div>
 </header>
-<div class="wrapper">
+<div class="wrapper page_contacts">
 <div class="container contacts_form">
   <h2 class="page_headline take_design">Заберите у нас свой стильный и<br>  эффективно продающий дизайн</h2>
   <h2 class="page_headline mobile_design ">Ваш новый дизайн ждет!</h2>
@@ -89,18 +89,24 @@
   <div class="col-md-12">
      <div class="col-md-6">
       <p class="contacts_title_left">Email</p>
-      <hr class="contact_data_line_left"><p class="contacts_data_left">21rabbits@mail.ru</p><hr class="contact_data_line_left invisible_line">
+      <div class="contacts_information">
+      <hr class="contact_data_line_left"><p class="contacts_data_left">21rabbits@mail.ru</p><hr class="contact_data_line_right invisible_line">
+       </div>
      </div>
 
 
      <div class="col-md-6">
       <p class="contacts_title_right">Телефон</p>
+      <div class="contacts_information">
       <hr class="contact_data_line_right "> 
-      <a class="contacts_data_right" href="tel:+79602592452">+7960-259-24-52</a><hr class="contact_data_line_right invisible_line">     
+      <a class="contacts_data_right" href="tel:+79602592452">+7960-259-24-52</a><hr class="contact_data_line_left invisible_line">
+      </div>     
      </div>
   </div>
+  <div class="clearfix"></div>
  <div class="container social_media_block">
-   	<p class="contacts_social_media">Соц.сети</p>  
+  <div class="col-md-12">
+   	<p class="contacts_social_media">Соц.сети</p> 
     <div class="col-md-12">
      <div class="col-md-3"><hr class="order_button_lines left_line"></div>
      <div class="col-md-6"> 
@@ -112,7 +118,8 @@
        </div> 
      </div>
      <div class="col-md-3"><hr class="order_button_lines right_line"></div>
-    </div>  
+    </div> 
+    </div> 
    </div> <!-- wrapper -->   
 </div>
 
