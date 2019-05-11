@@ -33,6 +33,7 @@ $('.multi-item-carousel .item').each(function(){
       
       $(this).children(':nth-child(1)').find('.desktop_cover_title').css('left', '-50%');
       $(this).children(':nth-child(3)').find('.desktop_cover_title').css('left', '60%');
+      $(this).children(':nth-child(2)').find('.desktop_cover_title').css('left', '0%');
 
 
 });
@@ -44,7 +45,7 @@ $('.multi-item-carousel .item').each(function(){
   
 // $(window).resize(function() {
   if(document.documentElement.clientWidth > 768) {
-   var margin_wrapper = $('#header').height(); 
+   var margin_wrapper = $('.navbar-fixed-top').height(); 
    var margin_footer = $('.footer').height(); 
    
     $('.wrapper').css('margin-top', margin_wrapper);
@@ -148,4 +149,18 @@ function short_item_case(){
 
  $('#carousel_slider').css('display', 'block');
  $('#project_cover').removeClass('disappear_covers');
+}
+
+// change header color on scroll
+
+var scrolled;
+window.onscroll = function() {
+    scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    if(scrolled > 30){
+        $(".navbar-fixed-top").css({"background": "#fff "})
+    }
+    if(1 > scrolled){
+        $(".navbar-fixed-top").css({"background": "transparent"})         
+    }
+
 }

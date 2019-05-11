@@ -48,16 +48,16 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }*/
-[hidden],
+/*[hidden],
 template {
   display: none;
-}
+}*/
 
 a:active,
 a:hover {
   outline: 0;
 }
-abbr[title] {
+/*abbr[title] {
   border-bottom: 1px dotted;
 }
 b,
@@ -77,7 +77,7 @@ mark {
 }
 small {
   font-size: 80%;
-}
+}*/
 /*sub,
 sup {
   font-size: 75%;
@@ -250,9 +250,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-.img-rounded {
+/*.img-rounded {
   border-radius: 6px;
-}
+}*/
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
@@ -1685,7 +1685,8 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+ /* margin-bottom: 20px;*/
+
 
   
 }
@@ -1786,8 +1787,11 @@ tbody.collapse.in {
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
+
+
+
 .navbar-fixed-bottom {
   bottom: 0;
   margin-bottom: 0;
@@ -1820,6 +1824,8 @@ tbody.collapse.in {
 
 
 @media (min-width: 768px) {
+
+
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -2179,7 +2185,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .embed-responsive-4by3 {
   padding-bottom: 75%;
 }
-.modal-open {
+/*.modal-open {
   overflow: hidden;
 }
 .modal {
@@ -2221,7 +2227,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .modal-content {
   position: relative;
   /*background-color: #ffffff;*/
-  border: 1px solid #999999;
+/*  border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -2433,7 +2439,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-right-width: 0;
   border-left-color: #ffffff;
   bottom: -10px;
-}
+}*/
 .carousel {
   position: relative;
 }
@@ -2700,7 +2706,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .modal-footer:after {
   clear: both;
 }
-.center-block {
+/*.center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -2710,14 +2716,14 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pull-left {
   float: left !important;
-}
+}*/
 .hide {
   display: none !important;
 }
 .show {
   display: block !important;
 }
-.invisible {
+/*.invisible {
   visibility: hidden;
 }
 .text-hide {
@@ -2755,8 +2761,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .visible-lg-inline,
 .visible-lg-inline-block {
   display: none !important;
-}
-@media (max-width: 767px) {
+}*/
+/*@media (max-width: 767px) {
   .visible-xs {
     display: block !important;
   }
@@ -2770,8 +2776,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   td.visible-xs {
     display: table-cell !important;
   }
-}
-@media (max-width: 767px) {
+}*/
+/*@media (max-width: 767px) {
   .visible-xs-block {
     display: block !important;
   }
@@ -2780,8 +2786,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   .visible-xs-inline {
     display: inline !important;
   }
-}
-@media (max-width: 767px) {
+}*/
+/*@media (max-width: 767px) {
   .visible-xs-inline-block {
     display: inline-block !important;
   }
@@ -2800,8 +2806,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   td.visible-sm {
     display: table-cell !important;
   }
-}
-@media (min-width: 768px) and (max-width: 991px) {
+}*/
+/*@media (min-width: 768px) and (max-width: 991px) {
   .visible-sm-block {
     display: block !important;
   }
@@ -2830,8 +2836,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   td.visible-md {
     display: table-cell !important;
   }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
+}*/
+/*@media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-block {
     display: block !important;
   }
@@ -2924,8 +2930,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .visible-print-inline {
   display: none !important;
-}
-@media print {
+}*/
+/*@media print {
   .visible-print-inline {
     display: inline !important;
   }
@@ -2942,4 +2948,4 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   .hidden-print {
     display: none !important;
   }
-}
+}*/
