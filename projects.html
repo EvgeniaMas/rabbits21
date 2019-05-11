@@ -45,53 +45,53 @@
   </div>
 </header>
 <div id="slider_wrapper">
-  <div class="grey_back_cover"></div>
+<div class="grey_back_cover"></div>
 <div  id="project_cover" class="row project_slider">
     <div class="col-md-12">
       <div class="carousel slide multi-item-carousel target" id="theCarousel">
         <div class="carousel-inner ">
-          <div class="item active">
-            <div class="col-xs-4">
-              <a href="#1">
+          <div class="item active carousel_slider">
+            <div class="col-xs-4 item_block">
+             <!--  <a href="#1"> -->
                 <img id="fluger" class="projects_slides" src="img/fluger_case.png" class="img-responsive">
                 <div class="desktop_cover_title">
-                    <p class="project_logo__cover_desktop">Флюгер</p>
+                    <p class="project_logo_cover_desktop">Флюгер</p>
                     <p class="logo_vertical_cover_desktop">website</p>
                 </div>
-              </a>
+            <!--   </a> -->
             </div>
           </div>
           <div class="item ">
-            <div class="col-xs-4">
-              <a href="#1">
+            <div class="col-xs-4 item_block">
+             <!--  <a href="#1"> -->
                 <img id="green" class="projects_slides " src="img/green_case.png" class="img-responsive">
                 <div class="desktop_cover_title">
-                    <p class="project_logo__cover_desktop">Зеленый сад</p>
+                    <p class="project_logo_cover_desktop">Зеленый сад</p>
                     <p class="logo_vertical_cover_desktop">website</p>
                 </div>
-              </a>
+           <!--    </a> -->
             </div>
           </div>
           <div class="item ">
-            <div class="col-xs-4">
-              <a href="#1">
+            <div class="col-xs-4 item_block">
+              <!-- <a href="#1"> -->
                 <img id="river" class="projects_slides" src="img/river_case.png" class="img-responsive">
                 <div class="desktop_cover_title">
-                    <p class="project_logo__cover_desktop">River Line</p>
+                    <p class="project_logo_cover_desktop">River Line</p>
                     <p class="logo_vertical_cover_desktop">website</p>
                 </div>
-              </a>
+             <!--  </a> -->
             </div>
           </div>
            <div class="item">
-            <div class="col-xs-4">
-              <a href="#1">
+            <div class="col-xs-4 item_block">
+             <!--  <a href="#1"> -->
                 <img id="pure" class="projects_slides" src="img/pure_case.png" class="img-responsive">
                 <div class="desktop_cover_title">
-                    <p class="project_logo__cover_desktop">Pure/Pure</p>
+                    <p class="project_logo_cover_desktop">Pure/Pure</p>
                     <p class="logo_vertical_cover_desktop">website</p>
                 </div>
-              </a>
+             <!--  </a> -->
             </div>
           </div>
         </div>
@@ -109,17 +109,20 @@
 <!-- opened_slider-->
 <div id="carousel_slider" class="carousel slide wrapper" data-ride="carousel">
   <div class="carousel-inner">
-    <div id="river_case" class="item">
-      <div class="container river_first_block">         
-        <div class="slider_content_part">
+
+     <div id="river_case" class="item active">
+      <div class="container pure_first_block">
          <img class="fluger_logo" src="img/river/river_logo.png" alt="Логотип">
+        <div class="slider_content_part">
+       
         <p class="project_logo animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">River Line</p>
-        <p class="logo_vertical">Mobile app</p>
-        <p class="close_full_slider">Обратно к проектам</p>
-        <p class="project_short_description">Разработка мобильного приложения для судоходной компании для быстрого и удобного заказа экскурсии или оформления аренды.</p>
+        <p class="logo_vertical">website</p>
+         <p class="close_full_slider">Обратно к проектам</p>
+        <p class="project_short_description">Abuyz</p>
           </div>
-      </div>      
-      <div class="container river_second_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
+      </div>
+      
+ <div class="container river_second_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
       </div>
       <div class="container-fluid">
         <p class="river_project_description">Судоходная компания, которая предоставляет услуги экскурсий по Санкт-Петербургу, а также предлагает теплоходы в аренду для проведения различных мероприятий (корпоративы, свадьбы, дни рождения)</p>
@@ -136,9 +139,15 @@
       </div>
       <div class="container-fluid river_fifth_block">
 
-     </div>
-   </div><!-- end active_item -->
-    <div id="green_case" class="item active">
+     </div> 
+
+
+      
+    </div><!-- end item -->
+
+ 
+   <!-- </div> --><!-- end active_item -->
+    <div id="green_case" class="item">
        <div class="container pure_first_block">
          
         <div class="slider_content_part">
@@ -395,12 +404,12 @@
 <script src="js/wow.min.js"></script>
 
 
-<!-- <script>
-  new WOW().init();
-</script> -->
-
-
 <script>
+  new WOW().init();
+</script>
+
+
+<!-- <script>
 new WOW().init();
 var scroll = window.pageYOffset, array = [];
 wow.boxes.forEach(function (box) {
@@ -412,7 +421,7 @@ array.push(box);
 }
 });
 wow.boxes = array;
-</script>
+</script> -->
 </body>
 </html>
 

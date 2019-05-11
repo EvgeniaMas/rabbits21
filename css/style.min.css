@@ -110,6 +110,8 @@ img.projects_slides{
 margin:auto;
 display: block;
 float: none;
+cursor: pointer;
+/*max-width: 553px;*/
 max-width: 400px;
 transition: all 800ms ease-out;
 }
@@ -131,6 +133,32 @@ div.item.active {
 display: block;
 /*min-height: 400px;*/
 }
+
+/*.item_block{
+position: relative;
+box-sizing: border-box;
+}*/
+
+.desktop_cover_title{
+position: absolute;
+top: 20%;
+overflow: hidden;
+cursor: pointer;
+}
+
+.project_logo_cover_desktop{
+font-family: 'Avenir-Heavy';
+font-size: 4rem;	
+white-space: nowrap;
+}
+
+.logo_vertical_cover_desktop{
+font-family: 'Avenir-Heavy';
+font-size: 1.25rem;
+text-align: right;	
+}
+
+
 img.white_black_logo{
 display: none;
 }
@@ -265,7 +293,7 @@ letter-spacing: 0.0425rem;
 max-width: 3.875rem;
 }
 .navbar-nav {
-margin: 1.25rem -15px 0 -15px;
+margin: 0 -15px 0 -15px;
 position: relative;
 z-index: 99;
 }
@@ -1568,10 +1596,6 @@ text-decoration: underline;
 position: relative;
 text-align: center;
 }
-#slider_wrapper{
-position: relative;
-height: 100%;
-}
 #carousel_slider,
 #project_cover{
 position: absolute;
@@ -1588,6 +1612,7 @@ z-index: 23;
 
 #slider_wrapper{
 position: relative;
+height: 100%;
 }
 .grey_back_cover{
 height: 100vh;
