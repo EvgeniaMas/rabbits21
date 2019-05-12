@@ -458,7 +458,7 @@ if (typeof jQuery === 'undefined') {
     var options = $.extend({}, $target.data(), $this.data())
     var slideIndex = $this.attr('data-slide-to')
 
-    $('.thumbs .item[data-slide-to="'+slideIndex+'"]').addClass('active');
+    
 
     
     if (slideIndex) options.interval = false

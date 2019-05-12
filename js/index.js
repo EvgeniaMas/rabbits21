@@ -94,22 +94,25 @@ function relocate(){
 
 
    
-         $(document).ready(function() {
+         // $(document).ready(function() {
 
 
-           $('.cover_desktop').click(function(e) {
+           //$('.cover_desktop').click(function(e) {
              
-  var clickId = $(e.target).attr('id');
+  // var clickId = $(e.target).attr('id');
 
      $('.cover_desktop').each(function(){
   // $(".projects_slides").hide( "explode", {pieces: 150}, 3500 );
       
-});
-   // $(".desktop_cover_wrapper").hide(3000);
+//});
+
+$(".cover_desktop").click(function(e){
+   var clickId = $(e.target).attr('id');
+   $(".desktop_cover_wrapper").hide(3000);
     full_item_case(clickId); 
 
 });
-
+  //});
             // $(".target").click(function(){
             //    $(".target").hide( "explode", {pieces: 150}, 3000 );
             //    full_item_case(clickId);
