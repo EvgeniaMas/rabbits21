@@ -17,11 +17,12 @@
 <header id="header">
   <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top">
-      <span class="mobile_menu_page">Проекты</span>
+      
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span id="up_panel" class="icon-bar"></span>
             <span id="down_panel" class="icon-bar"></span>
       </button>
+      <span class="mobile_menu_page">Проекты</span>
       <a class="navbar-brand" href="index.html">
         <img class="black_white_logo" src="img/logo.svg">
          <img class="white_black_logo" src="img/logo_moble.png"><span>21Rabbits</span></a> 
@@ -32,10 +33,10 @@
             </li>
             <li><a href="about.html">О нас</a>              
             </li>                
-            <li><a  href="service.html">Наши услуги</a>              
+            <li><a  href="service.html">Наши услуги</a>
             </li>                 
             <li><a class="active_page"href="projects.html">Проекты</a>
-            <span class="underlined_menu project_page"></span>              
+            <span class="underlined_menu project_page"></span>
             </li>                 
             <li><a href="contacts.html">Контакты</a>
             </li>      
@@ -44,13 +45,14 @@
     </nav>
   </div>
 </header>
-<div id="slider_wrapper">
+
+<div class="wrapper desktop_cover_wrapper">
 <div class="grey_back_cover"></div>
 <div  id="project_cover" class="row project_slider">
     <div class="col-md-12">
-      <div class="carousel slide multi-item-carousel target" id="theCarousel">
+      <div class="carousel slide multi-item-carousel" id="theCarousel">
         <div class="carousel-inner ">
-          <div class="item active carousel_slider">
+          <div class="item active carousel_slider cover_desktop">
             <div class="col-xs-4 item_block">
              <!--  <a href="#1"> -->
                 <img id="fluger" class="projects_slides" src="img/fluger_case.png" class="img-responsive">
@@ -61,7 +63,7 @@
             <!--   </a> -->
             </div>
           </div>
-          <div class="item ">
+          <div class="item cover_desktop">
             <div class="col-xs-4 item_block">
              <!--  <a href="#1"> -->
                 <img id="green" class="projects_slides " src="img/green_case.png" class="img-responsive">
@@ -72,7 +74,7 @@
            <!--    </a> -->
             </div>
           </div>
-          <div class="item ">
+          <div class="item cover_desktop">
             <div class="col-xs-4 item_block">
               <!-- <a href="#1"> -->
                 <img id="river" class="projects_slides" src="img/river_case.png" class="img-responsive">
@@ -83,7 +85,7 @@
              <!--  </a> -->
             </div>
           </div>
-           <div class="item">
+           <div class="item cover_desktop">
             <div class="col-xs-4 item_block">
              <!--  <a href="#1"> -->
                 <img id="pure" class="projects_slides" src="img/pure_case.png" class="img-responsive">
@@ -104,13 +106,15 @@
         </div>     
     </div>
 </div>
+</div><!-- wrapper -->
 
 
+<div class="wrapper">
 <!-- opened_slider-->
 <div id="carousel_slider" class="carousel slide wrapper" data-ride="carousel">
   <div class="carousel-inner">
 
-     <div id="river_case" class="item active">
+     <div id="river_case" class="item">
       <div class="container pure_first_block">
          <img class="fluger_logo" src="img/river/river_logo.png" alt="Логотип">
         <div class="slider_content_part">
@@ -131,13 +135,13 @@
 
 
 
-      <div class="container-fluid river_third_block">
+      <div class="container-fluid river_third_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
 
       </div>
-      <div class="container-fluid river_fourth_block">
+      <div class="container-fluid river_fourth_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
 
       </div>
-      <div class="container-fluid river_fifth_block">
+      <div class="container-fluid river_fifth_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
 
      </div> 
 
@@ -165,12 +169,12 @@
       <div class="container-fluid">
         <p class="river_project_description">В атмосфере спокойствия и комфорта можно насладиться вкусными и легкими растительными блюдами, сбалансированными и без термической обработки.</p>
       </div>
-       <div class="slider_content_part">
+       <div class="slider_content_part wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
          <img class="four_items" src="img/green/4items_bg.jpg" alt="Зеленый сад">
       </div>
 
 
-      <div class="container-fluid green_third_block">
+      <div class="container-fluid green_third_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
         <div class="pale_green">
           <!-- <img class="pale_left_square_bg" src="img/green/2.svg"> -->
           <!-- <img class="pale_down_square_bg" src="img/green/pale_down_squere.svg"> -->
@@ -188,7 +192,7 @@
         </div>        
       </div>
 
-      <div class="container green_fourth_block">
+      <div class="container green_fourth_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
 
         <img src="img/green/green_bg4_back.svg" class="green_fourth_block"  alt="Зеленый сад">
          <div class="slider_content_part">
@@ -205,7 +209,7 @@
       </div>
 
 
-    <div class="container-fluid green_fifth_block">
+    <div class="container-fluid green_fifth_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
        <img src="img/green/green_bg5_back.jpg" class="green_fifth_block_grid"  alt="Зеленый сад">
         <div class="slider_content_part">
         <img src="img/green/green_bg5.png" class="green_fifth_block_bg"  alt="Зеленый сад">
@@ -335,7 +339,7 @@
 </div>
 </div>
 
-</div><!-- slider_wrapper -->
+</div><!-- wrapper -->
 
 
 <div id="mobile_cases" class="container">
@@ -404,12 +408,12 @@
 <script src="js/wow.min.js"></script>
 
 
-<script>
-  new WOW().init();
-</script>
-
-
 <!-- <script>
+  new WOW().init();
+</script> -->
+
+
+<script>
 new WOW().init();
 var scroll = window.pageYOffset, array = [];
 wow.boxes.forEach(function (box) {
@@ -421,7 +425,7 @@ array.push(box);
 }
 });
 wow.boxes = array;
-</script> -->
+</script>
 </body>
 </html>
 

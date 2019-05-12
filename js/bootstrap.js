@@ -452,11 +452,17 @@ if (typeof jQuery === 'undefined') {
     var href
     var $this   = $(this)
     var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) // strip for ie7
+
+
     if (!$target.hasClass('carousel')) return
     var options = $.extend({}, $target.data(), $this.data())
     var slideIndex = $this.attr('data-slide-to')
-    if (slideIndex) options.interval = false
 
+    $('.thumbs .item[data-slide-to="'+slideIndex+'"]').addClass('active');
+
+    
+    if (slideIndex) options.interval = false
+         
     Plugin.call($target, options)
 
     if (slideIndex) {
@@ -518,6 +524,8 @@ if (typeof jQuery === 'undefined') {
   function clearMenus(e) {
 $('#up_panel').toggleClass('open_menu');
 $('#down_panel').toggleClass('open_menu');
+
+
 
     if (e && e.which === 3) return
     $(backdrop).remove()

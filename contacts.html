@@ -16,11 +16,12 @@
 <header id="header">
   <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top mobile_grey">
-      <span class="mobile_menu_page">Контакты</span>
+      
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span id="up_panel" class="icon-bar"></span>
             <span id="down_panel" class="icon-bar"></span>
       </button>
+      <span class="mobile_menu_page">Контакты</span>
       <a class="navbar-brand" href="index.html">
         <img class="black_white_logo" src="img/logo.svg">
          <img class="white_black_logo" src="img/logo_moble.png"><span>21Rabbits</span></a> 
@@ -83,23 +84,40 @@
     <button class="contacts_form_submit draw maker service_form" type="submit">Отправить</button>           
 </form> 
 <div class="error"></div>
-</div>
+</div> 
 
 <div class="container">
+
   <div class="col-md-12">
      <div class="col-md-6">
       <p class="contacts_title_left">Email</p>
       <div class="contacts_information">
-      <hr class="contact_data_line_left"><p class="contacts_data_left">21rabbits@mail.ru</p><hr class="contact_data_line_right invisible_line">
+        <div class="col-xs-2">
+      <hr class="contact_data_line_right">
+        </div>
+        <div class="col-xs-8">
+          <p class="contacts_data_left">21rabbits@mail.ru</p>
+        </div>
+        <div class="col-xs-2">
+      <hr class="contact_data_line_right invisible_line">
+        </div>
        </div>
-     </div>
+    </div>
 
 
      <div class="col-md-6">
       <p class="contacts_title_right">Телефон</p>
       <div class="contacts_information">
-      <hr class="contact_data_line_right "> 
-      <a class="contacts_data_right" href="tel:+79602592452">+7960-259-24-52</a><hr class="contact_data_line_left invisible_line">
+        <div class="col-xs-2">
+          <hr class="contact_data_line_right invisible_line">
+        </div> 
+        <div class="col-xs-8">
+      <a class="contacts_data_right" href="tel:+79602592452">
+      +7960-259-24-52</a>
+         </div>
+         <div class="col-xs-2">
+      <hr class="contact_data_line_left ">
+        </div>
       </div>     
      </div>
   </div>
