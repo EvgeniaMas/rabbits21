@@ -118,10 +118,10 @@ transition: all 800ms ease-out;
 
 img.projects_slides:hover{
 -o-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);	
+-ms-transform: scale(1.2);
+-moz-transform: scale(1.2);
+-webkit-transform: scale(1.2);
+transform: scale(1.2);	
 }
 
 
@@ -223,8 +223,8 @@ display: none;
 }
 
 .navbar.navbar-default.navbar-fixed-top{
-	max-width: 120rem;
-	margin: auto;	
+max-width: 120rem;
+margin: auto;	
 }
 
 
@@ -263,16 +263,14 @@ margin-top: 0.9375rem;
 
 /*общие стили управления слайдером*/
 .manage_container{
-	width: 70%;
-	min-width: 250px;
-	display: flex;
+width: 70%;
+/*min-width: 250px;*/
+display: flex;
 align-items: center;
 justify-content: center;
-
-	
-	min-height: 100px;
-	position: relative;
-	margin:auto;
+min-height: 100px;
+position: relative;
+margin:auto;
 }
 
 a.carousel-control{
@@ -282,7 +280,7 @@ height: 50px;
 width: 50px;
 line-height: 50px;
 border-radius: 50%;
-border: 1px solid rgb(213, 213, 213);
+border: 0.0625rem solid #d5d5d5;
 }
 
 
@@ -339,6 +337,12 @@ width: 2.9375rem;
 
 
 @media screen and (max-width: 768px) { 
+#mobile_cover_footer{
+display: none;
+}
+
+
+
 img.black_white_logo{
 display: none;
 }
@@ -450,12 +454,9 @@ width: 2.4375rem;
 margin-left: 1rem;
 }
 .mobile_menu_page{
-  font-size: 1rem;
-/*  color: #000;
-  display: inline-block;
-  text-align: right;
-  margin-top: 8px;*/
-  margin-left: 60%;
+font-family:"Avenir-Heavy";	
+font-size: 1rem;
+margin-left: 60%;
 }
 
 }
@@ -469,8 +470,8 @@ right: 0;
 left: 0;
 top: 0;
 z-index: 99;
-padding-top: 20px; 
-padding-bottom: 40px;  
+padding-top: 2.0625rem; 
+padding-bottom: 5.0625rem;  
 max-width: 120rem;
 margin: auto; 
 }
@@ -541,6 +542,13 @@ color: #26f1bc;
 
 
 @media screen and (max-width: 1918px) { 
+header{
+padding-top: 1.25rem; 
+padding-bottom: 2.875rem;  
+}
+
+
+
 h1.header__activity{
 font-size: 2.25rem;
 }
@@ -550,6 +558,10 @@ font-size: 4.5rem;
 }
 
 @media screen and (max-width: 1024px) { 
+header{
+padding-top: 1.0625rem; 
+padding-bottom: 2.3125rem;  
+}
 
 }
 
@@ -558,10 +570,18 @@ font-size: 4.5rem;
 header.main_page{
 background-color:transparent;
 }
+
 header{
+padding-top: 0; 
+padding-bottom: 0;  
+}
+
+
+
+/*header{
 padding-bottom: 0;
 background-color: #f8f8f8;
-}
+}*/
 
 
 
@@ -606,8 +626,8 @@ background-image: none;
 
 img.white_black_logo {
 position: absolute;
-    top: 0.1625rem;
-    left: 0.125rem;
+top: 0.1625rem;
+left: 0.125rem;
 }
 
 
@@ -616,8 +636,17 @@ position: absolute;
 min-height: 100%;
 position: relative;
 z-index: 9;
-
 }
+
+.wrapper_mobile {
+min-height: 100%;
+position: relative;
+z-index: 9;
+}
+
+
+
+
 .mobile_wrapper{
 min-height: 100%;
 position: relative;
@@ -635,6 +664,8 @@ background-size: cover;
 background-image: url('../img/about_team.jpg');
 background-position : center;
 background-repeat: no-repeat;
+background-size: cover;
+height: 46.1875rem;
 z-index: 7;
 position: relative;
 }
@@ -669,11 +700,9 @@ right: 0;
 left: 0;
 bottom: 0;
 margin:auto;
-/*background-color: green;*/
-/*background-color: #fafafa;*/
 background-image: url('../img/about_grey_bg.png');   
 background-size: 100%;
-background-position: bottom 2rem center;
+background-position: bottom 4rem center;
 background-repeat: no-repeat;
 z-index: 9;
 }
@@ -681,7 +710,7 @@ z-index: 9;
 color: #fff;
 position: relative;
 z-index: 9;
-width: 76%;
+width: 75.7%;
 margin: auto;  
 }
 /*
@@ -696,7 +725,8 @@ background-color: red;
 
 .slogan{
 font-family: 'Avenir-Next-Bold';
-font-size: 100px;   
+font-size: 6.25rem; 
+line-height: 3.875rem;  
 color: #02eeda;
 text-align: left;
 display: block;
@@ -705,19 +735,20 @@ margin-bottom: 0;
 }
 
 .slogan.slogan_left{
-padding-top: 364px;
+padding-top: 35%;
 }
 .slogan.slogan_right{
-padding-top: 427px;
+text-align: center;
+margin-left: 4vw;
 }
 
 .team_name{
 font-family: 'Avenir-Next-Bold';
-font-size: 48px; 
+font-size: 3rem; 
 color: #000;
 text-align: left;
 display: block;  
-margin-top: 50px; 
+margin-top: 1.3125rem; 
 letter-spacing: 0; 
 }
 
@@ -731,7 +762,14 @@ margin-top: 0;
 }
 
 .team_position{
-margin-bottom: 0.75rem;
+font-family:"Avenir-Next-Bold";	
+font-size: 1.125rem; 
+color: #000;
+text-align: left;
+display: block; 
+margin-top: 0; 
+letter-spacing: normal; 
+margin-bottom: 1.9375rem;
 }
 
 .team_short{
@@ -744,7 +782,7 @@ color: #000;
 .team_description{
 font-family: 'Montserrat-Light';
 font-size: 1.25rem;
-line-height: 0.9;
+line-height: 1.875rem;
 color: #626262;  
 margin-top: 0;
 margin-bottom: 0; 
@@ -789,14 +827,14 @@ text-align: center;
 
 h2.team_special{
 font-family: 'Avenir-Next-Bold';
-font-size: 48px;
-line-height: 59px;
+font-size: 3rem;
+line-height: 3.6875rem;
 color: #000;  
 text-align: center; 
 width: 69%;
 margin:auto!important;
-margin-bottom: 3rem;
-margin-top: 3rem;
+padding-bottom: 3rem;
+padding-top: 3rem;
 
 }
 
@@ -822,12 +860,12 @@ margin-top: 2rem;
 
 .link_to_projects{
 font-family: 'Avenir-Heavy';
-font-size: 20px;
+font-size: 1.125rem;
 display: block;
 text-align: center;
 text-decoration: underline;
-padding-top: 81px;
-padding-bottom: 67px;
+padding-top: 5.8125rem;
+padding-bottom: 4.1875rem;
 font-weight: bold; 
 color: #000;
 cursor: pointer;
@@ -849,72 +887,141 @@ text-decoration: underline;
 /* responsive about*/
 @media screen and (max-width: 1919px) { 
 .team_block{
-background-image: url('../img/about_team_middle.jpg');
-height: 526px;  
-background-size: contain;
+height: 32.8125rem;  
 background-position: bottom center;
 } 
 .team_name{  
 font-size: 2.25rem; 
+margin-top: 2rem;
 }
 .team_position{
 font-size: 1.125rem; 
-color: #000;
-text-align: left;
-display: block; 
-margin-top: 0; 
-letter-spacing: normal; 
+margin-bottom: 1.3125rem;
 }
 .team_short{
 font-size: 1rem;
 line-height: 1;
-margin-top: 1.3125rem;
 margin-bottom: 0.75rem;
 letter-spacing: normal;
 }
-
-
-
 .slogan{
-font-family: 'Avenir-Next-Bold';
-font-size: 60px;
+font-size: 4.5rem;
 }
-
-.slogan.slogan_left{
-padding-top: 248px;
-}
-.slogan.slogan_right{
-padding-top: 302px;
-}
-
 .team_description {
-
 font-size: 1rem;
 line-height: 1.3125rem;
-
 }
 
 .text_logo_green{
 font-size: 13.125rem;
 }
-}
 
-@media screen and (max-width: 1918px) { 
+.link_to_projects{
+padding-top: 4rem;
+padding-bottom: 4rem;
+}
 
 }
 
 @media screen and (max-width: 1024px) { 
+.team_block{
+height: 24.625rem;  
+} 
 
+.team_description {
+font-size: 0.875rem;
+line-height: 1.125rem;
+}
+
+
+.slogan{
+font-size: 3.4375rem; 
+}
+.link_to_projects{
+padding-top: 3.8125rem;
+padding-bottom: 3.8125rem;
+font-size: 1.125rem;
+}
 }
 
 
 @media screen and (max-width: 768px) { 
 .team_block {
-    
-    height: 200px;
-    background-size: cover;
-    background-position: top center;
+height:23.4375rem; /*не указан в макете точно*/
+background-image: url('../img/anout_team_mobile.jpg');
+}
+.grey_block{
+width: 100%;
+background-position: bottom 1rem center;
+}
+.white_container, body#page_about{
+background-color: #fafafa;	
+}
 
+
+/*#about_page_nav
+{
+position: absolute;
+top:0;
+z-index: 9999999999999999999999;
+background-color: transparent;
+}
+*/
+
+
+
+.about_content_block{
+width: 82%;
+}
+
+.text_logo_green{
+font-size: 3.625rem;
+letter-spacing: 0.3125rem;
+line-height: 5rem;
+}
+
+h2.team_special {
+font-family: 'Avenir-Next-Bold';
+font-size: 1rem;
+line-height: 1.3125rem;
+
+padding-bottom: 1.7rem;
+padding-top: 1.7rem;
+}
+
+
+
+.team_description_text {
+font-family: 'Montserrat-Light';
+font-size: 1rem;
+line-height: 1.3125rem;
+width: 95%;
+margin: auto!important;
+color: #626262;
+text-align: center;
+}
+
+
+.team_description, 
+.team_short {
+display: none;
+}
+
+.team_name{  
+font-size: 1rem; 
+margin-top: 2rem;
+}
+.team_position{
+font-size: 0.8rem; 
+margin-bottom: 1.3125rem;
+}
+
+.empty_slogan{
+display: none;
+}
+
+.slogan{
+font-size: 1.75rem; 
 }
 
 header#about_page_header{
@@ -928,22 +1035,40 @@ padding-bottom: 0;
 background-color: transparent;
 }
 .slogan.slogan_left {
-    padding-top: 248px;
+padding-top: 59%;
 }
 
 .slogan {
-    font-size: 2rem;
-}
-.slogan.slogan_left {
-    padding-top: 1rem;
+font-size: 2rem;
 }
 .slogan.slogan_right {
-    padding-top: 1rem;
+text-align: right;   
+margin-left: 0;
+}
+
+.link_to_projects{
+padding-top: 3.5rem;
+padding-bottom: 3.5rem;
+font-size: 1.125rem;
+background-image: url('../img/about_mobile_bg.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 }
 
 @media screen and (max-width: 300px) { 
+.team_block{
+height: 17.9375rem;  
+} 
+
+.text_logo_green{
+font-size: 3.125rem;
+letter-spacing: 0.25rem;
+}
+
+
 
 }
 /*service page */
@@ -955,7 +1080,7 @@ display: block;
 #mobile_service_slider,
 .footer.footer_mobile,
 /*#carousel_slider,*/
-#mobile_cases
+/*#mobile_cases*/
 {
 display: none;
 }
@@ -1331,7 +1456,7 @@ h2.page_headline.take_design{
 margin-left: 11%;
 }
 h2.page_headline.mobile_design{
-    display: none;
+display: none;
 }
 .page_headline.jobs_stages{
 padding-top: 0;   
@@ -1620,10 +1745,10 @@ width: 100%;
 
 p.contacts_title_left, p.contacts_title_right {
 /*    font-family: 'Montserrat-Light';
-    font-size: 24px;*/
-    text-align: center!important;
+font-size: 24px;*/
+text-align: center!important;
 /*    line-height: 32px;
-    margin-bottom: 21px;*/
+margin-bottom: 21px;*/
 }
 
 p.contacts_data_left,
@@ -1640,24 +1765,24 @@ width: 90%;
 }
 
 .contacts_information{
-	min-height: 60px;
-	box-sizing: border-box;
+min-height: 60px;
+box-sizing: border-box;
 }
 
 
 hr.contact_data_line_right,
 hr.contact_data_line_left {
-    display: inline-block;
-    width: 2rem;
-    height: 2px;    
-    box-sizing: border-box;    
+display: inline-block;
+width: 2rem;
+height: 2px;    
+box-sizing: border-box;    
 }
 /*p.contacts_title_left,
 p.contacts_title_right {
-    font-size: 24px;
-    text-align: center;
-    display: block;
-    
+font-size: 24px;
+text-align: center;
+display: block;
+
 }*/
 
 hr.contact_data_line_right,
@@ -1671,25 +1796,25 @@ float: none;
 
 
 h2.page_headline.mobile_design{
-    display: block;
-    font-size: 1.875rem;
-    font-family:"Avenir-Heavy";
-    line-height: 2.1875rem;
-    margin-bottom: 3rem;
-    margin-left: 4%;
-    margin-top: 0;
+display: block;
+font-size: 1.875rem;
+font-family:"Avenir-Heavy";
+line-height: 2.1875rem;
+margin-bottom: 3rem;
+margin-left: 4%;
+margin-top: 0;
 }
 h2.page_headline.take_design{
 display: none;
 }
 .social_media_block {
-    margin-bottom: 2.625rem;
+margin-bottom: 2.625rem;
 }
 button.service_form {
-    width: 16.0625rem;
-    height: 2.75rem;
-    font-size: 1.0625rem;
-    letter-spacing: 0.125rem;
+width: 16.0625rem;
+height: 2.75rem;
+font-size: 1.0625rem;
+letter-spacing: 0.125rem;
 }
 }
 
@@ -1699,22 +1824,33 @@ button.service_form {
 /*project*/
 
 
-p.close_full_slider{
+p.close_full_slider,
+.button_full_slider{
 font-size: 1.25rem;
 font-family: 'Avenir-Heavy';
 text-decoration: underline;
 position: absolute;
-top: 0;
-right: 0;
+top: 12.0625rem;
+right: 13.75rem;
 cursor: pointer;
 }
 
-#carousel_management p.close_full_slider{
+.button_full_slider{
+position: relative;
+top: 0;
+right: 0;
+margin-top: 1.8125rem;
+margin-bottom: 5.8125rem;
+}
+
+
+/*#carousel_management p.close_full_slider{
 font-size: 1.2rem;
 text-decoration: underline;
 position: relative;
 text-align: center;
-}
+display: inline-block;
+}*/
 #carousel_slider,
 #project_cover{
 position: absolute;
@@ -1738,7 +1874,6 @@ display: none;
 #slider_wrapper{
 position: relative;
 height: 100%;
-/*background-color: red;*/
 }
 .grey_back_cover{
 height: 100vh;
@@ -1772,23 +1907,34 @@ width: 80%;
 margin:auto;
 display: block;
 }
+
+.slider_content_part.fluger_content_part{
+max-width: 82.625rem;
+width: 69%
+}
+
+
 #carousel_management{
-min-height: 200px;
+display: flex;
 position: relative;
+justify-content: center;
+align-items: center;
 }
 
+#carousel_management.desktop_management{
+ width: 86%;
+ margin: auto;	
+}
 .white_bg_block{
-  min-height: 23%;
-  background-color: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left:0;
-  width: 100%;
-  z-index: 2;
+min-height: 23%;
+background-color: #fff;
+position: absolute;
+top: 0;
+right: 0;
+left:0;
+width: 100%;
+z-index: 2;
 }
-
-
 
 /*project*/
 /*river*/
@@ -1808,6 +1954,7 @@ display: inline-block;
 -ms-transform: rotate(-90deg);
 transform: rotate(-90deg);
 margin-top: 2rem;
+margin-left: -1rem;
 z-index: 5;
 position: relative;
 }
@@ -1819,19 +1966,13 @@ position: relative;
 z-index: 5;
 margin-top: 9%;
 line-height: 1.875rem;
-width: 55%;
+width: 76%;
 }
-
-
-
 .animated {
 -webkit-animation-duration: 3000ms;
 -moz-animation-duration: 3000ms;
 animation-duration: 3000ms;
 }
-
-
-
 .river_first_block{
 height: 679px;
 background-image: url('../img/river/river-line.png');
@@ -1989,14 +2130,10 @@ z-index: 5;
 max-width: 365px;
 display: block;
 }
-
-
 .pure_seven_block{
 position: relative;
 height: 100%;
-
 }
-
 .pure_seven_block>.pure_dark_grey_bg{
 height: 80%;
 background-color: #ebebeb;
@@ -2015,7 +2152,6 @@ display: block;
 margin:auto;
 margin-top: 0;
 }
-
 img.pure_six_block_ball{
 position: absolute;
 bottom: 0;
@@ -2028,47 +2164,303 @@ display: block;
 /*флюгер */
 img.fluger_logo{
 display: block;
-max-height: 7.6875rem;
+max-width: 23.5625rem;
 position: absolute;
-top: 0;
-left: 0;
+top: 0.5rem;
+left: -14.7%;
 z-index: 1;
 opacity: 0.8;
 }
-
-
+.fluger_first_block{
+position: relative;
+height: 29.4375rem;
+padding-top: 8.3125rem;
+background-image: radial-gradient(circle at 26% 32%, rgba(238, 238, 238, 0), #fafafa);	
+}
 .fluger_second_block{
 position: relative;
 height: 29.25rem;
-background-image: url("../img/fluger/fluger_bg2.png");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;    
+margin-bottom: 5.5rem;
 }
-
+.fluger_grey_bg{
+position: absolute;
+height: 30%;
+top: 0;
+right: 0;
+left: 0;
+width: 100%;
+background-image: radial-gradient(circle at 26% 32%, rgba(238, 238, 238, 0), #fafafa);
+z-index: 1;
+}
+img.fluger_second_img{
+display: block;
+width: 100%;
+position: relative;
+z-index: 2;
+}
+p.fluger_project_description{
+font-family: 'Montserrat-Light';
+font-size: 3rem;
+line-height: 3rem;
+text-align: center; 
+margin:auto;
+padding-bottom: 12.75rem;    
+}
 .fluger_third_block{
 background-image: url("../img/fluger/fluger_bg_back.png");
 background-position: bottom;
 background-repeat: no-repeat;
 background-size: 100%; 
-min-height: 20rem;  
+margin-bottom: 3.1875rem;
 }
-
 .fluger_third_block_text{
 font-size: 1.25rem;
 font-family: "Montserrat-Light";
-width: 55%;
+width: 67%;
 margin-bottom: 6.8125rem;
 margin-top: 6.8125rem; /*Не видно!!!*/
 }
-
+.fluger_third_block_img{
+display: block;
+width: 100%;
+}
 .fluger_fifth_block_text{
 font-size: 1.25rem;
 font-family: "Montserrat-Light";
-width: 55%;
-margin-bottom: 6.8125rem;
-margin-top: 6.8125rem; /*хреннннннн!!*/
+width: 67%;
+margin-top: 5.3125rem;
+margin-bottom: 6.25rem;
 }
+img.fluger_fifth_block_img{
+display: block;
+margin: auto;
+margin-bottom: 1.9375rem;
+}
+
+
+
+/*fluger etc.,mobile*/
+@media screen and (max-width: 1919px){
+
+.fluger_first_block {
+    position: relative;
+    height: 29.4375rem;
+    padding-top: 4.875rem;
+    
+}
+
+p.close_full_slider
+{
+top: 8.1875rem;
+right: 6.0625rem;
+}
+
+
+
+.project_logo{
+font-size: 4.5rem;
+}
+
+.project_short_description{
+font-family: 'Montserrat-Light';
+font-size: 1rem;
+line-height: 1.3125rem;
+position: relative;
+z-index: 5;
+margin-top: 9%;
+line-height: 1.875rem;
+width: 63%;
+}
+p.fluger_project_description{
+font-size: 2.25rem;
+line-height: 3.125rem;
+text-align: center; 
+margin:auto;
+padding-bottom: 7.75rem;    
+}
+.fluger_third_block{
+
+margin-bottom: 2.3125rem;
+}
+.fluger_third_block_text{
+font-size: 1.25rem;
+line-height: 1.3125rem;
+width: 41%;
+margin-bottom: 6.6875rem;
+margin-top: 1.4375rem;
+}
+.fluger_fifth_block_text{
+font-size: 1rem;
+line-height: 1.3125rem;
+width: 59%;
+margin-top: 3.6875rem;
+margin-bottom: 6.6875rem;
+}
+img.fluger_fifth_block_img{
+margin-bottom: 1rem;
+}
+
+
+
+}
+
+@media screen and (max-width: 1024px){
+img.fluger_logo{
+display: block;
+max-width: 23.5625rem;
+position: absolute;
+top: 0.5rem;
+left: -14.7%;
+z-index: 1;
+opacity: 0.8;
+}
+.fluger_first_block{
+position: relative;
+height: 29.4375rem;
+padding-top: 8.3125rem;
+background-image: radial-gradient(circle at 26% 32%, rgba(238, 238, 238, 0), #fafafa);	
+}
+.fluger_second_block{
+position: relative;
+height: 29.25rem;
+margin-bottom: 5.5rem;
+}
+.fluger_grey_bg{
+position: absolute;
+height: 30%;
+top: 0;
+right: 0;
+left: 0;
+width: 100%;
+background-image: radial-gradient(circle at 26% 32%, rgba(238, 238, 238, 0), #fafafa);
+z-index: 1;
+}
+img.fluger_second_img{
+display: block;
+width: 100%;
+position: relative;
+z-index: 2;
+}
+p.fluger_project_description{
+font-family: 'Montserrat-Light';
+font-size: 3rem;
+line-height: 3rem;
+text-align: center; 
+margin:auto;
+padding-bottom: 12.75rem;    
+}
+.fluger_third_block{
+background-image: url("../img/fluger/fluger_bg_back.png");
+background-position: bottom;
+background-repeat: no-repeat;
+background-size: 100%; 
+margin-bottom: 3.1875rem;
+}
+.fluger_third_block_text{
+font-size: 1.25rem;
+font-family: "Montserrat-Light";
+width: 67%;
+margin-bottom: 6.8125rem;
+margin-top: 6.8125rem; /*Не видно!!!*/
+}
+.fluger_third_block_img{
+display: block;
+width: 100%;
+}
+.fluger_fifth_block_text{
+font-size: 1.25rem;
+font-family: "Montserrat-Light";
+width: 67%;
+margin-top: 5.3125rem;
+margin-bottom: 6.25rem;
+}
+img.fluger_fifth_block_img{
+display: block;
+margin: auto;
+margin-bottom: 1.9375rem;
+}
+}
+
+
+
+@media screen and (max-width: 768px){
+.manage_container.mobile_cover_manage{
+width: 50%;
+}
+#mobile_cover_footer{
+display: block;
+}
+
+
+#mobile_cases,
+body#project_page{
+background-color: #fafafa;	
+}
+#carousel_cases_mobile>div>div.active{
+position: relative;
+min-height: 32.5rem; 
+}
+.carousel_cases_description{
+font-family: 'Montserrat-Light';
+font-size: 1rem;
+line-height: 1.5625rem;
+color: #626262;    
+text-align: center;   
+width: 88%;
+margin: auto;
+margin-top: 1.8rem;
+margin-bottom: 1.8rem;
+}
+
+.mobile_slider_covers{
+display: block;
+position: relative;
+z-index: 1;
+max-width: 80%!important;
+float: right;
+height: 10.1875rem;
+}
+.mobile_cover_title{
+position: absolute;
+top: 5%;
+left: 3%;
+z-index: 3;
+}
+.mobile_cover_title>p.project_logo__cover_mobile{
+font-family:"Avenir-Heavy";
+font-size: 2.25rem;	
+}
+
+.mobile_cover_title>p.logo_vertical_cover_mobile{
+font-family:"Avenir-Heavy";
+font-size: 1.125rem;	
+margin-left: 3rem;
+}
+
+a.carousel-control {
+font-size: 1rem;
+font-family: 'Avenir-Next-Bold';
+height: 2.5rem;
+width: 2.5rem;
+line-height: 2.5rem;
+border-radius: 50%;
+border: 0.0625rem solid #d5d5d5;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 300px) { 
+
+}
+
+
+
+
+
+
 
 /*green_case */
 
@@ -2108,26 +2500,26 @@ background-size: cover;
 .green_third_block{
 position: relative;
 background-color: #eff7e5;
- margin-bottom: 3rem;
+margin-bottom: 3rem;
 }
 .green_block_squares{
-    max-width: 39%;
-    position: absolute;
-    top: 0;
-    left: 1%;
-    z-index: 7;
+max-width: 39%;
+position: absolute;
+top: 0;
+left: 1%;
+z-index: 7;
 }
 .pale_left_square_bg{
-    width: 50%;
-    position: absolute;
-    top: 31%;
-    left: 0%;   
+width: 50%;
+position: absolute;
+top: 31%;
+left: 0%;   
 }
 .pale_down_square_bg{
-      width: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 0;   
+width: 50%;
+position: absolute;
+bottom: 0;
+right: 0;   
 
 }
 .white_half{
@@ -2183,17 +2575,17 @@ margin-left: 20%;
 }
 
 img.green_main_page_img{
-	display: block;
-	width: 80%;	
-	clear:both;
-	position: relative;
-	z-index: 8;
+display: block;
+width: 80%;	
+clear:both;
+position: relative;
+z-index: 8;
 
 }
 
 .third_block_first_item{
-    margin-top: 8rem;
-    width: 100%;
+margin-top: 8rem;
+width: 100%;
 }
 
 
@@ -2204,17 +2596,17 @@ margin-top:13rem;
 }
 
 .third_block_third_item{
-    float: right;
-    position: relative;
-    display: block;
-    z-index: 4;
-    margin-bottom: 10rem;
+float: right;
+position: relative;
+display: block;
+z-index: 4;
+margin-bottom: 10rem;
 }
 .third_block_second_item{
-    float: left;
-    display: block;
-    position: relative;
-    z-index: 4;
+float: left;
+display: block;
+position: relative;
+z-index: 4;
 }
 
 .green_fourth_block{
@@ -2224,7 +2616,7 @@ margin-bottom: 6rem;
 }
 
 img.green_fourth_block{
-   display: block;
+display: block;
 position: absolute;
 bottom:0;
 max-height: 8.9375rem;
@@ -2241,8 +2633,8 @@ z-index: 4444;
 .green_fifth_block{
 position: relative;
 height: 47.5625rem; 
- margin-bottom: 6rem; 
- margin-top: 6rem;
+margin-bottom: 6rem; 
+margin-top: 6rem;
 }
 
 img.green_fifth_block_grid{
@@ -2264,12 +2656,12 @@ position: relative;
 /*обложки проектов в мобильной версии*/
 
 img.mobile_slider_covers{
-	display: block;
-	margin: auto;
+display: block;
+margin: auto;
 }
 #carousel_cases_mobile_inner{
-	/*background-color: pink;*/
-	min-height: 800px;
+/*background-color: pink;*/
+min-height: 800px;
 }
 
 
@@ -2392,14 +2784,6 @@ width: auto;
 
 background-image: none;
 }
-
-
-
-form {
-text-align: center;
-}
-
-
 
 
 

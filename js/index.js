@@ -55,6 +55,9 @@ $('.multi-item-carousel .item').each(function(){
     // $('#main_page_content').css('margin-top', margin_wrapper);
     // $('#slider_wrapper').css('margin-top', margin_wrapper);
     
+    if(document.documentElement.clientWidth < 769) {    
+     $('#about_page_wrapper').css('margin-top', 0);
+    }
    });
     // else{ 
     //  var margin_wrapper = $('.navbar-fixed-top').height(); 
@@ -167,7 +170,8 @@ var scrolled;
 window.onscroll = function() {
     scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if(scrolled > 30){
-        $(".navbar-fixed-top").css({"background": "#fff "})
+        $(".navbar-fixed-top").css({"background": "#fff "});
+        $(".navbar").css({"max-height": "30px "})
     }
     if(1 > scrolled){
         $(".navbar-fixed-top").css({"background": "transparent"})         
@@ -188,3 +192,28 @@ $('#carousel_swipe').on('slid.bs.carousel', function(){
    $('#thumbcarousel_previews .thumb[data-slide-to="'+index+'"]').addClass('active');
    
 });
+
+
+
+
+// swipe turn on for mobile cover and service mobile sliders
+  $(document).ready(function() {  
+       $("#carousel_cases_mobile").swiperight(function() {
+
+          $(this).carousel('prev');  
+          });  
+       $("#carousel_cases_mobile").swipeleft(function() {  
+          $(this).carousel('next');  
+     });  
+  });  
+
+
+$(document).ready(function() {  
+       $("#carousel_swipe").swiperight(function() {
+
+          $(this).carousel('prev');  
+          });  
+       $("#carousel_swipe").swipeleft(function() {  
+          $(this).carousel('next');  
+     });  
+  });  

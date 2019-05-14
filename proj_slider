@@ -1,119 +1,64 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="format-detection" content="telephone=no">
-<link rel="shortcut icon" type="image/x-icon" href="logo.png" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<title>Студия дизайна 21Rabbits</title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="css/style.min.css">
-<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-</head>
-<body id="project_page">
-<header id="header">
-  <div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span id="up_panel" class="icon-bar"></span>
-            <span id="down_panel" class="icon-bar"></span>
-      </button>
-      <span class="mobile_menu_page">Проекты</span>
-      <a class="navbar-brand" href="index.html">
-        <img class="black_white_logo" src="img/logo.svg">
-         <img class="white_black_logo" src="img/logo_moble.png"><span>21Rabbits</span></a> 
+<div class="wrapper desktop_cover_wrapper">
+<div class="grey_back_cover"></div>
+<div  id="project_cover" class="row project_slider">
+    <div class="col-md-12">
+      <div class="carousel slide multi-item-carousel" id="theCarousel">
+        <div class="carousel-inner ">
+          <div class="item active carousel_slider cover_desktop">
+            <div class="col-xs-4 item_block">
+             <!--  <a href="#1"> -->
+                <img id="fluger" class="projects_slides" src="img/fluger_case.png" class="img-responsive">
+                <div class="desktop_cover_title">
+                    <p class="project_logo_cover_desktop">Флюгер</p>
+                    <p class="logo_vertical_cover_desktop">website</p>
+                </div>
+            <!--   </a> -->
+            </div>
+          </div>
+          <div class="item cover_desktop">
+            <div class="col-xs-4 item_block">
+             <!--  <a href="#1"> -->
+                <img id="green" class="projects_slides " src="img/green_case.png" class="img-responsive">
+                <div class="desktop_cover_title">
+                    <p class="project_logo_cover_desktop">Зеленый сад</p>
+                    <p class="logo_vertical_cover_desktop">website</p>
+                </div>
+           <!--    </a> -->
+            </div>
+          </div>
+          <div class="item cover_desktop">
+            <div class="col-xs-4 item_block">
+              <!-- <a href="#1"> -->
+                <img id="river" class="projects_slides" src="img/river_case.png" class="img-responsive">
+                <div class="desktop_cover_title">
+                    <p class="project_logo_cover_desktop">River Line</p>
+                    <p class="logo_vertical_cover_desktop">website</p>
+                </div>
+             <!--  </a> -->
+            </div>
+          </div>
+           <div class="item cover_desktop">
+            <div class="col-xs-4 item_block">
+             <!--  <a href="#1"> -->
+                <img id="pure" class="projects_slides" src="img/pure_case.png" class="img-responsive">
+                <div class="desktop_cover_title">
+                    <p class="project_logo_cover_desktop">Pure/Pure</p>
+                    <p class="logo_vertical_cover_desktop">website</p>
+                </div>
+             <!--  </a> -->
+            </div>
+          </div>
+        </div>
+        </div> 
+        <div class="container">
+          <div class="manage_container">
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><</a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next">></a>
+          </div>
+        </div>     
     </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-            <li class="menus"><a href="index.html">Главная</a>
-            </li>
-            <li><a href="about.html">О нас</a>              
-            </li>                
-            <li><a  href="service.html">Наши услуги</a>
-            </li>                 
-            <li><a class="active_page"href="projects.html">Проекты</a>
-            <span class="underlined_menu project_page"></span>
-            </li>                 
-            <li><a href="contacts.html">Контакты</a>
-            </li>      
-      </ul>
-    </div>
-    </nav>
-  </div>
-</header>
-
-
-
-
-<!-- <div id="mobile_cases" class="container wrapper">
-<div id="carousel_cases_mobile" class="carousel slide" data-ride="carousel">
-  <div id="carousel_cases_mobile_inner" class="carousel-inner">
-    <div class="item active">
-
-      <div class="mobile_cover_title">
-        <p class="project_logo__cover_mobile">Флюгер</p>
-        <p class="logo_vertical_cover_mobile">landing page</p>
-       </div>
-    
-      <img class="mobile_slider_covers" src="img/fluger_case.png" alt="Примеры работ">
-      <div class="clearfix"></div>
-
-       <p class="carousel_cases_description">Флюгер - компания, занимающаяся предоставлением групповых экскурсий. Их отличительной особенностью является наличие уникальных маршрутов, что позволило им стать ведущим бюро групповых экскурсий в Санкт-Петербурге. </p>
-
-        <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
-
-    </div>
-    <div class="item">
-      <div class="mobile_cover_title">
-        <p class="project_logo__cover_mobile">Pure/Pure</p>
-        <p class="logo_vertical_cover_mobile">website</p>
-      </div>
-       <img class="mobile_slider_covers" src="img/pure_case.png" alt="Примеры работ">
-       <div class="clearfix"></div>
-        <p class="carousel_cases_description">Бренд представляет большой ассортимент одежды в стиле минимализма. Основной задачей элементов оформления являлась передача ощущения чистоты и комфорта. </p>
-
-        <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
-
-    </div>
-    <div class="item">
-       <div class="mobile_cover_title">
-        <p class="project_logo__cover_mobile">Зеленый сад</p>
-        <p class="logo_vertical_cover_mobile">website</p>
-      </div>
-      <img class="mobile_slider_covers" src="img/green_case.png" alt="Примеры работ">
-      <div class="clearfix"></div>
-       <p class="carousel_cases_description">В атмосфере спокойствия и комфорта можно насладиться вкусными и легкими растительными блюдами, сбалансированными и без термической обработки.</p>
-       <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
-    </div>
-    <div class="item">
-      <div class="mobile_cover_title">
-        <p class="project_logo__cover_mobile">River Line</p>
-        <p class="logo_vertical_cover_mobile">mobile app</p>
-      </div>
-      <img class="mobile_slider_covers" src="img/river_case.png" alt="Примеры работ">
-      <div class="clearfix"></div>
-       <p class="carousel_cases_description">Судоходная компания, которая предоствляет услуги экскурсий по Санкт-Петербургу, а также предлагает теплоходы в аренду для проведения различных мероприятий (корпоративы, свадьбы, дни рождения)</p>
-       <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
-    </div>
-  <div class="col-md-12">
-    <div class="manage_container mobile_cover_manage">
-    <a class="left carousel-control" href="#carousel_cases_mobile" role="button" data-slide="prev"><  
-    </a>
-    <a class="right carousel-control" href="#carousel_cases_mobile" role="button" data-slide="next">
-    >    
-  </a>
-  </div>
- </div>
-
-  </div>
-  </div>
-</div> --> <!-- container
-
-
+</div>
+</div><!-- wrapper -->
 
 
 <div class="wrapper">
@@ -158,10 +103,10 @@
 
  
    <!-- </div> --><!-- end active_item -->
-    <div id="green_case" class="item">
+    <div id="green_case" class="item active">
        <div class="container pure_first_block">
          
-        <div class="slider_content_part ">
+        <div class="slider_content_part">
          <div class="green_logo" ></div>
         <p class="project_logo animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">Зеленый сад</p>
         <p class="logo_vertical">website</p>
@@ -302,49 +247,43 @@
       
     </div><!-- end item -->
 
-    <div id="fluger_case" class="item active">
+    <div id="fluger_case" class="item">
 
-       <div class="container fluger_first_block">
-          <p class="close_full_slider">Обратно к проектам</p>
-        <div class="slider_content_part fluger_content_part">
+       <div class="container pure_first_block">
+         
+        <div class="slider_content_part">
          <img class="fluger_logo" src="img/fluger/fluger_logo.png" alt="Логотип">
         <p class="project_logo animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">Флюгер</p>
         <p class="logo_vertical">landing <br>page</p>
-        
+        <p class="close_full_slider">Обратно к проектам</p>
         <p class="project_short_description">Продающая страница для компании, предоставляющей услуги групповых экскурсий. В дизайне мы отразили яркость и современность, создали интересное и динамичное стилистическое решение, вызывающее положительные эмоции. Сайт адаптирован под мобильные устройства.</p>
           </div>
       </div>
       
       <div class="container fluger_second_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
-        <div class="fluger_grey_bg"></div>
-
-        <img class="fluger_second_img" src="img/fluger/fluger_bg2.png" alt="Флюгер">
-
       </div>
 
       <div class="container-fluid">
-        <div class="slider_content_part fluger_content_part">
-        <p class="fluger_project_description">Флюгер - компания, занимающаяся предоставлением групповых экскурсий. Их отличительной особенностью является наличие уникальных маршрутов, что позволило им стать ведущим бюро групповых экскурсий в Санкт-Петербурге.</p>
+        <p class="river_project_description">Флюгер - компания, занимающаяся предоставлением групповых экскурсий. Их отличительной особенностью является наличие уникальных маршрутов, что позволило им стать ведущим бюро групповых экскурсий в Санкт-Петербурге.</p>
       </div>
-    </div>
 
 
       <div class="container-fluid fluger_third_block">
         <div class="slider_content_part">
-        <img class="fluger_third_block_img" src="img/fluger/fluger_bg1.png" alt="Сайт для Флюгера">
+        <img src="img/fluger/fluger_bg1.png" alt="Сайт для Флюгера">
         <p class="fluger_third_block_text">Основной задачей главной страницы является возможность погрузиться будущим потенциальным клиентам в атмосферу выходного дня. </p>
         </div>
       </div>
 
       <div class="container-fluid fluger_fourth_block">
-        <img class="fluger_fourth_block_img img-responsive" src="img/fluger/fluger_bg4.png" alt="Флюгер">
+        <img class="img-responsive" src="img/fluger/fluger_bg4.png" alt="Флюгер">
       </div>
 
     <div class="container-fluid fluger_fifth_block">
        <div class="slider_content_part">
                <p class="fluger_fifth_block_text">Лендинг адаптирован под мобильные устройства и планшеты, что позволяет легко и удобно ознакомиться со всей необходимой информацией с любых устройств. </p>
         </div>
-        <img class="fluger_fifth_block_img img-responsive" src="img/fluger/fluger_bg5.png"  alt="Флюгер">
+        <img class="img-responsive" src="img/fluger/fluger_bg5.png"  alt="Флюгер">
    </div>
 
     </div><!-- end item -->
@@ -366,19 +305,22 @@
   </div>
   
 
-  <div id="carousel_management" class="desktop_management">
+  <div id="carousel_management">
+    <div class="manage_container">
+    <p class="close_full_slider">Обратно к проектам</p>
+  <!-- Элементы управления -->
   <a class="left carousel-control" href="#carousel_slider" role="button" data-slide="prev">
     <
     <span class="sr-only">Предыдущий</span>
   </a>
-  <p class="button_full_slider">Обратно к проектам</p>
-
   <a class="right carousel-control" href="#carousel_slider" role="button" data-slide="next">
     >
     <span class="sr-only">Следующий</span>
-    </a>
+  </a>
   </div>
-  </div>
+</div>
+</div>
+
 </div><!-- wrapper -->
 
 
@@ -387,116 +329,4 @@
 
 
 
-
-
-
-
-<!-- covers on mobile phones -->
-<!-- <div id="mobile_cases" class="container wrapper">
-<div id="carousel_cases_mobile" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="item active">
-            <div class="mobile_cover_title">
-        <p class="project_logo__cover_mobile">Флюгер</p>
-        <p class="logo_vertical_cover_mobile">landing page</p>
-       </div>
-    
-      <img class="mobile_slider_covers" src="img/fluger_case.png" alt="Примеры работ">
-      <div class="clearfix"></div>
-
-       <p class="carousel_cases_description">Флюгер - компания, занимающаяся предоставлением групповых экскурсий. Их отличительной особенностью является наличие уникальных маршрутов, что позволило им стать ведущим бюро групповых экскурсий в Санкт-Петербурге. </p>
-
-        <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
-
-    </div>
-    <div class="item">
-      <div class="mobile_cover_title">
-        <p class="project_logo__cover_mobile">Pure/Pure</p>
-        <p class="logo_vertical_cover_mobile">website</p>
-      </div>
-       <img class="mobile_slider_covers" src="img/pure_case.png" alt="Примеры работ">
-       <div class="clearfix"></div>
-        <p class="carousel_cases_description">Бренд представляет большой ассортимент одежды в стиле минимализма. Основной задачей элементов оформления являлась передача ощущения чистоты и комфорта. </p>
-
-        <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
-
-    </div>
-    <div class="item">
-       <div class="mobile_cover_title">
-        <p class="project_logo__cover_mobile">Зеленый сад</p>
-        <p class="logo_vertical_cover_mobile">website</p>
-      </div>
-      <img class="mobile_slider_covers" src="img/green_case.png" alt="Примеры работ">
-      <div class="clearfix"></div>
-       <p class="carousel_cases_description">В атмосфере спокойствия и комфорта можно насладиться вкусными и легкими растительными блюдами, сбалансированными и без термической обработки.</p>
-       <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
-    </div>
-    <div class="item">
-      <div class="mobile_cover_title">
-        <p class="project_logo__cover_mobile">River Line</p>
-        <p class="logo_vertical_cover_mobile">mobile app</p>
-      </div>
-      <img class="mobile_slider_covers" src="img/river_case.png" alt="Примеры работ">
-      <div class="clearfix"></div>
-       <p class="carousel_cases_description">Судоходная компания, которая предоствляет услуги экскурсий по Санкт-Петербургу, а также предлагает теплоходы в аренду для проведения различных мероприятий (корпоративы, свадьбы, дни рождения)</p>
-       <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
-    </div>
-  <div class="col-md-12">
-    <div class="manage_container mobile_cover_manage">
-    <a class="left carousel-control" href="#carousel_cases_mobile" role="button" data-slide="prev"><  
-    </a>
-    <a class="right carousel-control" href="#carousel_cases_mobile" role="button" data-slide="next">
-    >    
-  </a>
-    </div>
-   </div>
-   
-  </div>
-  </div>
-</div>
-
- <footer id="mobile_cover_footer" class="container-fluid footer">
-  <div class="container footer_block">
-     <div class="col-md-4 col-xs-4">
-       <p class="studio">Студия дизайна 21RABBITS</p>
-     </div>
-     <div class="col-md-4 col-xs-4">
-        <img class="footer_logo" src="img/logo.png" alt="Логотип">
-     </div>
-     <div class="col-md-4 col-xs-4">
-        <p class="copywrite">&copy; 2018-2019 21Rabbits All Rights Reserved</p>
-    </div>
- </div>
-</footer>   -->
-
-
-<script src="js/juery.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/swipe.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/index.js"></script>
-<script src="js/scrollspy.min.js"></script>
-<script src="js/wow.min.js"></script>
-
-
-<!-- <script>
-  new WOW().init();
-</script> -->
-
-<!-- 
-<script>
-new WOW().init();
-var scroll = window.pageYOffset, array = [];
-wow.boxes.forEach(function (box) {
-var pos = $(box).position(), height = $(box).height();
-if (pos.top + height < scroll) {
-$(box).addClass("visible");
-} else {
-array.push(box);
-}
-});
-wow.boxes = array;
-</script> -->
-</body>
-</html>
 
