@@ -136,11 +136,7 @@
 
      <div class="container-fluid fluger_second_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
         <div class="fluger_grey_bg"></div>
-
-        <img class="fluger_second_img" src="img/river/river-line.png" alt="River_Line">
-
-        <!-- <img class="fluger_second_img_mobile" src="img/fluger/fluger_second_mobile.jpg" alt="Флюгер"> -->
-
+        <img class="river_second_img" src="img/river/river-line.png" alt="River_Line"> 
       </div>
 
 
@@ -189,11 +185,12 @@
      </div>       
     </div><!-- end item --> 
    <!-- </div> --><!-- end active_item -->
-    <div id="green_case" class="item">
-       <div class="container pure_first_block">
+    <div id="green_case" class="item active">
+       <div class="container green_first_block">
+        <div class="green_logo" ></div>
          <p class="close_full_slider">Обратно к проектам</p>
         <div class="slider_content_part ">
-         <div class="green_logo" ></div>
+         
         <p class="project_logo animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">Зеленый сад</p>
         <p class="logo_vertical">website</p>
         
@@ -202,6 +199,7 @@
       </div>
       
       <div class="container green_second_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
+        <div class="fluger_grey_bg"></div>
          <img class="fluger_second_img" src="img/green/green_bg1.png" alt="Зеленый сад">
 
         <img class="fluger_second_img_mobile" src="img/green/green_second_mobile.png" alt="Зеленый сад">
@@ -231,7 +229,7 @@
         <div class="white_half">
           <img class="pale_green_third_leaf" src="img/green/green_leaf_right.png">        
         </div>
-        <img class="green_block_squares" src="img/green/green_bg3_squres.svg">
+        <img class="green_block_squares" src="img/green/green_bg3_squares.png">
         <div class="slider_content_part">
           <div class="col-md-12">
         <img class="green_main_page_img third_block_first_item" src="img/green/green_bg3_1.jpg" alt="Зеленый сад">
@@ -247,6 +245,13 @@
 
         </div>        
       </div>
+
+
+       <div class="container_fluid white_block_mobile">
+         <p class="white_half_text_mobile">
+        Страницы устроены таким образом, чтобы пользователь легко мог переключаться между ними и получить всю необходимую информацию о заведении, режиме работы, контактах.</p>
+      </div>
+
 
       <div class="container green_fourth_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
 
@@ -272,6 +277,7 @@
 
     <div class="container-fluid green_fifth_block wow slideInUp" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="60">
        <img src="img/green/green_bg5_back.jpg" class="green_fifth_block_grid"  alt="Зеленый сад">
+       <img src="img/green/green_bg5_mobile.png" class="green_fifth_block_grid_mobile"  alt="Зеленый сад">
         <div class="slider_content_part">
         <img src="img/green/green_bg5.png" class="green_fifth_block_bg"  alt="Зеленый сад">
     </div>
@@ -281,7 +287,7 @@
       
     </div><!-- end item -->
 
-  <div id="pure_case" class="item active">
+  <div id="pure_case" class="item">
       <div class="container pure_first_block">
         <p class="close_full_slider">Обратно к проектам</p>
          <img class="pure_logo" src="img/pure/pure-logo.png" alt="Логотип">
@@ -531,14 +537,14 @@
 <script src="js/wow.min.js"></script>
 <script>
 
-// $(".button_full_slider").on("mouseover", function(){
-//   $(".carousel-control").css("border-color", "#02eeda");
-// });
+$(".carousel-control").on("mouseover", function(){
+  $(this).css("border-color", "#02eeda");
+});
 
-// $(".button_full_slider").on("mouseout", function(){
+$(".carousel-control").on("mouseout", function(){
         
-//   $(".carousel-control").css("border-color", "#d5d5d5");
-// });
+  $(this).css("border-color", "#d5d5d5");
+});
 
 
 $(".button_full_slider").on("click", function(){

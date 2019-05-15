@@ -522,8 +522,8 @@ if (typeof jQuery === 'undefined') {
   }
 
   function clearMenus(e) {
-$('#up_panel').toggleClass('open_menu');
-$('#down_panel').toggleClass('open_menu');
+   $('#up_panel').toggleClass('open_menu');
+   $('#down_panel').toggleClass('open_menu');
 
 
 
