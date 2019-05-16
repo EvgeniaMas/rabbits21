@@ -326,6 +326,69 @@
 
 
 
+<!-- <div id="mobile_cases" class="container wrapper">
+<div id="carousel_cases_mobile" class="carousel slide" data-ride="carousel">
+  <div id="carousel_cases_mobile_inner" class="carousel-inner">
+    <div class="item active">
+
+      <div class="mobile_cover_title">
+        <p class="project_logo__cover_mobile">Флюгер</p>
+        <p class="logo_vertical_cover_mobile">landing page</p>
+       </div>
+    
+      <img class="mobile_slider_covers" src="img/fluger_case.png" alt="Примеры работ">
+      <div class="clearfix"></div>
+
+       <p class="carousel_cases_description">Флюгер - компания, занимающаяся предоставлением групповых экскурсий. Их отличительной особенностью является наличие уникальных маршрутов, что позволило им стать ведущим бюро групповых экскурсий в Санкт-Петербурге. </p>
+
+        <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
+
+    </div>
+    <div class="item">
+      <div class="mobile_cover_title">
+        <p class="project_logo__cover_mobile">Pure/Pure</p>
+        <p class="logo_vertical_cover_mobile">website</p>
+      </div>
+       <img class="mobile_slider_covers" src="img/pure_case.png" alt="Примеры работ">
+       <div class="clearfix"></div>
+        <p class="carousel_cases_description">Бренд представляет большой ассортимент одежды в стиле минимализма. Основной задачей элементов оформления являлась передача ощущения чистоты и комфорта. </p>
+
+        <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
+
+    </div>
+    <div class="item">
+       <div class="mobile_cover_title">
+        <p class="project_logo__cover_mobile">Зеленый сад</p>
+        <p class="logo_vertical_cover_mobile">website</p>
+      </div>
+      <img class="mobile_slider_covers" src="img/green_case.png" alt="Примеры работ">
+      <div class="clearfix"></div>
+       <p class="carousel_cases_description">В атмосфере спокойствия и комфорта можно насладиться вкусными и легкими растительными блюдами, сбалансированными и без термической обработки.</p>
+       <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
+    </div>
+    <div class="item">
+      <div class="mobile_cover_title">
+        <p class="project_logo__cover_mobile">River Line</p>
+        <p class="logo_vertical_cover_mobile">mobile app</p>
+      </div>
+      <img class="mobile_slider_covers" src="img/river_case.png" alt="Примеры работ">
+      <div class="clearfix"></div>
+       <p class="carousel_cases_description">Судоходная компания, которая предоствляет услуги экскурсий по Санкт-Петербургу, а также предлагает теплоходы в аренду для проведения различных мероприятий (корпоративы, свадьбы, дни рождения)</p>
+       <button class="contacts_form_submit draw maker service_form">Подробнее</button>   
+    </div>
+  <div class="col-md-12">
+    <div class="manage_container mobile_cover_manage">
+    <a class="left carousel-control" href="#carousel_cases_mobile" role="button" data-slide="prev"><  
+    </a>
+    <a class="right carousel-control" href="#carousel_cases_mobile" role="button" data-slide="next">
+    >    
+    </a>
+    </div>
+   </div>
+  </div>
+  </div>
+</div> --> <!-- container-->
+
 
 
 

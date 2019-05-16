@@ -1825,6 +1825,13 @@ tbody.collapse.in {
 
 @media (min-width: 768px) {
 
+.navbar-brand {
+  float: left;
+  width: auto;
+  height: auto;
+  }
+
+
 
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {

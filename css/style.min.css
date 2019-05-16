@@ -346,6 +346,8 @@ display: none;
 
 
 
+
+
 img.black_white_logo{
 display: none;
 }
@@ -638,7 +640,7 @@ left: 0.125rem;
 .wrapper {
 min-height: 100%;
 position: relative;
-z-index: 9;
+z-index: 2;
 }
 
 .wrapper_mobile {
@@ -1045,9 +1047,8 @@ letter-spacing: 0.25rem;
 display: block;
 }
 #mobile_service_slider,
-.footer.footer_mobile
-/*#carousel_slider,*/
-/*#mobile_cases*/
+#carousel_slider,
+#mobile_cases 
 {
 display: none;
 }
@@ -1637,6 +1638,7 @@ max-width: 100%;
 }
 label input:focus + .label-text {
 color: #000;
+font-family: 'Montserrat-Light';  
 font-size: 13px;
 -moz-transform: translateY(-4rem);
 -ms-transform: translateY(-4rem);
@@ -1827,21 +1829,33 @@ color: #02eeda;
 }
 #carousel_slider,
 #project_cover{
-position: absolute;
+/*position: absolute;
 top:0;
 right: 0;
 bottom: 0;
-left:0;
+left:0;*/
 opacity: 1;
 }
+
+#mobiles_footer{
+display: none;
+}
+
+
 #project_cover{
 opacity: 1;
 z-index: 23;
 }
 
 .desktop_cover_wrapper{
+display: block;
+}
+
+/*#mobile_cover_footer{
 display: none;
 }
+*/
+
 
 #slider_wrapper{
 position: relative;
@@ -2087,6 +2101,22 @@ padding-top: 3.1875rem;
 }
 
 @media screen and (max-width: 768px){
+
+#mobiles_footer{
+display: block;
+}
+
+
+
+.desktop_cover_wrapper{
+display: none;
+}
+#mobile_cases{
+display: block;	
+}
+
+
+
 #river_case_fluid{
 min-height: 20rem;
 }
@@ -2350,6 +2380,7 @@ padding: 0;
 margin:0;
 width: 100vw;
 }*/
+
 img.pure_logo{
 max-height:13.1875rem;	
 }
@@ -2920,13 +2951,11 @@ z-index: 4;
 }
 .green_fourth_block{
 position: relative;
-height: 43.5625rem;
-margin-bottom: 6rem;
 }
 img.green_fourth_block{
 display: block;
 position: absolute;
-bottom:0;
+bottom:-2rem;
 max-height: 8.9375rem;
 right: 0;
 z-index: 2; 
@@ -2937,6 +2966,12 @@ position: relative;
 width: 100%;
 z-index: 4;
 }
+
+.container.comodo{
+margin-top: 4rem;
+}
+
+
 .green_fifth_block{
 position: relative;
 height: 47.5625rem; 
@@ -3029,10 +3064,12 @@ margin-top:4.375rem;
 .third_block_third_item{
 margin-bottom: 3.25rem;
 }
-.green_four_text,
+p.green_four_text,
 .white_half_text {    
 font-size: 1rem;
 line-height: 1.3125rem;
+font-family:"Montserrat-Light";
+color: #000;
 }
 }
 
