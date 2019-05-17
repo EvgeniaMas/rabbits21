@@ -65,7 +65,7 @@ $('.multi-item-carousel .item').each(function(){
     
       $(this).children(':nth-child(1)').find('.desktop_cover_title').css('left', '-50%');
       $(this).children(':nth-child(3)').find('.desktop_cover_title').css('left', '60%');
-      $(this).children(':nth-child(2)').find('.desktop_cover_title').css('left', '0%');
+      $(this).children(':nth-child(2)').find('.desktop_cover_title').css('left', '-22%');
 
 });
     var first_cover = $('.multi-item-carousel .item').children(':nth-child(1)').find('img');

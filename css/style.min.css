@@ -142,45 +142,35 @@ input:focus::-webkit-input-placeholder {
   font-size: 1.25rem;
     line-height: 1rem;
     font-family: 'Montserrat-Light';
-}
- 
+} 
 input:focus::-moz-placeholder {
    color: #828282;
    font-size: 1.25rem;
     line-height: 1rem;
     font-family: 'Montserrat-Light';
-}
- 
+} 
 input:focus:-moz-placeholder {
   color: #828282;
   font-size: 1.25rem;
     line-height: 1rem;
     font-family: 'Montserrat-Light';
-}
- 
+} 
 input:focus:-ms-input-placeholder {
    color: #828282;
    font-size: 1.25rem;
     line-height: 1rem;
     font-family: 'Montserrat-Light';
 }
-
 @-webkit-keyframes autofill {
   to {
     color: inherit;
     background: transparent;
   }
 }
-
 input:-webkit-autofill {
   -webkit-animation-name: autofill;
   -webkit-animation-fill-mode: both;
 }
-
-
-
-
-
 img.projects_slides{
 margin:auto;
 display: block;
@@ -189,9 +179,7 @@ cursor: pointer;
 max-width: 400px;
 transition: all 800ms ease-out;
 }
-
-
-.projects_slides:after{
+/*.projects_slides:after{
 width: 400px;
  height: 400px; 
  position: absolute;
@@ -200,10 +188,7 @@ width: 400px;
  content: ""; 
  background: url("../img/contacts_bg.png") no-repeat center center;
   display: block;
-}
-
-
-
+}*/
 img.projects_slides:hover{
 -o-transform: scale(0.9);
 -ms-transform: scale(0.9);
@@ -217,32 +202,22 @@ margin-top: 10%;
 div.item.active {
 display: block;
 }
-
-/*.item_block{
-position: relative;
-box-sizing: border-box;
-}*/
-
 .desktop_cover_title{
 position: absolute;
 top: 20%;
 overflow: hidden;
 cursor: pointer;
 }
-
 .project_logo_cover_desktop{
 font-family: 'Avenir-Heavy';
 font-size: 4rem;	
 white-space: nowrap;
 }
-
 .logo_vertical_cover_desktop{
 font-family: 'Avenir-Heavy';
 font-size: 1.25rem;
 text-align: right;	
 }
-
-
 img.white_black_logo{
 display: none;
 }
@@ -252,6 +227,11 @@ height: 5.375rem;
 width: 5.375rem;
 }
 
+
+#desktop_covers_manage{
+margin-top:  3.4375rem; 
+width: 82.3%;
+}
 .navbar-brand span{
 font-weight: normal;
 }
@@ -370,11 +350,6 @@ border: 0.0625rem solid #d5d5d5;
 a.carousel-control:hover{
 border-color: #02eeda;
 }
-
-
-
-
-
 @media screen and (max-width: 1918px) { 
 img.black_white_logo{
 height: 3.875rem;
@@ -423,6 +398,24 @@ font-size: 0.875rem;
 img.black_white_logo{
 height: 2.9375rem;
 width: 2.9375rem;
+}
+
+img.projects_slides{
+max-width: 23.75rem;
+}
+
+.project_logo_cover_desktop {
+    font-size: 3rem;
+}
+
+}
+
+@media screen and (max-width: 992px) { 
+img.projects_slides{
+max-width: 17rem;
+}
+.project_logo_cover_desktop {
+    font-size: 2rem;
 }
 }
 
@@ -654,19 +647,11 @@ header.main_page{
 background-color:transparent;
 }
 
+
 header{
 padding-top: 0; 
 padding-bottom: 0;  
 }
-
-
-
-/*header{
-padding-bottom: 0;
-background-color: #f8f8f8;
-}*/
-
-
 
 .chat_box{
 display: none;
@@ -721,16 +706,16 @@ position: relative;
 z-index: 2;
 }
 
-.wrapper_mobile {
+/*.wrapper_mobile {
 min-height: 100%;
 position: relative;
 z-index: 9;
-}
+}*/
 
 
 
 
-.mobile_wrapper{
+#mobile_service_slider{
 min-height: 100%;
 position: relative;
 z-index: 9;    
@@ -1001,13 +986,10 @@ padding-bottom: 4rem;
 .team_block{
 height: 24.625rem;  
 } 
-
 .team_description {
 font-size: 0.875rem;
 line-height: 1.125rem;
 }
-
-
 .slogan{
 font-size: 3.4375rem; 
 }
@@ -1019,6 +1001,18 @@ font-size: 1.125rem;
 }
 
 
+@media screen and (max-width: 992px) { 
+.slogan.slogan_left {
+    padding-top: 19%;
+}
+
+.text_logo_green{
+ /* max-height: 160px;*/
+}
+}
+
+
+
 @media screen and (max-width: 768px) { 
 .team_block {
 height:23.4375rem; /*не указан в макете точно*/
@@ -1028,8 +1022,12 @@ background-image: url('../img/anout_team_mobile.jpg');
 width: 100%;
 background-position: bottom 1rem center;
 }
-.white_container, body#page_about{
-background-color: #fafafa;	
+.white_container,
+body#page_about,
+body#service_page
+{
+background-color: #fafafa;
+
 }
 .about_content_block{
 width: 82%;
@@ -1085,7 +1083,7 @@ padding-bottom: 0;
 background-color: transparent;
 }
 .slogan.slogan_left {
-padding-top: 59%;
+padding-top: 20%;
 }
 
 .slogan {
@@ -1455,7 +1453,8 @@ margin-top: 1rem;
 
 @media screen and (max-width: 768px) { 
 #desktop_service,
-hr.order_button_lines
+hr.order_button_lines,
+#job_schema
 {
 display: none;
 }
@@ -1463,6 +1462,10 @@ display: none;
 .footer.footer_mobile{
 display: block;
 }
+
+
+
+
 ul.service_list li{
 padding-left: 0;
 
@@ -1878,7 +1881,7 @@ margin-top: 1rem;
 background-image: url('../img/mobile_contacts_bg.jpg');
 background-position :   bottom center;
 background-repeat: no-repeat;
-background-size: contain;
+background-size: cover;
 
 }
 hr.order_button_lines{
@@ -1990,6 +1993,9 @@ width: 100%;
 .col-md-6.col-xs-6.divided_input,
 .col-md-6.col-xs-6.divided_block{
 	width: 100%;	
+}
+.wrapper.page_contacts{
+background-size: contain;
 }
 }
 
@@ -3459,7 +3465,7 @@ margin: 0;
 
 
 #carousel_swipe>div>div.item{
-height: 310px;
+min-height: 410px;
 
 }
 
@@ -3532,4 +3538,35 @@ background-image: none;
 }
 
 
+@media screen and (max-width: 768px) { 
+.product-slider {
+    width: 100%;
+    padding-left: 0;
+}
+p.preview_text{
+ font-family:"Avenir-Heavy";
+ font-size: 0.9rem; 
+ text-align: center;
+}
+p.mobile_service_title{
+font-size: 1.875rem;
+font-family:"Avenir-Heavy";
+color: #02eeda;
+text-align: left;
+line-height: 2.75rem;
+margin-bottom: 0.8125rem;
+}
+.mobile_service_title.double_line{
+  line-height: 1.875rem;
+  margin-bottom: 0.8125rem;
+
+}
+}
+
+@media screen and (max-width: 380px) { 
+p.preview_text{
+
+ font-size: 0.5rem; 
+
+}
 
