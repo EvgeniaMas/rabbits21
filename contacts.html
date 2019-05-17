@@ -46,50 +46,38 @@
 </header>
 <div class="wrapper page_contacts">
 <div class="container contacts_form">
-  <h2 class="page_headline take_design">Заберите у нас свой стильный и<br>  эффективно продающий дизайн</h2>
-  <h2 class="page_headline mobile_design ">Ваш новый дизайн ждет!</h2>
-
-    
-
+  <h2 class="page_headline take_design">Заберите у нас свой стильный и<br>  эффективно продающий дизайн!</h2>
+  <h2 class="page_headline mobile_design ">Ваш новый дизайн ждет!</h2> 
     <p id="sent_message">Спасибо за заявку! Мы скоро с Вами свяжемся!</p>
    <form id="contacts_form" class="contacts__form"  method="POST">
-
     <label>
-    <input class="contacts_input required_data" name="user_name" type="text" required="required" />
+    <input class="contacts_input required_data" name="user_name" type="text" required="required" placeholder="Даша" />
     <div class="label-text">Имя</div>
-    </label>
-    
-   <!--  <div class="col-md-12"> -->
-      <div class="col-md-6">
+    </label> 
+      <div class="col-md-6 col-xs-6 divided_input">
          <label>
-         <input class="contacts_input contacts_small_input_left" name="user_mail" type="email" required="required" /> 
+         <input class="contacts_input contacts_small_input_left" name="user_mail" type="email" required="required" placeholder="daria_daria20@mail.ru"/> 
           <div class="label-text">Email</div>
            </label>
         </div>
-       <div class="col-md-6">
+       <div class="col-md-6 col-xs-6 divided_input">
         <label> 
          <input class="contacts_input contacts_small_input_right"  name="user_phone" type="tel" required="required" />
           <div class="label-text">Телефон</div>
         </label>
        </div>
-    <!--  </div> -->
-
          <label>
-          <input class="contacts_input required_data" name="comments" type="text" required="required" />
+          <input class="contacts_input required_data" name="comments" type="text" required="required" placeholder="Хочу сайт"/>
           <div class="label-text">Комментарий</div>
         </label>
-     
-
-
     <button class="contacts_form_submit draw maker service_form" type="submit">Отправить</button>           
 </form> 
 <div class="error"></div>
-</div> 
-
-<div class="container">
-
-  <div class="col-md-12">
-     <div class="col-md-6">
+</div>
+<div class="container ">
+  <div class="col-md-12 ">
+    <div class="information_block">
+     <div class="col-md-6 col-xs-6 divided_block">
       <p class="contacts_title_left">Email</p>
       <div class="contacts_information">
         <div class="col-xs-2">
@@ -103,9 +91,7 @@
         </div>
        </div>
     </div>
-
-
-     <div class="col-md-6">
+     <div class="col-md-6 col-xs-6 divided_block">
       <p class="contacts_title_right">Телефон</p>
       <div class="contacts_information">
         <div class="col-xs-2">
@@ -120,14 +106,15 @@
         </div>
       </div>     
      </div>
+   </div>
   </div>
   <div class="clearfix"></div>
  <div class="container social_media_block">
   <div class="col-md-12">
    	<p class="contacts_social_media">Соц.сети</p> 
     <div class="col-md-12">
-     <div class="col-md-3"><hr class="order_button_lines left_line"></div>
-     <div class="col-md-6"> 
+     <div class="col-md-3 col-xs-3 social_media_container_lines"><hr class="order_button_lines left_line"></div>
+     <div class="col-md-6 col-xs-6 social_media_container"> 
       <div class="social_icons_block"> 
         <a href="#" class="social_icon vkontakte"></a>
         <a href="#" class="social_icon instagram"></a> 
@@ -135,15 +122,11 @@
         <a href="#" class="social_icon dribble"></a>       
        </div> 
      </div>
-     <div class="col-md-3"><hr class="order_button_lines right_line"></div>
+     <div class="col-md-3 col-xs-3 social_media_container_lines"><hr class="order_button_lines right_line"></div>
     </div> 
     </div> 
    </div> <!-- wrapper -->   
 </div>
-
-
-
-
 <footer class="container-fluid footer">
   <div class="container footer_block">
      <div class="col-md-4 col-xs-4">
@@ -162,114 +145,7 @@
 <script src="js/juery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.maskedinput.min.js" ></script>
-
-<script>
-//Маска для телефона
-$(function() {
-    $("input[type='tel']").mask('+7(999) 999-99-99');   
-});
-
-$(document).on('click', 'input[type="tel"]', function(){
-$(this).focus();
-});
-
-</script>
-
-
+<script src="js/contacts.js"></script>
 <script src="js/index.js"></script>
-
-
-
-<script>
-$("input[type='email']").on('blur', function () {
-  let email = $(this).val();
-  
-  if (email.length > 0
-  && (email.match(/.+?\@.+/g) || []).length !== 1) {
-   // $('#mail_error').text('Falsch!');      
-  }
-
-});
-
-// var telInp = $('input[type="tel"]');
-      
-// telInp.each(function(){
-//   $(this).mask("+7 (___) ___-__-__");
-// });
-
-
-</script>
-
-<script>
-// $("#contacts_form").on("submit", function () {
-// $("input").each(function () {
-//         $(this).data("defvalue", this.value);
-//     });
-
-// $("#contacts_form").css("display", "none");
-// $("#sent_message").css("display", "block");
-
-
-// });
-
-
-// почта
-$(document).ready(function() { 
-    $("#contacts_form").submit(function(){ 
-        var form = $(this); 
-        var error = false; 
-        form.find('input.required_data').each( function(){ 
-            if ($(this).val() == '') { 
-                form.find('.error').text('Зaпoлнитe поля!');
-                error = true; 
-            }
-        });
-        if (!error) { 
-            var data = form.serialize(); 
-            $.ajax({ 
-                type: 'POST', 
-                url: 'call.php', 
-                dataType: 'json', 
-                data: data,
-                beforeSend: function(data) { 
-                    form.find('button[type="submit"]').attr('disabled', 'disabled'); 
-                },
-                success: function(data){ 
-                    // if (data['error']) { 
-                    //     alert(data['error']);
-                    // } 
-
-                    //else {                                     
-                     $("input").each(function () {
-                       $(this).data("defvalue", this.value);
-                    });                                     
-                  $("#contacts_form").css("display", "none");
-                  $("#sent_message").css("display", "block");                                  
-                           
-                    //}
-                },
-                error: function (xhr, ajaxOptions, thrownError) { 
-                    // alert(xhr.status); 
-                    // alert(thrownError);
-                },
-                complete: function(data) {
-                    form.find('button[type="submit"]').prop('disabled', false); 
-                }
-                          
-                 });
-        }
-        return false;
-    });
-});
-
-
-
-
-
-
-
-</script> 
-
-
 </body>
 </html>
