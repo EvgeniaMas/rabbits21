@@ -239,6 +239,7 @@ width: 5.375rem;
 }
 #desktop_covers_manage{
 margin-top:  3.4375rem; 
+padding-bottom: 1rem;
 width: 82.3%;
 }
 .navbar-brand span{
@@ -3567,11 +3568,13 @@ z-index: 3;
 
 
 .multi-item-carousel> div.carousel-inner{
-    background-color: red;
+/*    background-color: red;*/
     min-height: 350px;
 }
 
-/*#project_page{
+#project_page{
     overflow: hidden;
+    position: relative;
+    z-index: 22;
     
-}*/
+}

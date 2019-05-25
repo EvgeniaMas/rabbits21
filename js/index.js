@@ -13,25 +13,23 @@ $('#carousel_swipe').carousel({
 });
 // close big case
 $(".back_to_covers").click(function(){
-   $("#carousel_slider").hide(1000);
+   $("#carousel_slider").hide(2000);
    var items = $("#carousel_slider > div.carousel-inner").find(".item");
    
     $(items).each(function(){
            $(this).removeClass("active");           
     });
 
-    $('html, body').animate({scrollTop:0}, 300);
+    // $('html, body').animate({scrollTop:0}, 300);
     if(document.documentElement.clientWidth > 768) {
-
-     $(".desktop_cover_wrapper").show(3000);
+     $('#project_page').css('overflow', 'hidden');
      $('#mobiles_footer').css('display', 'none');
-      // $('#project_page').css('overflow', 'hidden');
-     
-     
+     $(".desktop_cover_wrapper").fadeIn(3000);     
+         
      }
      else{
        $("#mobile_cases").show(2000); 
-       // $('#project_page').css('overflow', 'visible');
+       $('#project_page').css('overflow', 'visible');
         
      }   
 });
@@ -78,7 +76,20 @@ function relocate(){
   
 }
 $(".cover_desktop").click(function(e){
+
    var clickId = $(e.target).attr('id');
+
+   console.log($(e.target).parent().parent().find('img').attr('id'));
+
+   if(!clickId){
+
+   	clickId = $(e.target).parent().parent().find('img').attr('id');
+     if(!clickId) {
+     	clickId = "green";
+     }
+   	
+   }  
+
    var image= $(this).find('.item_block').find('img');
    $(image).hide( "explode", {pieces: 23}, 3500 );
     $(".desktop_cover_wrapper").hide(2000);
@@ -93,14 +104,6 @@ $(".mobile_slider_closed").click(function(e){
 });
       
 function full_item_case(clickId){
-
-  if(clickId == false){    
-  $('#case_green').addClass('active');
-  }
-
-  else{
-
-
 if(clickId== 'pure'|| clickId=='purem'){
 $('#case_pure').addClass('active');
 }
@@ -114,19 +117,18 @@ if(clickId== 'green' || clickId=='grenm'){
   $('#case_green').addClass('active');
 }
 
-}
-// $('#project_page').css('overflow', 'visible');
-$('#carousel_slider').css('display', 'block');
+$('#project_page').css('overflow', 'visible');
+$('#carousel_slider').show(2500);
 $('#mobiles_footer').css('display', 'block');
 
    
      setTimeout(      
         function() { 
-         var wow ="";
+         // var wow ="";
           wow = new WOW();
           wow.init();    
 
-        }, 200
+        }, 1000
      ); 
 
 }
@@ -223,6 +225,20 @@ $("#send_order").on("mouseout", function(){
         
   $(".order_button_lines").css("background-color", '#000');
 });
+
+
+$(".desktop_cover_title").on("mouseover", function(){
+	$(this).parent().find('img').css("transform", "scale(0.9)");       
+  
+});
+
+$(".desktop_cover_title").on("mouseout", function(){
+     $(this).parent().find('img').css("transform", "scale(1)");   
+  
+});
+
+
+
 
 
 $(".carousel-control").on("click", function(e){
