@@ -2400,9 +2400,9 @@ if($(".navbar-collapse").hasClass('in'))
 }
 else{
      alert('hhhh');
-     navMain.on("click", "a:not([data-toggle])", null, function () {
+     // navMain.on("click", "a:not([data-toggle])", null, function () {
          navMain.collapse('hide');
-     });
+     //});
 }  
 // $('#up_panel').toggleClass('open_menu');
 // $('#down_panel').toggleClass('open_menu');
