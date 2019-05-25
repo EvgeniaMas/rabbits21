@@ -2396,12 +2396,12 @@ var navMain = $(".navbar-collapse");
 if($(".navbar-collapse").hasClass('in'))
 {
   alert('llll');
-  navMain.collapse('show');
+  $(navMain).css('display', 'block');
 }
 else{
      alert('hhhh');
      // navMain.on("click", "a:not([data-toggle])", null, function () {
-         navMain.collapse('hide');
+         $(navMain).css('display', 'none');
      //});
 }  
 // $('#up_panel').toggleClass('open_menu');
