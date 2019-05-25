@@ -161,7 +161,7 @@ $('#carousel_swipe').on('slid.bs.carousel', function(){
 // swipe turn on for mobile cover and service mobile sliders
   $(document).ready(function() {  
        $("#carousel_cases_mobile").swiperight(function() {
-
+          alert('8888');
           $(this).carousel('prev');  
           });  
        $("#carousel_cases_mobile").swipeleft(function() {  
@@ -272,6 +272,12 @@ $(".carousel-control").on("mouseout", function(){
 $(".button_full_slider").on("click", function(){
   $(".button_full_slider").css("color", "#02eeda");
 });
+
+
+$(".contacts_form_submit").on("click", function(){
+  $(this).css("border-color", "#26f1bc");
+});
+
 
   var text = 'Привет! Я вижу, что ты ищешь';
   var text2 = 'кого-то, чтобы ';
