@@ -3592,7 +3592,7 @@ overflow: visible;
 }
 }
 
-@media (max-width: 1024px) and (orientation:portrait) {
+/*@media (max-width: 1024px) and (orientation:portrait) {
   .navbar-toggle {
     display: block;
   }
@@ -3603,4 +3603,4 @@ overflow: visible;
     display: none;
     
   }
-}
+}*/

@@ -2395,17 +2395,17 @@ $('.navbar-toggle').on('click', function(){
 var navMain = $(".navbar-collapse");
 if($(".navbar-collapse").hasClass('in'))
 {
-  alert('llll');
+
   $(navMain).css('display', 'block');
 }
 else{
-     alert('hhhh');
+     
      // navMain.on("click", "a:not([data-toggle])", null, function () {
          $(navMain).css('display', 'none');
      //});
 }  
-// $('#up_panel').toggleClass('open_menu');
-// $('#down_panel').toggleClass('open_menu');
+$('#up_panel').toggleClass('open_menu');
+$('#down_panel').toggleClass('open_menu');
 });
 
 
