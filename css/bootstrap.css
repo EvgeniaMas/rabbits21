@@ -1244,6 +1244,16 @@ tbody.collapse.in {
 .navbar-collapse.in {
   overflow-y: auto;
 }
+
+
+@media (max-width: 1024px)and (orientation:portrait) {
+  .navbar-collapse.collapse {
+    display: none;
+  }
+}
+
+
+
 @media (min-width: 768px) {
   .navbar-collapse {
     width: auto;
@@ -1273,13 +1283,7 @@ tbody.collapse.in {
 }
 
 
-@media (max-width: 1024px)and (orientation:portrait) {
-  .navbar-collapse.collapse {
-    display: none;
-  }
 
-
-}
 
 
 
@@ -1415,6 +1419,14 @@ tbody.collapse.in {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
+
+@media (max-width: 1024px)and (orientation:portrait) {
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+
 @media (min-width: 768px) {
   .navbar-toggle {
     display: none;
@@ -1422,11 +1434,7 @@ tbody.collapse.in {
 }
 
 
-@media (max-width: 1024px)and (orientation:portrait) {
-  .navbar-toggle {
-    display: block;
-  }
-}
+
 @media (max-width: 767px) {
 /*  .navbar-nav .open .dropdown-menu {
     position: static;

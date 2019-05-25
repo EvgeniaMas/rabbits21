@@ -166,6 +166,7 @@ if (typeof jQuery === 'undefined') {
   }
 
   Button.prototype.toggle = function () {
+
     var changed = true
     var $parent = this.$element.closest('[data-toggle="buttons"]')
 
@@ -451,11 +452,17 @@ if (typeof jQuery === 'undefined') {
     var href
     var $this   = $(this)
     var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) // strip for ie7
+
+
     if (!$target.hasClass('carousel')) return
     var options = $.extend({}, $target.data(), $this.data())
     var slideIndex = $this.attr('data-slide-to')
-    if (slideIndex) options.interval = false
 
+    
+
+    
+    if (slideIndex) options.interval = false
+         
     Plugin.call($target, options)
 
     if (slideIndex) {
@@ -515,6 +522,10 @@ if (typeof jQuery === 'undefined') {
   }
 
   function clearMenus(e) {
+   
+
+
+
     if (e && e.which === 3) return
     $(backdrop).remove()
     $(toggle).each(function () {
@@ -531,6 +542,7 @@ if (typeof jQuery === 'undefined') {
       if (e.isDefaultPrevented()) return
 
       $this.attr('aria-expanded', 'false')
+
       $parent.removeClass('open').trigger($.Event('hidden.bs.dropdown', relatedTarget))
     })
   }
@@ -566,6 +578,7 @@ if (typeof jQuery === 'undefined') {
       $parent
         .toggleClass('open')
         .trigger($.Event('shown.bs.dropdown', relatedTarget))
+        
     }
 
     return false
@@ -2378,3 +2391,13 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+
+
+// $('.navbar-toggle').on('click', function(){
+// $('#up_panel').toggleClass('open_menu');
+// $('#down_panel').toggleClass('open_menu');
+// });
+
+
+
+ 
