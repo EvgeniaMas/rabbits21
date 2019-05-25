@@ -67,7 +67,7 @@
         </label>
        </div>
          <label>
-          <input class="contacts_input required_data" name="comments" type="text" required="required" placeholder="Хочу сайт"/>
+          <input class="contacts_input " name="comments" type="text" placeholder="Хочу сайт"/>
           <div class="label-text">Комментарий</div>
         </label>
     <button class="contacts_form_submit draw maker service_form" type="submit">Отправить</button>           
@@ -145,6 +145,17 @@
 <script src="js/juery.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/jquery.maskedinput.min.js" ></script>
+<script>
+//Маска для телефона
+$(function() {
+    $("input[type='tel']").mask('+7(999) 999-99-99');   
+});
+
+  
+$(document).on('click', 'input[type="tel"]', function(){
+$(this).focus();
+});
+</script>
 <script src="js/contacts.js"></script>
 <script src="js/index.js"></script>
 </body>
