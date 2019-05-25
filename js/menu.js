@@ -2393,10 +2393,13 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 
-// $('.navbar-toggle').on('click', function(){
-// $('#up_panel').toggleClass('open_menu');
-// $('#down_panel').toggleClass('open_menu');
-// });
+$('.navbar-toggle').on('click', function(){
+
+
+  
+$('#up_panel').toggleClass('open_menu');
+$('#down_panel').toggleClass('open_menu');
+});
 
 
 

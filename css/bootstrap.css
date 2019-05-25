@@ -1247,7 +1247,12 @@ tbody.collapse.in {
 
 
 
-
+@media (min-width: 992px) and (orientation:portrait) {
+  .navbar-collapse.collapse {
+    display: none;
+    
+  }
+}
 
 
 @media (min-width: 768px) {
@@ -1279,11 +1284,7 @@ tbody.collapse.in {
 }
 
 
-@media (max-width: 1024px)and (orientation:portrait) {
-  .navbar-collapse.collapse {
-    display: none;
-  }
-}
+
 
 
 
