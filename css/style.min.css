@@ -1168,6 +1168,7 @@ background-position : center;
 background-repeat: no-repeat;
 background-size: cover; 
 position: relative;
+background-attachment: fixed;
 }
 .service_container_content {
 padding-left: 11.8%;
