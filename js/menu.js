@@ -2395,18 +2395,19 @@ if (typeof jQuery === 'undefined') {
 
 $('.navbar-toggle').on('click', function(){
 
-// var navMain = $(".navbar-collapse");
+var navMain = $(".navbar-collapse");
 
-// if($(".navbar-collapse").hasClass('in'))
-// {
-//   navMain.collapse('show');
-// }
-// else{
- 
-//      navMain.on("click", "a:not([data-toggle])", null, function () {
-//          navMain.collapse('hide');
-//      });
-// }
+if($(".navbar-collapse").hasClass('in'))
+{
+  alert('llll');
+  navMain.collapse('show');
+}
+else{
+     alert('hhhh');
+     navMain.on("click", "a:not([data-toggle])", null, function () {
+         navMain.collapse('hide');
+     });
+}
 
 
 
