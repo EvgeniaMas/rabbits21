@@ -1246,11 +1246,7 @@ tbody.collapse.in {
 }
 
 
-@media (max-width: 1024px)and (orientation:portrait) {
-  .navbar-collapse.collapse {
-    display: none;
-  }
-}
+
 
 
 
@@ -1283,7 +1279,11 @@ tbody.collapse.in {
 }
 
 
-
+@media (max-width: 1024px)and (orientation:portrait) {
+  .navbar-collapse.collapse {
+    display: none;
+  }
+}
 
 
 
@@ -1370,6 +1370,20 @@ tbody.collapse.in {
 }
 
 
+@media (max-width: 1024px)and (orientation:portrait) {
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+
+@media (max-width: 992px)and (orientation:portrait) {
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+
 @media (min-width: 768px) {
 
 .navbar-brand {
@@ -1420,11 +1434,7 @@ tbody.collapse.in {
   margin-top: 4px;
 }
 
-@media (max-width: 1024px)and (orientation:portrait) {
-  .navbar-toggle {
-    display: block;
-  }
-}
+
 
 
 @media (min-width: 768px) {
