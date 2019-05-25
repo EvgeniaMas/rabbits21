@@ -2391,12 +2391,8 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
-
-
 $('.navbar-toggle').on('click', function(){
-
 var navMain = $(".navbar-collapse");
-
 if($(".navbar-collapse").hasClass('in'))
 {
   alert('llll');
@@ -2407,13 +2403,9 @@ else{
      navMain.on("click", "a:not([data-toggle])", null, function () {
          navMain.collapse('hide');
      });
-}
-
-
-
-  
-$('#up_panel').toggleClass('open_menu');
-$('#down_panel').toggleClass('open_menu');
+}  
+// $('#up_panel').toggleClass('open_menu');
+// $('#down_panel').toggleClass('open_menu');
 });
 
 
