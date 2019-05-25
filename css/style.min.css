@@ -1593,9 +1593,9 @@ max-width: 854px;
 input.contacts_input{
 font-family: 'Montserrat-Light';	
 border-bottom: 2px solid #000;
-border-right: none;
-border-left: none;
-border-top: none;
+border-right: 2px solid transparent;
+border-left: 2px solid transparent;
+border-top: 2px solid transparent;
 background-color: transparent;
 display: block;
 margin:auto;
