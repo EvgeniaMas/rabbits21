@@ -20,7 +20,7 @@ $(".back_to_covers").click(function(){
            $(this).removeClass("active");           
     });
 
-    // $('html, body').animate({scrollTop:0}, 300);
+    $('html, body').animate({scrollTop:0}, 300);
     if(document.documentElement.clientWidth > 768) {
      $('#project_page').css('overflow', 'hidden');
      $('#mobiles_footer').css('display', 'none');

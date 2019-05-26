@@ -2392,18 +2392,18 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 $('.navbar-toggle').on('click', function(){
-var navMain = $(".navbar-collapse");
-if($(".navbar-collapse").hasClass('in'))
-{
+// var navMain = $(".navbar-collapse");
+// if($(".navbar-collapse").hasClass('in'))
+// {
 
-  $(navMain).css('display', 'block');
-}
-else{
+//   $(navMain).css('display', 'block');
+// }
+// else{
      
-     // navMain.on("click", "a:not([data-toggle])", null, function () {
-         $(navMain).css('display', 'none');
-     //});
-}  
+//      // navMain.on("click", "a:not([data-toggle])", null, function () {
+//          $(navMain).css('display', 'none');
+//      //});
+// }  
 $('#up_panel').toggleClass('open_menu');
 $('#down_panel').toggleClass('open_menu');
 });

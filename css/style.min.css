@@ -9,6 +9,20 @@ url("../fonts/Futura/Futura-Bold.svg#svgFutura-Bold") format("svg");
 font-style:normal;
 font-weight:normal;
 }
+
+@font-face{font-family:"Futura Bold";
+src:url("../fonts/Futura_Bold/Futura_Bold.eot");
+src:url("../fonts/Futura_Bold/Futura_Bold?#iefix") format("embeddededopentype"),
+url("../fonts/Futura_Bold/Futura_Bold.woff2") format("woff2"),
+url("../fonts/Futura_Bold/Futura-Bold.woff") format("woff"),
+url("../fonts/Futura_Bold/Futura_Bold.ttf") format("truetype"),
+url("../fonts/Futura_Bold/Futura-Bold.otf") format("opentype"),
+url("../fonts/Futura_Bold/Futura-Bold.svg#svgFutura-Bold") format("svg");
+font-style:normal;
+font-weight:normal;
+}
+
+
 @font-face{font-family:"Avenir-Heavy";
 src:url("../fonts/Avenir-Heavy/Avenir-Heavy.eot");
 src:url("../fonts/Avenir-Heavy/Avenir-Heavy.eot?#iefix") format("embeddedopentype"),
@@ -94,31 +108,26 @@ body
 height: 100%;   
 font-weight:normal;
 }
-
 p, h2{
 margin-top:0;
 margin-bottom:0;
 }
-
 html, body{
 padding: 0;
 margin:0;
 height: 100%;
 }
-
 ::-webkit-input-placeholder {
 color: transparent; 
 font-size: 1rem;
 line-height: 1rem;
 font-family: 'Montserrat-Light';
-
 }
 ::-moz-placeholder          {
 color: transparent;
 font-size: 1rem;
 line-height: 1rem;
 font-family: 'Montserrat-Light';
-
 }/* Firefox 19+ */
 :-moz-placeholder           {
 color: transparent;
@@ -177,30 +186,6 @@ transition: all 800ms ease-out;
 position: relative;
 z-index: 2;
 }
-
-/*.col-xs-4.item_block:before{
-display: block;
-content:"";
-width: 100%;
-height: 100%;
-background-color: #000;
-opacity: 0.6;
-position: absolute;
-top: 0;
-left: 0;
-z-index: 1;
-cursor: pointer;
-
-transition: all 800ms ease-out;
-}
-
-.col-xs-4.item_block:hover:before{
-display: block;
-opacity: 0.2;
-}*/
-
-
-
 img.projects_slides:hover{
 -o-transform: scale(0.9);
 -ms-transform: scale(0.9);
@@ -224,11 +209,15 @@ cursor: pointer;
 font-family: 'Avenir-Heavy';
 font-size: 4rem;	
 white-space: nowrap;
+position: relative;
+z-index: 5;
 }
 .logo_vertical_cover_desktop{
 font-family: 'Avenir-Heavy';
 font-size: 1.25rem;
-text-align: right;	
+text-align: right;
+position: relative;
+z-index: 5;	
 }
 img.white_black_logo{
 display: none;
@@ -250,18 +239,25 @@ border: none;
 position: relative;
 z-index: 101;
 }
-.navbar-nav {
+/*.navbar-nav {
 margin: 2.0625rem -15px 0 -15px;
-}
+}*/
 .nav.navbar-nav > li > a {
 font-family: 'Avenir-Heavy';
-margin-right: 33px;
+font-size: 1.5rem;
+margin-right: 6.625rem;
 text-align: center; 
 color:#000!important;
 display: block;
 cursor: pointer;
 transition: all 300ms ease-out;
 }
+
+ul.nav.navbar-nav{
+margin-left: 5.375rem;
+}
+
+
 .nav.navbar-nav > li > a:hover{
 opacity: 0.5;  
 }
@@ -279,9 +275,15 @@ margin-top: 0.2rem;
 }
 span.underlined_menu{
 display: block;
-height: 4px;
+height: 0.25rem;
 width: 36%;
 }
+
+span.underlined_menu.main_page{
+width: 26%;	
+}
+
+
 .nav.navbar-nav {
 float: none;
 text-align: center;
@@ -331,11 +333,10 @@ margin-top: 0.9375rem;
 /*общие стили управления слайдером*/
 .manage_container{
 width: 70%;
-/*min-width: 250px;*/
 display: flex;
 align-items: center;
 justify-content: center;
-min-height: 100px;
+min-height: 6.25rem;
 position: relative;
 margin:auto;
 }
@@ -351,7 +352,7 @@ border: 0.0625rem solid #d5d5d5;
 a.carousel-control:hover{
 border-color: #02eeda;
 }
-@media screen and (max-width: 1918px) { 
+@media screen and (max-width: 1800px) { 
 img.black_white_logo{
 height: 3.875rem;
 width: 3.875rem;
@@ -374,6 +375,13 @@ line-height: 1.375rem;
 padding-bottom: 0;
 color: #000;
 }
+
+ul.nav.navbar-nav{
+margin-left: 0;
+}
+
+
+
 span.underlined_menu.main_page{
 width: 23%;
 }
@@ -403,10 +411,10 @@ max-width: 23.75rem;
 font-size: 3rem;
 }
 
-.nav.navbar-nav > li > a {  
+/*.nav.navbar-nav > li > a {  
 font-size: 0.875rem;
 margin-right: 1.1875rem;
-}
+}*/
 
 
 
@@ -521,6 +529,15 @@ margin:auto;
 margin-top: 0.4375rem;
 }
 }
+
+
+@media screen and (max-width: 768px) and (orientation: portrait) { 
+.footer p.studio,
+.footer p.copywrite{
+font-size: 0.375rem;
+}
+}
+
 @media screen and (max-width: 300px) {
 html{
 overflow-x: visible;
@@ -534,6 +551,12 @@ margin-left: 1rem;
 font-family:"Avenir-Heavy";	
 font-size: 1rem;
 }
+
+.footer p.studio,
+.footer p.copywrite{
+font-size: 0.375rem;
+}
+
 }
 header{
 background-color:#fff;
@@ -542,7 +565,7 @@ right: 0;
 left: 0;
 top: 0;
 z-index: 99;
-padding-top: 2.0625rem; 
+/*padding-top: 2.0625rem;*/ 
 padding-bottom: 5.0625rem;  
 max-width: 120rem;
 margin: auto; 
@@ -552,20 +575,19 @@ background-color:transparent;
 }
 h1.header__activity{
 font-family: 'Avenir-Next-Bold';  
-margin-top: 27vh;
-font-size: 2.5rem;
+/*margin-top: 27vh;*/
+margin-top: 14.125rem;
+font-size: 3rem;
 text-align: left;
 margin-left: 10vw;
 }
 h1.header__activity span{ 
 opacity: 0.94;
 font-family: 'Futura';
-font-size: 5rem;
+font-size: 6.25rem;
+line-height: 8.125rem;
 font-weight: bold;
-font-style: normal;
-font-stretch: normal;
-line-height: normal;
-letter-spacing: normal;
+font-style: bold;
 text-align: center;
 color: #000;
 text-transform: uppercase;
@@ -575,7 +597,7 @@ padding: 0;
 width: 100vw;
 height: 100vh;
 background-image: url('../img/main.jpg');
-background-position : bottom center;
+background-position : center;
 background-repeat: no-repeat;
 position: relative;
 background-size:cover;
@@ -596,9 +618,14 @@ background-position: center;
 
 .chat_box{
 position: absolute;
-right: 6%;
-top: 27%; 
+right: 9.375rem;
+top: 25%; 
 }
+
+
+
+
+
 .chat_box_content{
 position: relative;
 width: 320px;
@@ -615,7 +642,7 @@ letter-spacing: normal;
 .rabbit_message#message3{   
 color: #02eeda;
 }
-@media screen and (max-width: 1918px) { 
+@media screen and (max-width: 1800px) { 
 #main_page{
 background-size:contain;
 }
@@ -729,7 +756,8 @@ overflow-y: visible;
 @media screen and (max-width: 768px) and (orientation:portrait) { 
 #main_page{
 background-image: url('../img/main768.jpg');
-background-size: cover;
+background-size: contain;
+background-position: top center;
 }
 
 h1.header__activity{
@@ -821,10 +849,10 @@ right: 0;
 left: 0;
 bottom: 0;
 margin:auto;
-background-image: url('../img/about_grey_bg.png');   
-background-size: 100%;
-background-position: bottom 28% center;
-background-repeat: no-repeat;
+/*background-image: url('../img/about_grey_bg.png');   
+background-size: contain;
+background-position: bottom 41% left;
+background-repeat: no-repeat;*/
 z-index: 9;
 }
 .about_content_block{
@@ -890,11 +918,12 @@ font-size: 1.25rem;
 line-height: 1.875rem;
 color: #626262;  
 margin-top: 0;
-margin-bottom: 0; 
+margin-bottom: 5rem; 
 width: 79%;
 text-align: center;
 position: relative;
 letter-spacing: 0;
+
 }
 .team_description_text{
 font-family: 'Montserrat-Light';
@@ -903,20 +932,42 @@ line-height: 31px;
 width: 75%;
 margin:auto!important; 
 color: #626262;
-text-align: center;   
+text-align: center; 
+max-width: 55.5rem;  
 }
 .text_logo_green{
 font-family: 'Futura';
 font-size: 18.125rem;
 line-height: 20rem;
-letter-spacing: 18px;
+letter-spacing: 1.75rem;
 text-transform: uppercase;
+margin-left: -120px;
 color: #02eeda;
 margin:auto;
 text-align: center;
 position: relative;
 z-index: 4;
 }
+
+.container-fluid.logos{
+position: relative;
+z-index: 23;
+min-height: 200px;
+
+margin-bottom: 3rem;
+
+}
+
+.logo_bg_about{
+position: absolute;
+top:-400px;
+left: 5%;
+display: block;
+width: 90vw;
+}
+
+
+
 .team_description_block{
 position: relative;
 z-index: 9;
@@ -933,8 +984,9 @@ color: #000;
 text-align: center; 
 width: 69%;
 margin:auto!important;
-padding-bottom: 3rem;
-padding-top: 3rem;
+padding-bottom: 4rem;
+padding-top: 2.5rem;
+max-width: 53.5rem;
 }
 p.right_position{
 text-align: right;
@@ -967,7 +1019,7 @@ color: #02eeda;
 text-decoration: underline;
 }
 /* responsive about*/
-@media screen and (max-width: 1919px) { 
+@media screen and (max-width: 1800px) { 
 .team_block{
 height: 32.8125rem;  
 background-position: bottom center;
@@ -1001,6 +1053,21 @@ padding-top: 4rem;
 padding-bottom: 4rem;
 }
 }
+
+@media screen and (max-width: 1400px) { 
+.text_logo_green{
+font-size: 11.125rem;
+}
+
+}
+
+@media screen and (max-width: 1200px) { 
+.text_logo_green{
+font-size: 10rem;
+}
+
+}
+
 @media screen and (max-width: 1024px) { 
 .team_block{
 height: 24.625rem;  
@@ -1017,13 +1084,25 @@ padding-top: 3.8125rem;
 padding-bottom: 3.8125rem;
 font-size: 1.125rem;
 }
+
+.text_logo_green{
+font-size: 8.6875rem;
+line-height: 8.6875rem;
+}
+h2.team_special {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+}
 }
 @media screen and (max-width: 992px) { 
 .slogan.slogan_left {
 padding-top: 19%;
 }
 .text_logo_green{
-/* max-height: 160px;*/
+font-size: 6.6875rem;
+line-height: 6.6875rem;
 }
 }
 @media screen and (max-width: 768px) { 
@@ -1045,7 +1124,7 @@ background-color: #f6f6f8;
 width: 82%;
 }
 .text_logo_green{
-font-size: 3.625rem;
+font-size: 3rem;
 letter-spacing: 0.3125rem;
 line-height: 5rem;
 }
@@ -1168,7 +1247,6 @@ background-position : center;
 background-repeat: no-repeat;
 background-size: cover; 
 position: relative;
-background-attachment: fixed;
 }
 .service_container_content {
 padding-left: 11.8%;
@@ -1189,7 +1267,7 @@ width: 80%;
 margin-bottom: 0;
 }
 .vertical-tab-menu div.list-group>a{
-margin-bottom: 0;
+/*margin-bottom: 0;*/
 margin-left: 1rem;
 }
 .vertical-tab-menu div.list-group>a:first-child{
@@ -1249,7 +1327,7 @@ color: #02eeda;
 margin:auto;
 }
 .schema_block{
-height: 40rem;
+height: 45rem;
 background-image: url('../img/job_schema.png');
 background-position : center top ;
 background-repeat: no-repeat;
@@ -1412,6 +1490,11 @@ margin-right: 2rem;
 hr.order_button_lines.left_line{
 margin-left: 2rem;
 }
+
+
+
+
+
 .order_block{
 position: absolute;
 top:33%;
@@ -1426,7 +1509,7 @@ padding-left: 11.8%;
 padding-top: 6.75rem;
 padding-bottom: 4.625rem; 
 }
-@media screen and (max-width: 1918px) { 
+@media screen and (max-width: 1800px) { 
 .service_container_content2 {
 padding-top: 1.75rem;
 padding-bottom: 3.0625rem; 
@@ -1512,6 +1595,16 @@ height: 3px;
 width: 60%;
 float: none;
 }
+
+hr.order_button_lines.left_line.service_sends{
+margin-left: 0;
+min-width: 6.75rem;
+}
+hr.order_button_lines.right_line.service_sends{
+margin-right: 0;
+min-width: 6.75rem;
+}
+
 }
 @media screen and (max-width: 992px) { 
 hr.order_button_lines {
@@ -1793,7 +1886,7 @@ font-size: 13px;
 -webkit-transform: translateY(-4rem);
 transform: translateY(-4rem);
 }
-@media screen and (max-width: 1918px) { 
+@media screen and (max-width: 1800px) { 
 .contacts_form{
 background-image: url('../img/cont_bg.jpg');
 background-position : bottom center ;
@@ -2264,7 +2357,7 @@ margin-bottom: 0;
 width: 90%;
 }
 /*river etc., mobile*/
-@media screen and (max-width: 1919px){
+@media screen and (max-width: 1800px){
 .river_first_block {   
 padding-top: 4.875rem;
 height: auto;
@@ -2527,7 +2620,7 @@ top: 58%;
 height: 42%;
 }
 /*river etc., mobile*/
-@media screen and (max-width: 1919px){
+@media screen and (max-width: 1800px){
 .pure_first_block {   
 padding-top: 4.875rem;
 max-height: 28.375rem;    
@@ -2543,6 +2636,7 @@ max-width: 15.75rem;
 
 .pure_eight_block{
 margin-bottom: 8.625rem;
+}
 }
 @media screen and (max-width: 1024px){
 .pure_first_block {   
@@ -2578,8 +2672,6 @@ max-width: 11.75rem;
 background: url("../img/pure/eight_left_leaf.png") left /160px no-repeat,
 url("../img/pure/eight_leaf_right.png") right /160px no-repeat; 
 }
-
-
 }
 @media screen and (max-width: 768px){
 img.pure_logo{
@@ -2722,8 +2814,8 @@ display: block;
 margin: auto;
 margin-bottom: 1.9375rem;
 }
-.fluger_second_img_mobile,
-.fluger_fifth_block_img_mobile{
+img.fluger_second_img_mobile,
+img.fluger_fifth_block_img_mobile{
 display: none;
 }
 
@@ -2732,7 +2824,7 @@ img.fluger_fifth_block_img{
 display: block;
 }
 /*fluger etc.,mobile*/
-@media screen and (max-width: 1919px){
+@media screen and (max-width: 1800px){
 .fluger_first_block {
 position: relative;
 height: 29.4375rem;
@@ -2923,12 +3015,12 @@ padding-top: 0;
 height: auto;
 margin-bottom: 1rem;
 }
-.fluger_second_img_mobile,
-.fluger_fifth_block_img_mobile{
+/*img.fluger_second_img_mobile,
+img.fluger_fifth_block_img_mobile{
 display: block;
 width: 100%;
 margin-bottom: 1rem;
-}
+}*/
 img.fluger_second_img,
 img.fluger_fifth_block_img{
 display: none;
@@ -3190,7 +3282,7 @@ position: relative;
 display: none;
 }
 /*green etc., mobile*/
-@media screen and (max-width: 1919px){
+@media screen and (max-width: 1800px){
 .green_first_block {   
 padding-top: 4.875rem;
 }
@@ -3413,7 +3505,7 @@ width: 1.5625rem;
 transform: rotate(-45deg) translate(0, -3px);
 }
 
-@media screen and (max-width: 1918px) { 
+@media screen and (max-width: 1800px) { 
 
 }
 
