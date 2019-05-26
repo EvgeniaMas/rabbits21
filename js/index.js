@@ -56,6 +56,8 @@ $('.multi-item-carousel .item').each(function(){
    var margin_footer = $('.footer').height(); 
     
     $('.wrapper').css('margin-top', margin_wrapper);
+    
+    
     $('.mobile_wrapper').css('margin-top', margin_wrapper);
    
     if(document.documentElement.clientWidth < 769) {    
@@ -113,7 +115,7 @@ $('#case_river').addClass('active');
 if(clickId== 'fluger' || clickId=='flugerm'){
   $('#case_fluger').addClass('active');
 }
-if(clickId== 'green' || clickId=='grenm'){
+if(clickId== 'green' || clickId=='greenm'){
   $('#case_green').addClass('active');
 }
 
