@@ -52,16 +52,18 @@ $('.multi-item-carousel .item').each(function(){
   
    $(document).ready(function() {
    var margin_wrapper = $('.navbar-fixed-top').height(); 
- 
+   var margin_header = $('#about_page_header').height(); 
+   // alert(margin_header);
    var margin_footer = $('.footer').height(); 
     
     $('.wrapper').css('margin-top', margin_wrapper);
+    // $('.about_wrapper').css('margin-top', 96);
     
     
     $('.mobile_wrapper').css('margin-top', margin_wrapper);
    
     if(document.documentElement.clientWidth < 769) {    
-     $('#about_page_wrapper').css('margin-top', 0);
+     // $('#about_page_wrapper').css('margin-top', 0);
     }
    });
 
@@ -162,8 +164,7 @@ $('#carousel_swipe').on('slid.bs.carousel', function(){
 });
 // swipe turn on for mobile cover and service mobile sliders
   $(document).ready(function() {  
-       $("#carousel_cases_mobile").swiperight(function() {
-          alert('8888');
+       $("#carousel_cases_mobile").swiperight(function() {         
           $(this).carousel('prev');  
           });  
        $("#carousel_cases_mobile").swipeleft(function() {  
@@ -196,11 +197,17 @@ $('.backtotop').click(function(){
 });
 $(".desktop_control").click(function(e){ 
    var a = $(".item.cover_desktop.active");
-   $(a).css("opacity", 0.22);
-
+    $(a).css("opacity", 0.12);
+    var frase = $(a).find(".desktop_cover_title");
+     $(frase).each(function(){
+           $(this).css("display", "none");          
+    }); 
    setTimeout(      
         function() {        
-          $(a).css("opacity", 1);          
+          $(a).css("opacity", 1);           
+           $(frase).each(function(){
+           $(this).css("display", "block");          
+         });         
         }, 1500
   ); 
 });

@@ -228,8 +228,6 @@ div.item.active {
 display: block;
 }
 .desktop_cover_title{
-/*position: absolute;
-top: -80%;*/
 overflow: hidden;
 cursor: pointer;
 
@@ -242,10 +240,25 @@ position: relative;
 z-index: 5;
 }
 
+.navbar.navbar-default.navbar-fixed-top{
+max-width: 120rem;
+margin: auto;	
+min-height: 9.1875rem;
+}
+
+
+
+
+
 @media screen and (max-width: 1800px) { 
 .project_logo_cover_desktop{
 font-size: 4rem;	
 }
+
+.navbar.navbar-default.navbar-fixed-top{
+min-height: 5.5rem;
+}
+
 }
 
 .logo_vertical_cover_desktop{
@@ -319,6 +332,16 @@ span.underlined_menu.main_page{
 width: 26%;	
 }
 
+span.underlined_menu.about_page{
+width: 29%;	
+}
+
+/*span.underlined_menu.about_page{
+width: 29%;	
+}*/
+
+
+
 
 .nav.navbar-nav {
 float: none;
@@ -331,10 +354,9 @@ display: inline-block;
 span.mobile_menu_page{
 display: none;
 }
-.navbar.navbar-default.navbar-fixed-top{
-max-width: 120rem;
-margin: auto;	
-}
+/*.navbar.navbar-default.navbar-fixed-top{
+min-height: 96px;
+}*/
 .footer{
 background-color: #2f3b44;
 max-height: 8.125rem;
@@ -445,11 +467,9 @@ max-width: 23.75rem;
 .project_logo_cover_desktop {
 font-size: 3rem;
 }
-
-/*.nav.navbar-nav > li > a {  
-font-size: 0.875rem;
-margin-right: 1.1875rem;
-}*/
+.navbar.navbar-default.navbar-fixed-top{
+min-height: 4.875rem;
+}
 .footer p.studio, .footer p.copywrite {
 font-size: 0.75rem;
 }
@@ -474,6 +494,12 @@ margin-right: 1.1875rem;
 #mobile_cover_footer{
 display: none;
 }
+.navbar.navbar-default.navbar-fixed-top{
+min-height: auto;
+}
+
+
+
 img.black_white_logo{
 display: none;
 }
@@ -577,6 +603,12 @@ font-size: 0.375rem;
 br.breaks{
 display: block;
 }
+.footer p.copywrite{
+margin-right: 0.2rem;
+}
+.footer p.studio{
+margin-left: 0.2rem;
+}
 }
 
 @media screen and (max-width: 300px) {
@@ -600,25 +632,27 @@ font-size: 0.375rem;
 
 }
 header{
-background-color:#fff;
+background-color: #fff;
 position: fixed;
 right: 0;
 left: 0;
 top: 0;
 z-index: 99;
 padding-top: 2.0625rem; 
-padding-bottom: 5.0625rem;  
 max-width: 120rem;
 margin: auto; 
 }
 header.main_page{
 background-color:transparent;
-padding-top:0;
+padding-top: 1rem;
+}
+#project_page header{
+background-color: #fff;
 }
 h1.header__activity{
 font-family: 'Avenir-Next-Bold';  
 /*margin-top: 27vh;*/
-margin-top: 14.125rem;
+margin-top: 11.125rem;
 font-size: 3rem;
 text-align: left;
 margin-left: 10vw;
@@ -628,8 +662,6 @@ opacity: 0.94;
 font-family: 'Futura';
 font-size: 6.25rem;
 line-height: 8.125rem;
-font-weight: bold;
-font-style: bold;
 text-align: center;
 color: #000;
 text-transform: uppercase;
@@ -648,7 +680,6 @@ top: 0;
 right: 0;
 left:0;
 }
-
 #first_page_body{
 overflow-y: hidden;	
 background-image: url("../img/ddd.png");
@@ -656,28 +687,21 @@ background-size: cover;
 background-repeat: repeat;
 background-position: center;
 }
-
-
 .chat_box{
 position: absolute;
-right: 9.375rem;
-top: 25%; 
+right: 8.375rem;
+top: 11.125rem;
 }
-
-
-
-
-
 .chat_box_content{
 position: relative;
-width: 320px;
+width: 24rem;
 height: 100px;
 }
 .rabbit_message{
 color: #000;
-font-size: 1rem;
+font-size: 1.25rem;
 font-family: 'Montserrat-Bold';
-line-height: 1.5;
+line-height: 1.875rem;
 font-weight: bold;
 letter-spacing: normal;
 }
@@ -867,7 +891,7 @@ background-size: cover;
 /*//about us*/
 .team_block{
 background-image: url('../img/about_team.jpg');
-background-position : center;
+background-position : bottom center;
 background-repeat: no-repeat;
 background-size: cover;
 height: 46.1875rem;
@@ -925,11 +949,13 @@ margin-top: 0;
 margin-bottom: 0; 
 }
 .slogan.slogan_left{
-padding-top: 35%;
+padding-top: 35.7%;
+line-height: 3.875rem;
 }
 .slogan.slogan_right{
 text-align: center;
 margin-left: 4vw;
+line-height: 8.5625rem;
 }
 .team_name{
 font-family: 'Avenir-Next-Bold';
@@ -954,14 +980,14 @@ font-size: 1.125rem;
 color: #000;
 text-align: left;
 display: block; 
-margin-top: 0; 
 letter-spacing: normal; 
 margin-bottom: 1.9375rem;
 }
 .team_short{
 font-family: 'Avenir-Next-Bold';
 font-size: 1.25rem;
-line-height: 1.5;
+line-height: 1.5rem;
+margin-bottom: 1.125rem; 
 color: #000;   
 }
 .team_description{
@@ -971,7 +997,7 @@ line-height: 1.875rem;
 color: #626262;  
 margin-top: 0;
 margin-bottom: 5rem; 
-width: 79%;
+width: 36.5625rem;
 text-align: center;
 position: relative;
 letter-spacing: 0;
@@ -980,8 +1006,7 @@ letter-spacing: 0;
 .team_description_text{
 font-family: 'Montserrat-Light';
 font-size: 1.25rem;
-line-height: 31px;  
-width: 75%;
+line-height: 1.9375rem;  
 margin:auto!important; 
 color: #626262;
 text-align: center; 
@@ -1010,10 +1035,11 @@ margin-bottom: 3rem;
 
 .logo_bg_about{
 position: absolute;
-top:-400px;
+top:-365px;
 left: 5%;
 display: block;
-width: 90vw;
+width: 85vw;
+z-index: 2;
 }
 
 
@@ -1385,11 +1411,16 @@ transition: all 300ms ease-out;
 a.list-group-item:hover{
 opacity: 0.5;
 }
+
+.service_description{
+margin-top: 2.0625rem;	
+}
+
 .service_description,
 ul.service_list li{
 font-family: 'Montserrat-Light';
-font-size: 20px;
-line-height: 30px;
+font-size: 1.25rem;
+line-height: 1.875rem;
 text-align: left; 
 color: #262626;  
 }
@@ -1424,31 +1455,33 @@ margin-bottom: 3.0625rem;
 .stage.second_stage{
 float: left;
 margin-top: 6.1875rem;
-margin-left: 7.5%;
+margin-left: 14.9vw;
 }
 .stage.six_stage{
 float: right;
-margin-top: 7.625rem;
-margin-right: 5.9%;
+margin-top: 4.625rem;
+margin-right: 6.9vw;
 }
 .stage.first_stage{
 float: left;
+margin-left: 6vw;
 margin-top: 4.6875rem;
 }
 .stage.seven_stage{
 float: right;
-margin-top: 4.6875rem; 
+margin-right: 7vw;
+margin-top: 3.6875rem; 
 }
 .marked_text{
 text-transform: uppercase;
 font-family: "Avenir-Next-Bold";
 text-align: center;
-font-size: 14rem;
+font-size: 21rem;
 color: transparent;
 -webkit-text-stroke: 5px #f5f5f6;
 margin-right: -80px;
 margin-left: -80px;
-line-height: 14rem;
+line-height: 20rem;
 }
 button.service_form {
 box-shadow: inset 0 0 0 2px #000;
@@ -1568,15 +1601,34 @@ width: 69%;
 }
 hr.order_button_lines.right_line{
 float: right;	
-margin-right: 2rem;
+margin-right: 8rem;
+margin-top: 3rem;
 }
 
 hr.order_button_lines.left_line{
-margin-left: 2rem;
+margin-left: 8rem;
+margin-top: 3rem;
+}
+
+hr.order_button_lines.right_line.contacts_lines{
+margin-top: 1rem;
+margin-right: 0;
+width: 90%;
+}
+
+
+hr.order_button_lines.left_line.contacts_lines{
+margin-top: 1rem;
+margin-left: 0;
+width: 90%;
 }
 
 
 
+
+#send_order{
+	margin-top: 2rem;
+}
 
 
 .order_block{
@@ -1723,9 +1775,9 @@ padding-left: 0;
 /*contacts page*/
 .contacts_form{
 background-image: url('../img/contacts_bg.png');
-background-position : bottom center ;
+background-position : bottom right;
 background-repeat: no-repeat;
-background-size: contain;
+background-size: 67%;
 padding-top: 9.375rem;
 padding-bottom: 4.625rem;
 margin-bottom: 5.25rem;
@@ -1749,6 +1801,7 @@ h2.page_headline.take_design{
 margin-left: 11%;
 font-family: 'Avenir-Heavy';
 margin-bottom: 6.375rem;
+font-weight: bold;
 
 }
 h2.page_headline.mobile_design{
@@ -1816,6 +1869,9 @@ font-size: 1.5rem;
 display: inline-block;
 color:#000;
 }
+
+
+
 a.contacts_data_right:hover;
 a.contacts_data_right:focus,
 a.contacts_data_right:active{
@@ -1870,6 +1926,12 @@ a.contacts_data_right{
 display: block;
 text-align: right;
 }
+
+p.contacts_data_left{
+	text-align: left;
+	display: block;
+}
+
 
 .contacts_form_submit.service_form{
 margin-top: 2.4375rem;
@@ -1970,6 +2032,13 @@ font-size: 13px;
 -webkit-transform: translateY(-4rem);
 transform: translateY(-4rem);
 }
+
+.social_icons_block{
+margin:auto;
+max-width: 26.5625rem;
+}
+
+
 @media screen and (max-width: 1800px) { 
 .contacts_form{
 background-image: url('../img/cont_bg.jpg');
@@ -2036,7 +2105,7 @@ width: 90%;
 .information_block{
 width: 100%;	
 }
-.col-md-6.col-xs-6.social_media_container{
+.col-md-4.col-xs-4.social_media_container{
 width: 100%;
 }
 
@@ -2301,7 +2370,6 @@ z-index:5;
 }
 
 .project_logo.green_case_logo{
-font-size: 5rem;
 margin-top: 8.3125rem;
 margin-left: 2rem;
 }
@@ -2487,8 +2555,7 @@ height: auto;
 }
 
 .project_logo.green_case_logo{
-font-size: 5rem;
-margin-top: 8.3125rem;
+margin-top: 5.3125rem;
 margin-left: 2rem;
 }
 
@@ -3318,8 +3385,6 @@ img.pale_bg{
 	width: 41.5rem;
 	z-index: 2;
 }
-
-
 img.pale_bg2{
 	position: absolute;
 	top: 1720px;
@@ -3329,10 +3394,6 @@ img.pale_bg2{
 	max-width: 54.875rem;
 	z-index: 2;
 }
-
-
-
-
 .green_block_squares{
 width: 59.25rem;
 position: absolute;
@@ -3441,7 +3502,7 @@ margin-bottom: 6.25rem;
 img.green_fourth_block{
 display: block;
 position: absolute;
-bottom:-2rem;
+bottom:-9rem;
 max-height: 8.9375rem;
 right: 0;
 z-index: 2; 
@@ -3531,9 +3592,9 @@ top: 97%;
 z-index: 7;
 max-height: 7.1875rem;
 }
-.green_block_squares {
+/*.green_block_squares {
 max-width: 49.25rem;
-}
+}*/
 
 .third_block_first_item {
 margin-top: 3.3125rem;
@@ -3541,17 +3602,67 @@ margin-top: 3.3125rem;
 .pale_green_third_leaf{
 max-height: 12.75rem;
 }
-img.green_main_page_img.third_block_first_item {
 
-width: 100%;
+
+img.green_main_page_img {
+    display: block;
+    width: 77.625rem;
+    margin-left: 0;
+    clear: both;
+    position: relative;
+    z-index: 8;
+}
+
+.green_main_page_img.third_block_first_item{
+	margin-left: -3.875rem;
 }
 
 
-img.green_main_page_img{
-
-width: 100%;
-max-width: 67.625rem;
+img.green_main_page_img.third_block_second_item,
+img.green_main_page_img.third_block_third_item
+ {
+    display: block;
+    width: 68.1875rem;
+    margin-left: -4.875rem;
 }
+
+.pale_green_first_leaf {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 54%;
+    z-index: 7;
+    max-height: 13.875rem;
+}
+img.pale_bg2 {
+	display: block;
+    top: 748px;
+    left: 0rem;
+    width: 194.875rem;
+}
+img.pale_bg {
+   position: absolute;
+    top: 1400px;
+    left: 0;
+    width: 100%;
+    width: 19rem;
+    z-index: 2;
+}
+.pale_green_third_leaf {
+    margin-top: 6rem;
+}
+.white_half {
+    height: 440px;
+}
+
+
+img.green_fifth_block_bg {
+   
+    width: 100%;
+    max-width: 79.125rem;
+    margin:auto;
+}
+
 
 
 .white_line{
@@ -3719,7 +3830,7 @@ margin-bottom: 1rem;
 }
 .green_fifth_block {
 position: relative;
-height: auto;
+min-height: auto;
 margin-bottom: 1rem;
 margin-top: 1rem;
 }
@@ -3912,19 +4023,19 @@ z-index: 2;
 .col-xs-4.item_block:first-child>div.desktop_cover_title{
 position: absolute;
 top: 7.3125rem;
-left: -50%;
+right: 98%;
 z-index: 3;
 }
 .col-xs-4.item_block:nth-child(3)>div.desktop_cover_title{
 position: absolute;
 top: 7.3125rem;
-left: 51%;
+right: -33%;
 z-index: 3;
 }
 .col-xs-4.item_block:nth-child(2)>div.desktop_cover_title{
 position: absolute;
 top: 7.3125rem;
-left: -37%;
+right: 54%;
 z-index: 3;
 }
 .multi-item-carousel> div.carousel-inner{
@@ -3954,4 +4065,7 @@ overflow: visible;
 
 }
 }
-
+.item.cover_desktop.active{
+    transition: all .2s linear;
+   
+}
