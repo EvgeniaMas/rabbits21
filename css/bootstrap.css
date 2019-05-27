@@ -1443,11 +1443,7 @@ tbody.collapse.in {
 }
 
 
-@media (min-width: 1024px)  and(orientation: portrait){
-  .navbar-toggle {
-    display: none;
-  }
-}
+
 
 
 
@@ -1457,6 +1453,31 @@ tbody.collapse.in {
   .navbar-toggle {
     display: none;
   }
+}
+
+
+@media (max-width: 1024px) and(orientation: portrait) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  ul.nav.navbar-nav{
+    display: none;
+  }
+
+  .navbar-collapse{
+    display: none;
+  }
+
+  .collapse.in {
+  display: block;
+}
+
+.collapse.in> ul.nav.navbar-nav{
+    display: block;
+  }
+
+
 }
 
 
