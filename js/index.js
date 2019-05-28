@@ -57,10 +57,11 @@ $('.multi-item-carousel .item').each(function(){
    var margin_footer = $('.footer').height(); 
     
     $('.wrapper').css('margin-top', margin_wrapper);
+    $('.wrapper').css('margin-bottom', -margin_footer);
     // $('.about_wrapper').css('margin-top', 96);
     
     
-    $('.mobile_wrapper').css('margin-top', margin_wrapper);
+    // $('.mobile_wrapper').css('margin-top', margin_wrapper);
    
     if(document.documentElement.clientWidth < 769) {    
      // $('#about_page_wrapper').css('margin-top', 0);
@@ -122,13 +123,12 @@ if(clickId== 'green' || clickId=='greenm'){
 }
 
 $('#project_page').css('overflow', 'visible');
-$('#carousel_slider').show(2500);
+$('#carousel_slider').css("display", "block");
 $('#mobiles_footer').css('display', 'block');
 
    
      setTimeout(      
-        function() { 
-         // var wow ="";
+        function() {         
           wow = new WOW();
           wow.init();    
 
