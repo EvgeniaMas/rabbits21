@@ -929,6 +929,8 @@ font-size: 90px;
 }
 
 
+
+
 @media screen and (max-width: 350px) { 
 #main_page{
 background-image: url('../img/main768.jpg');
@@ -1410,12 +1412,25 @@ background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 }
-
 .grey_bg{
 background-color: transparent;
 }
-
 }
+
+
+@media screen and (max-width: 768px) and (orientation:landscape) { 
+#first_page_body{
+overflow-y: visible;
+}
+.team_block{
+margin-top: 96px;
+}
+.team_description_text{
+	max-width: 69%;
+}
+}
+
+
 @media screen and (max-width: 300px) { 
 .team_block{
 height: 17.9375rem;  
@@ -1424,6 +1439,7 @@ height: 17.9375rem;
 font-size: 3.125rem;
 letter-spacing: 0.25rem;
 }
+
 }
 /*service page */
 #desktop_service

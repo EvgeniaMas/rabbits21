@@ -105,7 +105,7 @@ $(".cover_desktop").click(function(e){
 });
 $(".mobile_slider_closed").click(function(e){ 
    var clickId = $(e.target).attr('id');
-   $("#mobile_cases").hide( "explode", {pieces: 23}, 1800 );
+   $("#mobile_cases").hide(2500);
     full_item_case(clickId); 
 });
       
