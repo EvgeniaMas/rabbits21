@@ -2685,7 +2685,7 @@ left: 0;
 background-color: #f6f6f8;
 }
 .river_first_block{
-height: 29.25rem;
+/*height: 29.25rem;*/
 padding-top: 8.3125rem;
 box-sizing: border-box;
 position: relative;
@@ -2796,7 +2796,7 @@ width: 90%;
 
 .project_short_description.river_short_desc{
 max-width: 29.375rem;
-margin-bottom: 7.375rem;
+margin-bottom: 0;
 }
 
 
@@ -2814,7 +2814,7 @@ margin-left: 2rem;
 
 .project_short_description.river_short_desc{
 max-width: 29.375rem;
-margin-bottom: 7.375rem;
+padding-bottom: 7.375rem;
 }
 
 .river_logo{
@@ -3226,6 +3226,7 @@ left: 0;
 width: 100%;
 background-color: #f6f6f8;
 z-index: 1;
+display: none;
 }
 
 
@@ -3445,8 +3446,8 @@ width: 100%;
 
 
 .service_form_block{
-height: 3rem;
-padding-bottom: 3rem;
+min-height: 3rem;
+margin-bottom: 3rem;
 }
 #service_mobile_tabs{
 width: 90%;
@@ -3686,6 +3687,10 @@ img.pale_bg3{
 	display: block;	
 	width: 22.5rem;
 	z-index: 2;
+}
+
+img.pale_bg4{
+display: none;
 }
 
 
@@ -4002,7 +4007,7 @@ img.pale_bg {
 
 img.pale_bg,
 img.pale_bg2,
-img.img.pale_bg3{
+img.pale_bg3{
 opacity: 0;
 }
 img.pale_bg4{
@@ -4087,7 +4092,127 @@ margin-left: 13.375rem;
 .green_first_block {   
 padding-top: 3.1875rem;    
 }
+img.four_items {
+    display: block;
+    width: 100%;
+    max-width: 28.5rem;
+    margin-left: 10rem;
+}
 
+.green_block_squares {
+	width: 100%;
+    max-width: 44.375rem;
+    left: 0rem;
+}
+
+img.green_main_page_img.third_block_first_item {
+    max-width: 58.1875rem;
+    width: 100%;
+    margin-left: 2.9375rem;
+}
+
+.green_main_page_img.third_block_second_item {
+    margin-left: 2.9375rem;
+    max-width: 51.0625rem;
+    margin-top: 5rem;
+    width: 100%;
+}
+.pale_down_square_bg {
+    max-width: 35.75rem;
+    top: 49%;
+}
+
+.pale_green_first_leaf {
+    right: 1rem;
+    top: 52%;
+    max-height: 10.375rem;
+}
+.pale_green_third_leaf {
+    max-height: 9.5rem;
+}
+
+.pale_green_second_leaf {
+    right: 10%;
+    top: 94%;
+    max-height: 5.375rem;
+}
+
+.container.order_block.slider_down_container{
+	width: 100vw;
+}
+
+hr.carousel_full_line.order_button_lines.right_line,
+hr.carousel_full_line.order_button_lines.left_line
+{
+min-width: 10rem;
+}
+
+.green_fifth_block{
+	margin-bottom: 6.9375rem;
+}
+
+#carousel_management.desktop_management {
+    min-height: 7.0625rem;
+}
+
+
+
+
+
+img.green_main_page_img.third_block_third_item {
+    margin-right: 2.875rem;
+    margin-top: 3.3125rem;
+    max-width: 51rem;
+    width: 100%;
+}
+img.pale_bg4 {
+    top: 29.5%;
+    width: 11.9375rem;
+}
+
+
+
+p.green_four_text, .white_half_text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 23.25rem;
+}
+
+.white_half {
+    width: 100%;
+}
+img.green_fourth_block_bg {
+    max-width: 58.0625rem;
+}
+img.green_fourth_block {
+    max-height: 6.6875rem;
+}
+
+p.green_four_text {
+	font-size: 0.875rem;
+    line-height: 1.25rem;
+
+}
+
+p.green_four_text.left {
+    max-width: 22rem;
+    width: 90%;
+}
+
+p.green_four_text.right {
+    max-width: 18.4375rem;
+    width: 90%;
+}
+
+img.green_fifth_block_bg {
+    width: 90%;
+    max-width: 59.75rem;
+    
+}
+
+img.green_fifth_block_grid2 {
+    width: 5.6875rem;
+}
 
 }
 @media screen and (max-width: 768px){
@@ -4102,6 +4227,15 @@ width: 100%;
 bottom: 0;
 height: 13%;
 }
+
+img.pale_bg4 {
+    opacity: 0;
+}
+img.green_fifth_block_grid2 {
+    display: none;
+}
+
+
 .pale_down_square_bg {
 width: 100%;
 top: 12%;
@@ -4152,6 +4286,15 @@ background-color: #eff7e5;
 .white_half_text {
 display: none;
 }
+
+
+hr.carousel_full_line.order_button_lines.right_line,
+hr.carousel_full_line.order_button_lines.left_line
+{
+min-width: auto;
+}
+
+
 /*img.green_main_page_img {
 display: block;
 width: 100%;
@@ -4177,9 +4320,12 @@ img.green_main_page_img.third_block_first_item,
 img.green_main_page_img.third_block_second_item,
  img.green_main_page_img.third_block_third_item {
     display: block;
-    width: 100%;
+    width: 91.5%;
+    max-width: 21.4375rem;
     margin:auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1.625rem;
+    margin-right: 0;
+    margin-left: 0;
     
 }
 
@@ -4233,9 +4379,11 @@ margin-left: 1rem;
 }
 img.four_items {
 display: block;
-width: 18.5rem;
+  width: 91.5%;
+    max-width: 21.4375rem;
 margin-right:0;
 margin-left: 0;
+margin:auto;
 }
 .green_block_squares {
 width: 44.375rem;
@@ -4412,12 +4560,20 @@ margin-bottom: 0.8125rem;
 p.preview_text{
 font-size: 0.5rem; 
 }
+hr.carousel_full_line.order_button_lines.right_line,
+hr.carousel_full_line.order_button_lines.left_line
+{
+min-width: 2.0625rem;
+}
 }
 
 @media screen and (max-width: 380px) { 
 p.preview_text{
 font-size: 0.5rem; 
 }
+
+
+
 }
 
 
