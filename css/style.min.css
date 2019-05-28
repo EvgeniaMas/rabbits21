@@ -1231,8 +1231,8 @@ padding-bottom: 4rem;
 font-size: 11.125rem;
 }
 .slogan.slogan_right {
-    text-align: center;
-    margin-left: 2vw;
+text-align: center;
+margin-left: 2vw;
 }
 }
 
@@ -1429,26 +1429,26 @@ background-color: transparent;
 margin-top: 96px;
 }
 .team_description_text{
-	max-width: 69%;
+max-width: 69%;
 }
 
 /*.nav.navbar-nav > li > .first_point {
-    margin-top: 2.5rem;
+margin-top: 2.5rem;
 }
 
 .nav.navbar-nav > li > a {
-    margin-top: 2.8rem;
+margin-top: 2.8rem;
 
 }*/
 h1.header__activity {
-    margin-top: 5rem;
-    font-size: 1.3rem;
+margin-top: 5rem;
+font-size: 1.3rem;
 }
 
 h1.header__activity span {
 
-    font-size: 2.9rem;
-    line-height: 3.1rem;
+font-size: 2.9rem;
+line-height: 3.1rem;
 
 }
 
@@ -1464,9 +1464,9 @@ font-size: 3.125rem;
 letter-spacing: 0.25rem;
 }
 .text_logo_green {
-    font-size: 3rem;
-    letter-spacing: 0.1rem;
-    
+font-size: 3rem;
+letter-spacing: 0.1rem;
+
 }
 }
 /*service page */
@@ -1896,8 +1896,8 @@ line-height: 1.3125rem;
 }
 @media screen and (max-width: 1400px) { 
 .marked_text {
-    font-size: 14rem;
-    line-height: 14rem;
+font-size: 14rem;
+line-height: 14rem;
 }
 }
 
@@ -2445,6 +2445,10 @@ margin:auto;
 margin-top: 0.4375rem;
 }
 
+.team_description {
+width: 90%;
+}
+
 .contacts_form{
 padding-top: 0;
 }
@@ -2573,7 +2577,9 @@ background-size: contain;
 .text_logo_green{
 font-size: 3.125rem;
 }
-
+.slogan.slogan_left {
+padding-top: 43%;
+}
 }
 
 @media screen and (max-width: 768px){
@@ -3249,7 +3255,7 @@ top: -3rem;
 }
 
 .pure_seven_block {
-    margin-bottom: 1.75rem;
+margin-bottom: 1.75rem;
 }
 
 .pure_eight_block{
@@ -4324,12 +4330,12 @@ height: 13%;
 }
 
 .pure_seven_block>.pure_dark_grey_bg {
-    top: 12%;
-    height: 90%;
+top: 12%;
+height: 90%;
 }
 
 .pure_six_block>.pure_dark_grey_bg {
-    top: -2rem;
+top: -2rem;
 }
 
 
@@ -4766,7 +4772,7 @@ max-width: auto;
 }
 hr.carousel_full_line.order_button_lines.right_line,
 hr.carousel_full_line.order_button_lines.left_line{
-	min-width: 8rem;
+min-width: 8rem;
 }
 
 #main_page{
