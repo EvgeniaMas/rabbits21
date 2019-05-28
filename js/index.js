@@ -24,7 +24,8 @@ $(".back_to_covers").click(function(){
     if(document.documentElement.clientWidth > 768) {
      $('#project_page').css('overflow', 'hidden');
      $('#mobiles_footer').css('display', 'none');
-     $(".desktop_cover_wrapper").fadeIn(3000);     
+     // $(".desktop_cover_wrapper").fadeIn(3000); 
+     $(".desktop_cover_wrapper").show( "explode", {pieces: 23}, 1800 );    
          
      }
      else{
@@ -104,7 +105,7 @@ $(".cover_desktop").click(function(e){
 });
 $(".mobile_slider_closed").click(function(e){ 
    var clickId = $(e.target).attr('id');
-   $("#mobile_cases").hide(3000);
+   $("#mobile_cases").hide( "explode", {pieces: 23}, 1800 );
     full_item_case(clickId); 
 });
       
@@ -123,6 +124,9 @@ if(clickId== 'green' || clickId=='greenm'){
 }
 
 $('#project_page').css('overflow', 'visible');
+
+$('#carousel_slider').fadeIn(3000); 
+
 $('#carousel_slider').css("display", "block");
 $('#mobiles_footer').css('display', 'block');
 
@@ -142,7 +146,7 @@ window.onscroll = function() {
     scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if(scrolled > 30){
         $(".navbar-fixed-top").css({"background": "#fff "});
-        $(".navbar").css({"max-height": "30px "})
+        $(".navbar").css({"max-height": "4.5rem"})
     }
     if(1 > scrolled){
         $(".navbar-fixed-top").css({"background": "transparent"})         

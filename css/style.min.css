@@ -511,6 +511,7 @@ font-size: 2rem;
 display: none;
 }
 .navbar.navbar-default.navbar-fixed-top{
+height: 3.5rem;
 min-height: auto;
 }
 
@@ -1334,9 +1335,9 @@ background-color: #f6f6f8;
 width: 82%;
 }
 .text_logo_green{
-font-size: 3rem;
+font-size: 3.625rem;
 letter-spacing: 0.3125rem;
-line-height: 5rem;
+line-height: 4.6875rem;
 }
 h2.team_special {
 font-family: 'Avenir-Next-Bold';
@@ -1389,6 +1390,17 @@ font-size: 2rem;
 text-align: right;   
 margin-left: 0;
 }
+
+.col-md-12.team_description_block{
+width: 100vw;
+}
+
+img.logo_bg_about{
+width: 100vw;
+left: 0;
+}
+
+
 .link_to_projects{
 padding-top: 3.5rem;
 padding-bottom: 3.5rem;
@@ -2324,10 +2336,6 @@ height: 4.6875rem;
 height: 4.25rem;
 width: 4.1875rem;
 margin-top: 0.4375rem;
-}
-
-.navbar.navbar-default.navbar-fixed-top {
-min-height: auto;
 }
 
 .contacts_form {
@@ -3596,7 +3604,7 @@ height: 10.1875rem;
 }
 
 #closed_mobile_cover>div.item{
-padding-top: 4rem;
+padding-top: 1rem;
 position: relative;
 }
 
