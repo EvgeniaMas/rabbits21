@@ -127,7 +127,7 @@ $('#project_page').css('overflow', 'visible');
 
 $('#carousel_slider').fadeIn(3000); 
 
-$('#carousel_slider').css("display", "block");
+// $('#carousel_slider').css("display", "block");
 $('#mobiles_footer').css('display', 'block');
 
    
@@ -329,3 +329,17 @@ $(".contacts_form_submit").on("click", function(){
   ); 
 
 
+window.onresize = message;
+    function message() {
+       if(document.documentElement.clientWidth > 768) {          
+
+           $("#carousel_slider").css("display", "none");
+           $(".desktop_cover_wrapper").css("display", "block");
+        }
+        else{
+            $("#carousel_slider").css("display", "none");
+           $("#mobile_cases").css("display", "block");
+           }
+           
+        }
+     
