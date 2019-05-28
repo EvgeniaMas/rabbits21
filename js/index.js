@@ -328,17 +328,17 @@ $(".contacts_form_submit").on("click", function(){
   ); 
 
 
-window.onresize = message;
-    function message() {
-       if(document.documentElement.clientWidth > 768) {          
+// window.onresize = message;
+//     function message() {
+//        if(document.documentElement.clientWidth > 768) {          
 
-           $("#carousel_slider").css("display", "none");
-           $(".desktop_cover_wrapper").css("display", "block");
-        }
-        else{
-            $("#carousel_slider").css("display", "none");
-           $("#mobile_cases").css("display", "block");
-           }
+//            $("#carousel_slider").css("display", "none");
+//            $(".desktop_cover_wrapper").css("display", "block");
+//         }
+//         else{
+//             $("#carousel_slider").css("display", "none");
+//            $("#mobile_cases").css("display", "block");
+//            }
            
-        }
+//         }
      
