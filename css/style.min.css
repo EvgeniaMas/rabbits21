@@ -3469,9 +3469,7 @@ height: 300px;
 z-index: 16;
 width: 100%;
 }
-.fluger_grey_bg {
-display: none;
-}
+
 .project_short_description {
 margin-top: 0;
 width: 100%;
@@ -4322,39 +4320,36 @@ img.green_main_page_img.third_block_second_item,
     display: block;
     width: 91.5%;
     max-width: 21.4375rem;
-    margin:auto;
-    margin-bottom: 1.625rem;
+    float: none;    
     margin-right: 0;
     margin-left: 0;
+    margin:auto!important;
+    padding-bottom: 1.625rem;
     
 }
+
+img.green_fourth_block_bg {
+   width: 91.5%;
+    max-width: 21.4375rem;
+}
+
 
 img.green_fourth_block{
 bottom:-2rem;
 max-height: 8.9375rem;
 }
-
-
-
-
 p.green_four_text.left {
 width: 100%;
 }
-
-
 p.green_four_text.right {
    
     margin-bottom: 2rem;
 }
-
 img.green_fifth_block_bg {
-    width: 90%;
-    max-width: 29.125rem;
+    width: 91.5%;
+     max-width: 21.4375rem;
     margin: auto;
 }
-
-
-
 .white_half {
 display: none;
 }
@@ -4387,6 +4382,7 @@ margin:auto;
 }
 .green_block_squares {
 width: 44.375rem;
+top: -40px;
 }
 
 .green_fourth_block {
