@@ -3645,16 +3645,18 @@ float: right;
 height: 10.1875rem;
 }
 
-/*#closed_mobile_cover>div.item{
+#closed_mobile_cover>div.item{
 padding-top: 1rem;
-position: relative;
-}*/
+}
 
 
 .mobile_cover_title{
 position: absolute;
-top: 14%;
+padding-top: 14%;
+top: 0;
 left: 3%;
+display: block;
+padding-left: 3%;
 z-index: 3;
 }
 .mobile_cover_title>p.project_logo__cover_mobile{
