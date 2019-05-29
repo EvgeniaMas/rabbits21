@@ -887,9 +887,9 @@ background-image: none;
 background-color: #fff;
 }
 
-#first_page_body{
+/*#first_page_body{
 overflow-y: hidden;
-}
+}*/
 
 
 h1.header__activity{
@@ -4685,11 +4685,11 @@ overflow: visible;
 }
 
 @media screen and (max-width: 300px) { 
-html, body{
+/*html, body{
 	min-height: 768px;
 	overflow: visible;
 	min-width: 300px;
-}
+}*/
 }
 
 
