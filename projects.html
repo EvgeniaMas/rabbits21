@@ -14,7 +14,48 @@
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 </head>
 <body id="project_page">
+
+
 <header id="header">
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top mobile_grey">
+      
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span id="up_panel" class="icon-bar"></span>
+            <span id="down_panel" class="icon-bar"></span>
+      </button>
+      <span class="mobile_menu_page">Наши услуги</span>
+      <a class="navbar-brand" href="index.html">
+        <img class="black_white_logo" src="img/logo.svg" alt="21Rabbits">
+         <img class="white_black_logo" src="img/logo_moble.png" alt="21Rabbits"><span>21Rabbits</span>
+      </a> 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+            <li class="menus">
+              <a class="first_point" href="index.html">Главная</a>
+            </li>
+            <li>
+              <a href="about.html">О нас</a>              
+            </li>                
+            <li> 
+              <a  href="service.html">Наши услуги              
+              
+              </a>
+            </li>     
+            <li>
+                <a class="active_page" href="projects.html">Проекты
+                  <span class="underlined_menu project_page"></span>
+                </a>              
+            </li>                 
+            <li>
+              <a  href="contacts.html">Контакты</a>              
+            </li>      
+      </ul>
+    </div>
+    </nav>
+  </div>
+</header>
+<!-- <header id="header">
   <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top">
       
@@ -44,17 +85,19 @@
     </div>
     </nav>
   </div>
-</header>
+</header> -->
 <div class="grey_back_cover"></div>
-<div class="wrapper" >
+<div class="wrapper">
 <div class="desktop_cover_wrapper">
+
+
 <div  id="project_cover" class="row project_slider">
     <div class="col-md-12">
       <div class="carousel slide multi-item-carousel" id="theCarousel">
         <div class="carousel-inner ">
           <div class="item active carousel_slider cover_desktop">
             <div class="col-xs-4 item_block">             
-                <img id="fluger" class="projects_slides" src="img/fluger_case.png" class="img-responsive">
+                <img id="fluger" class="projects_slides img-responsive" src="img/fluger_case.png" alt="Примеры работ">
                 <div class="desktop_cover_title animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="2s" data-wow-offset="10">
                     <p class="project_logo_cover_desktop ">Флюгер</p>
                     <p class="logo_vertical_cover_desktop">website</p>
@@ -63,7 +106,7 @@
           </div>
           <div class="item cover_desktop">
             <div class="col-xs-4 item_block">            
-                <img id="green" class="projects_slides " src="img/green_case.png" class="img-responsive">
+                <img id="green" class="projects_slides img-responsive" src="img/green_case.png" alt="Примеры работ">
                 <div class="desktop_cover_title animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="2s" data-wow-offset="60">
                     <p class="project_logo_cover_desktop">Зеленый сад</p>
                     <p class="logo_vertical_cover_desktop">website</p>
@@ -72,7 +115,7 @@
           </div>
           <div class="item cover_desktop">
             <div class="col-xs-4 item_block">              
-                <img id="river" class="projects_slides" src="img/river_case.png" class="img-responsive">
+                <img id="river" class="projects_slides img-responsive" src="img/river_case.png" alt="Примеры работ">
                 <div class="desktop_cover_title animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="2s" data-wow-offset="60">
                     <p class="project_logo_cover_desktop">River Line</p>
                     <p class="logo_vertical_cover_desktop">website</p>
@@ -81,7 +124,7 @@
           </div>
            <div class="item cover_desktop">
             <div class="col-xs-4 item_block">             
-                <img id="pure" class="projects_slides" src="img/pure_case.png" class="img-responsive">
+                <img id="pure" class="projects_slides img-responsive" src="img/pure_case.png" alt="Примеры работ">
                 <div class="desktop_cover_title animated fadeInUp swing" data-wow-duration="2s" data-wow-delay="2s" data-wow-offset="60">
                     <p class="project_logo_cover_desktop">Pure/Pure</p>
                     <p class="logo_vertical_cover_desktop">website</p>
@@ -99,7 +142,10 @@
     </div>
    </div>
   </div>
-<!-- covers on mobile phones -->
+
+
+
+  <!-- covers on mobile phones -->
 <div id="mobile_cases" class="container">
 <div id="carousel_cases_mobile" class="carousel slide" data-ride="carousel">
   <div id="closed_mobile_cover" class="carousel-inner">
@@ -161,6 +207,12 @@
     </div>
      </div>
     </div>
+
+
+
+
+
+
 <div id="carousel_slider" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
      <div id="case_river" class="item">     
@@ -178,7 +230,7 @@
      <div class="container river_grey_bg"> 
         <div class="container fluger_grey_bg"></div>
          </div> 
-        <img class="river_second_img" src="img/river/river-line.png" alt="River_Line"> 
+        <img class="river_second_img wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s" src="img/river/river-line.png" alt="River_Line"> 
       </div>
     <div class="container-fluid wow zoomIn" data-wow-duration="3s">
         <div class="slider_content_part fluger_content_part">
@@ -221,7 +273,7 @@
       </div>      
       <div class="container green_second_block">
         <div class="fluger_grey_bg"></div>
-         <img class="fluger_second_img" src="img/green/green_bg1.png" alt="Зеленый сад">
+         <img class="fluger_second_img wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s" src="img/green/green_bg1.png" alt="Зеленый сад">
         <img class="fluger_second_img_mobile" src="img/green/green_second_mobile.png" alt="Зеленый сад">
       </div>
       <div class="container-fluid wow zoomIn" data-wow-duration="3s" data-wow-delay="0s" data-wow-offset="60">
@@ -241,7 +293,7 @@
         <div class="white_half">
           <img class="pale_green_third_leaf" src="img/green/green_leaf_right.png" alt="Зеленый сад">        
         </div>
-        <img class="green_block_squares" src="img/green/green_bg3_squares.png">
+        <img class="green_block_squares" src="img/green/green_bg3_squares.png" alt="Зеленый сад">
         <img class="pale_bg" src="img/green/pale.bg.png" alt="Зеленый сад">
         <img class="pale_bg2" src="img/green/pale2.png" alt="Зеленый сад">
          <img class="pale_bg3" src="img/green/pale3.png" alt="Зеленый сад">
@@ -305,7 +357,7 @@
          </div>   
       </div>
       <div class="container-fluid pure_second_block">
-        <img class="fluger_second_img" src="img/pure/pure1.jpg" alt="Pure">
+        <img class="fluger_second_img wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s" src="img/pure/pure1.jpg" alt="Pure">
         <img class="fluger_second_img_mobile" src="img/pure/pure_second_mobile.jpg" alt="Pure">
       </div>
       <div class="container-fluid  wow zoomIn" data-wow-duration="3s" data-wow-delay="0s" data-wow-offset="60">
@@ -362,7 +414,7 @@
       </div>      
       <div class="container fluger_second_block">
         <div class="fluger_grey_bg"></div>
-        <img class="fluger_second_img" src="img/fluger/fluger_bg2.png" alt="Флюгер">
+        <img class="fluger_second_img wow fadeIn" data-wow-duration="3s" data-wow-delay="0.2s" src="img/fluger/fluger_bg2.png" alt="Флюгер">
         <img class="fluger_second_img_mobile" src="img/fluger/fluger_second_mobile.jpg" alt="Флюгер">
       </div>  
       <div class="container-fluid wow zoomIn" data-wow-duration="3s" data-wow-delay="0s" data-wow-offset="60">
@@ -412,6 +464,12 @@
     </a>
   </div>
 </div>
+
+</div> <!-- поставила после чека -->
+
+
+
+
 </div><!-- big wrapper -->
 <footer id="mobiles_footer" class="container-fluid footer">
   <div class="container footer_block">

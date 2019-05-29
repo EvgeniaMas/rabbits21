@@ -11,6 +11,29 @@ $('#carousel_cases_mobile').carousel({
 $('#carousel_swipe').carousel({
   interval : false
 });
+
+
+var mql = window.matchMedia("(orientation: portrait)");
+ if(mql.matches && document.documentElement.clientWidth <768) {  
+    // Портретная ориентация
+} else {  
+    // Горизонтальная ориентация
+}
+
+// Прослушка события изменения ориентации
+mql.addListener(function(m) {
+    if(m.matches) {
+        // Изменено на портретный режим
+    }
+    else {
+        // Изменено на горизонтальный режим
+    }
+});
+
+
+
+
+
 // close big case
 $(".back_to_covers").click(function(){
    $("#carousel_slider").hide(2000);
@@ -55,9 +78,10 @@ $('.multi-item-carousel .item').each(function(){
    var margin_wrapper = $('.navbar-fixed-top').height();    
    // alert(margin_header);
    var margin_footer = $('.footer').height(); 
-    
+    // alert(margin_wrapper);
+    // alert(margin_footer);
     $('.wrapper').css('margin-top', margin_wrapper);
-    $('.wrapper').css('margin-bottom', -margin_footer);
+    // $('.wrapper').css('margin-bottom', margin_footer);
     // $('.about_wrapper').css('margin-top', 96);
     
     

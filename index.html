@@ -13,8 +13,51 @@
 <link rel="stylesheet" type="text/css" href="css/style.min.css"> 
 </head>
 <body id="first_page_body">
-<div class="container-fluid" id="main_page">
 <header id="header" class="main_page">
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top mobile_grey">
+      
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span id="up_panel" class="icon-bar"></span>
+            <span id="down_panel" class="icon-bar"></span>
+      </button>
+      <span class="mobile_menu_page">Наши услуги</span>
+      <a class="navbar-brand" href="index.html">
+        <img class="black_white_logo" src="img/logo.svg" alt="21Rabbits">
+         <img class="white_black_logo" src="img/logo_moble.png" alt="21Rabbits"><span>21Rabbits</span>
+      </a> 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+            <li class="menus">
+              <a class="first_point active_page" href="index.html">Главная</a>
+              <span class="underlined_menu main_page"></span>
+            </li>
+            <li>
+              <a href="about.html">О нас</a>              
+            </li>                
+            <li> 
+              <a  href="service.html">Наши услуги              
+              
+              </a>
+            </li>     
+            <li>
+                <a href="projects.html">Проекты
+                 
+                </a>              
+            </li>                 
+            <li>
+              <a  href="contacts.html">Контакты</a>              
+            </li>      
+      </ul>
+    </div>
+    </nav>
+  </div>
+</header>
+
+
+
+
+<!-- <header id="header" class="main_page">
   <div class="container">
     <nav id="main_page_nav" class="navbar navbar-default navbar-fixed-top">   
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -42,7 +85,7 @@
     </div>
     </nav>
   </div>
-</header>
+</header> -->
 <div class="wrapper" id="main_page_content">  
 <div class="container">
   <div class="col-md-12">
@@ -53,22 +96,18 @@
     <div class="container-fluid">
      <div class="chat_box">
       <div class="chat_box_content">
-     <span class="rabbit_message" id="message"></span><br>
-     <span class="rabbit_message" id="message2"> </span> 
-     <a href="about.html"><span class="rabbit_message" id="message3"></span></a>
-     <span class="rabbit_message" id="message4"></span>
-     </div> 
-    </div>
-  </div> 
-</div>
-</div>
-</div>
+        <span class="rabbit_message" id="message"></span><br>
+         <span class="rabbit_message" id="message2"> </span> 
+         <a href="about.html"><span class="rabbit_message" id="message3">   </span></a>
+         <span class="rabbit_message" id="message4"></span>
+     </div> <!-- content -->
+    </div> <!-- chat_box -->
+  </div> <!-- fluid -->
+</div><!-- container -->
+</div><!-- wrapper -->
 <script src="js/juery.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/index.js"></script>
-<script>
- 
-</script>
 </body>
 </html>
 
