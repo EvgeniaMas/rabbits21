@@ -4685,14 +4685,12 @@ overflow: visible;
 }
 
 @media screen and (max-width: 300px) { 
-/*html, body{
+html, body{
 	min-height: 768px;
 	overflow: visible;
 	min-width: 300px;
-}*/
 }
-
-
+}
 @media screen and (max-width: 768px) and (orientation:landscape) { 
 img.green_main_page_img.third_block_first_item,
 img.green_main_page_img.third_block_second_item,
@@ -4712,7 +4710,6 @@ hr.carousel_full_line.order_button_lines.right_line,
 hr.carousel_full_line.order_button_lines.left_line{
 min-width: 8rem;
 }
-
 #main_page{
 background-position:contain;
 }
@@ -4724,5 +4721,12 @@ background-repeat: repeat;
 background-position: center;
 }
 
+#main_menu_mobile>ul.nav.navbar-nav > li > a 
+{
+font-family: 'Avenir-Heavy';
+font-size: 1rem;
+margin-top: 1rem;
 
+
+}
 }
