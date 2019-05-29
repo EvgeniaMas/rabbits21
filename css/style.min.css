@@ -1408,7 +1408,7 @@ margin-top: 96px;
 max-width: 69%;
 }
 h1.header__activity {
-margin-top: 5rem;
+margin-top: 4rem;
 font-size: 1.3rem;
 }
 
@@ -4713,9 +4713,9 @@ hr.carousel_full_line.order_button_lines.left_line{
 min-width: 8rem;
 }
 
-/*#main_page{
-background-image: none;
-}*/
+#main_page{
+background-position:contain;
+}
 #first_page_body{
 overflow-y: hidden;	
 background-image: url("../img/gradient.png");
@@ -4726,10 +4726,10 @@ background-position: center;
 
 
 #main_menu_mobile> ul.nav.navbar-nav > li > a{
-font-size: 1rem;
+/*font-size: 1rem;
 margin-top: 2rem;
 margin-right: 0;
-position: relative;
+position: relative;*/
 overflow: visible;
 }
 
