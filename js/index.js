@@ -25,7 +25,7 @@ $(".back_to_covers").click(function(){
      $('#project_page').css('overflow', 'hidden');
      $('#mobiles_footer').css('display', 'none');
      // $(".desktop_cover_wrapper").fadeIn(3000); 
-     $(".desktop_cover_wrapper").show( "explode", {pieces: 23}, 1800 );    
+     $(".desktop_cover_wrapper").fadeIn(2000);    
          
      }
      else{
@@ -84,7 +84,7 @@ $(".cover_desktop").click(function(e){
 
    var clickId = $(e.target).attr('id');
 
-   console.log($(e.target).parent().parent().find('img').attr('id'));
+   
 
    if(!clickId){
 
@@ -96,10 +96,10 @@ $(".cover_desktop").click(function(e){
    }  
 
    var image= $(this).find('.item_block').find('img');
-   $(image).hide( "explode", {pieces: 23}, 3500 );
+   $(image).hide( "explode", {pieces: 33}, 3500 );
     $(".desktop_cover_wrapper").hide(2000);
     full_item_case(clickId); 
-    $(image).show( "explode", {pieces: 23}, 2000 );
+    $(image).show( "explode", {pieces: 33}, 2000 );
 
 });
 $(".mobile_slider_closed").click(function(e){ 
@@ -124,7 +124,7 @@ if(clickId== 'green' || clickId=='greenm'){
 
 $('#project_page').css('overflow', 'visible');
 
-$('#carousel_slider').fadeIn(3000); 
+$('#carousel_slider').fadeIn(4500); 
 
 // $('#carousel_slider').css("display", "block");
 $('#mobiles_footer').css('display', 'block');

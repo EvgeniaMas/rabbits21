@@ -713,7 +713,7 @@ left:0;
 }
 #first_page_body{
 overflow-y: hidden;	
-background-image: url("../img/ddd.png");
+background-image: url("../img/gradient.png");
 background-size: cover;
 background-repeat: repeat;
 background-position: center;
@@ -1401,34 +1401,21 @@ background-color: transparent;
 
 
 @media screen and (max-width: 768px) and (orientation:landscape) { 
-
-.team_block{
+/*.team_block{
 margin-top: 96px;
-}
+}*/
 .team_description_text{
 max-width: 69%;
 }
-
-/*.nav.navbar-nav > li > .first_point {
-margin-top: 2.5rem;
-}
-
-.nav.navbar-nav > li > a {
-margin-top: 2.8rem;
-
-}*/
 h1.header__activity {
 margin-top: 5rem;
 font-size: 1.3rem;
 }
 
 h1.header__activity span {
-
 font-size: 2.9rem;
 line-height: 3.1rem;
-
 }
-
 }
 
 
@@ -2775,8 +2762,8 @@ position: relative;
 img.river_second_img,
 img.river_third_img{
 display: block;
-width: 91.5%;
 position: relative;
+width: 100%;
 z-index: 2;
 }
 .river_third_block{
@@ -3658,10 +3645,10 @@ float: right;
 height: 10.1875rem;
 }
 
-#closed_mobile_cover>div.item{
+/*#closed_mobile_cover>div.item{
 padding-top: 1rem;
 position: relative;
-}
+}*/
 
 
 .mobile_cover_title{
@@ -4697,22 +4684,28 @@ overflow: visible;
 }
 }
 
-
+@media screen and (max-width: 300px) { 
+html, body{
+	min-height: 768px;
+	overflow: visible;
+	min-width: 300px;
+}
+}
 
 
 @media screen and (max-width: 768px) and (orientation:landscape) { 
 img.green_main_page_img.third_block_first_item,
 img.green_main_page_img.third_block_second_item,
 img.green_main_page_img.third_block_third_item {
-width: 91.5%;
+width: 91.5vw;
 max-width: auto;
 }
 img.green_fourth_block_bg {
-width: 91.5%;
+width: 91.5vw;
 max-width: auto;
 }
 img.green_fifth_block_bg {
-width: 91.5%;
+width: 91.5vw;
 max-width: auto;
 }
 hr.carousel_full_line.order_button_lines.right_line,
@@ -4720,15 +4713,24 @@ hr.carousel_full_line.order_button_lines.left_line{
 min-width: 8rem;
 }
 
-#main_page{
+/*#main_page{
 background-image: none;
-}
+}*/
 #first_page_body{
-background-image: url('../img/main768.jpg');
-background-size: contain;
+overflow-y: hidden;	
+background-image: url("../img/gradient.png");
+background-size: cover;
+background-repeat: repeat;
 background-position: center;
-background-repeat: no-repeat;
-height: 100%;
+}
+
+
+#main_menu_mobile> ul.nav.navbar-nav > li > a{
+font-size: 1rem;
+margin-top: 2rem;
+margin-right: 0;
+position: relative;
 overflow: visible;
 }
+
 }
