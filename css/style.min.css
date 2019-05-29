@@ -4725,12 +4725,4 @@ background-position: center;
 }
 
 
-#main_menu_mobile> ul.nav.navbar-nav > li > a{
-/*font-size: 1rem;
-margin-top: 2rem;
-margin-right: 0;
-position: relative;*/
-overflow: visible;
-}
-
 }
