@@ -75,12 +75,12 @@ $('.multi-item-carousel .item').each(function(){
 });    
   
    $(document).ready(function() {
-   var margin_wrapper = $('.navbar-fixed-top').height();    
+   var margin_wrapper = $('header').height();    
    // alert(margin_header);
    var margin_footer = $('.footer').height(); 
     // alert(margin_wrapper);
     // alert(margin_footer);
-    $('.wrapper').css('margin-top', margin_wrapper);
+    $('.wrapper').css('padding-top', margin_wrapper);
     // $('.wrapper').css('margin-bottom', margin_footer);
     // $('.about_wrapper').css('margin-top', 96);
     
