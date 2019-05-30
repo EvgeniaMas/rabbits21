@@ -1134,8 +1134,8 @@ top: 17.625rem;
 }
 
 #main_page{
-background-image: url('../img/main1918.jpg');
-background-position : top left;
+background-image: url('../img/main1024.jpg');
+background-position : center;
 background-size: cover;
 }
 
@@ -2222,18 +2222,137 @@ min-width: 2.0625rem;
 
 @media screen and (max-width: 767px) and (orientation:landscape) { 
 
+
+.navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+
+  button.navbar-toggle{
+  display: none;
+  }
+
+    .navbar-header {
+    float: left;
+  }
+
+
+  .navbar-brand span{
+font-weight: normal;
+}
+.nav.navbar-nav {
+border: none;  
+position: relative;
+z-index: 101;
+}
+/*.navbar-nav {
+margin: 2.0625rem -15px 0 -15px;
+}*/
+.nav.navbar-nav > li > a {
+/*font-family: 'Avenir-Heavy';
+font-size: 1.5rem;
+padding-top: 1.25rem; 
+margin-right: 6.625rem;
+text-align: center; 
+color:#000!important;
+display: block;
+cursor: pointer;
+transition: all 300ms ease-out;
+}*/
+}
+.nav.navbar-nav > li > a {  
+font-size: 0.875rem;
+margin-right: 1.1875rem;
+padding-top: 0;
+margin-top: 1.25rem;
+}
+
+.nav.navbar-nav > li > a.active_page:after,
+.nav.navbar-nav > li > a.active_page:before
+ {
+display: none;
+}
+
+
+
+
+
+/*ul.nav.navbar-nav{
+margin-left: 5.375rem;
+}*/
+
+
+.nav.navbar-nav > li > a:hover{
+opacity: 0.5;  
+}
+.nav.navbar-nav > li:last-child>a{
+padding-right: 0!important
+}
+.nav.navbar-nav > li > a.active_page{
+color: #02eeda!important;
+}
+span.underlined_menu{
+display: block;
+height: 0.125rem;
+background-color: #02eeda;
+margin-top: 0.2rem;
+}
+span.underlined_menu{
+display: block;
+height: 0.25rem;
+width: 36%;
+}
+
+span.underlined_menu.main_page{
+width: 26%;	
+}
+
+span.underlined_menu.about_page{
+width: 29%;	
+}
+
+span.underlined_menu.contacts_page{
+width: 23%;	
+}
+
+
+span.underlined_menu.project_page{
+width: 23%;	
+}
+
+
+
+.nav.navbar-nav {
+float: none;
+text-align: center;
+}
+.nav.navbar-nav li {
+float: none;
+display: inline-block;
+}
+span.mobile_menu_page{
+display: none;
+}
+
+
+}
+
+
+
 /*ul.nav.navbar-nav {
 display: none;
 }*/
 
 
-.nav.navbar-nav > li > a {
+/*.nav.navbar-nav > li > a {
     font-size: 1rem;
     line-height: 1.0625rem;
     margin-top: 1rem;
     margin-right: 0;
     position: relative;
-}
+}*/
 
 
 #main_page {
