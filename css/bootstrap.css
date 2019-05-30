@@ -58,14 +58,14 @@ a:hover {
   .container {
     width: 90vw;
     max-width: 109.25rem;
-    min-width: 23.4375rem;
+    min-width: 20rem;
 }
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
   max-width: 120rem;
-  min-width: 23.4375rem;
+  min-width: 20rem;
 }
 .row {
   margin-left: -15px;
@@ -1011,6 +1011,7 @@ fieldset[disabled] .checkbox label {
 .collapse.in {
   display: block;
   
+  
 }
 tr.collapse.in {
   display: table-row;
@@ -1315,32 +1316,32 @@ tbody.collapse.in {
     border-radius: 0;
   }
 }
-.navbar-fixed-top {
+/*.navbar-fixed-top {
   position: fixed;
   right: 0;
   left: 0;
   z-index: 100;
   
-}
-@media (min-width: 768px) {
+}*/
+/*@media (min-width: 768px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
   }
-}
-.navbar-fixed-top {
+}*/
+/*.navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
   
-}
+}*/
 
 
 
-.navbar-fixed-bottom {
+/*.navbar-fixed-bottom {
   bottom: 0;
   margin-bottom: 0;
   border-width: 1px 0 0;
-}
+}*/
 .navbar-brand {
   float: left;
   width: 5.375rem;

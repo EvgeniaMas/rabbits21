@@ -410,7 +410,7 @@ text-align: center;
 color: #000;
 text-transform: uppercase;
 }
-#main_page{
+.wrapper#main_page{
 padding: 0;
 width: 100vw;
 height: 100vh;
@@ -2226,3 +2226,7 @@ overflow: hidden;
 position: relative;
 z-index: 22;
 }
+
+
+
+
