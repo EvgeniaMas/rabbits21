@@ -1,0 +1,17 @@
+$(document).ready(function() {
+     var mql = window.matchMedia("(orientation: portrait)");
+   if (document.documentElement.clientWidth<767){    
+       if(mql.matches) {   
+       alert('Вертикаль');     
+       $('.wrapper').css('padding-top', 0);
+         $("img.command_block").css("display", "none"); 
+       $("img.command_block_mobile").css("display", "block");  
+     }
+     else{ 
+     alert('Горизонт');       
+       $('.wrapper').css('padding-top', margin_wrapper);  
+        $("img.command_block").css("display", "block"); 
+       $("img.command_block_mobile").css("display", "none");     
+     }
+   }
+   });

@@ -11,29 +11,6 @@ $('#carousel_cases_mobile').carousel({
 $('#carousel_swipe').carousel({
   interval : false
 });
-
-
-var mql = window.matchMedia("(orientation: portrait)");
- if(mql.matches && document.documentElement.clientWidth <768) {  
-    // Портретная ориентация
-} else {  
-    // Горизонтальная ориентация
-}
-
-// Прослушка события изменения ориентации
-mql.addListener(function(m) {
-    if(m.matches) {
-        // Изменено на портретный режим
-    }
-    else {
-        // Изменено на горизонтальный режим
-    }
-});
-
-
-
-
-
 // close big case
 $(".back_to_covers").click(function(){
    $("#carousel_slider").hide(2000);
@@ -47,8 +24,8 @@ $(".back_to_covers").click(function(){
     if(document.documentElement.clientWidth > 767) {
      $("#project_page").css("overflow", "hidden");
      $("#mobiles_footer").css("display", "none");     
-     $(".desktop_cover_wrapper").fadeIn(2000);    
-         
+     $(".desktop_cover_wrapper").fadeIn(2000);  
+     $(".grey_back_cover").css("opacity", 1);
      }
      else{
        $("#mobile_cases").show(2000); 
@@ -71,44 +48,14 @@ $('.multi-item-carousel .item').each(function(){
 
   }   
 
-});    
+});   
   
    $(document).ready(function() {
      var mql = window.matchMedia("(orientation: portrait)");
    var margin_wrapper = $('header').height(); 
-   // alert(margin_wrapper);
-   // alert(margin_header);
    var margin_footer = $('.footer').height(); 
-    // alert(margin_wrapper);
-    // alert(margin_footer);
     $('.wrapper').css('padding-top', margin_wrapper);
-    // $('.wrapper').css('margin-bottom', margin_footer);
-    // $('.about_wrapper').css('margin-top', 96);
-    
-    
-    // $('.mobile_wrapper').css('margin-top', margin_wrapper);
-   // console.log(mql.matches);
-
-
-
-    // if(mql.matches && document.documentElement.clientWidth >768) { 
-     
-    //  // $('.team_block').css('padding-top', margin_wrapper);
-    // }
-
-    // else if(!mql.matches && document.documentElement.clientWidth >768){
-    //   alert("Маленький горизонталь");
-
-    //   $('.wrapper').css('padding-top', margin_wrapper);
-    // }
-
-    // else{
-    //   alert("Большой " + margin_wrapper)
-    //   $('.wrapper').css('padding-top', margin_wrapper);
-      
-    // }
    });
-
 function relocate(){
    $('#send_order').css('border-color', '#26f1bc');
 
@@ -116,26 +63,17 @@ function relocate(){
         function() {        
            window.location.href='contacts.html';  
         }, 500
-     ); 
-
-
-  
+     );   
 }
 $(".cover_desktop").click(function(e){
-
    var clickId = $(e.target).attr('id');
-
-   
-
    if(!clickId){
-
    	clickId = $(e.target).parent().parent().find('img').attr('id');
      if(!clickId) {
      	clickId = "green";
      }
    	
-   }  
-
+   } 
    var image= $(this).find('.item_block').find('img');
    $(image).hide( "explode", {pieces: 33}, 3500 );
     $(".desktop_cover_wrapper").hide(2000);
@@ -147,8 +85,7 @@ $(".mobile_slider_closed").click(function(e){
    var clickId = $(e.target).attr('id');
    $("#mobile_cases").hide(2500);
     full_item_case(clickId); 
-});
-      
+});      
 function full_item_case(clickId){
 if(clickId== 'pure'|| clickId=='purem'){
 $('#case_pure').addClass('active');
@@ -162,15 +99,10 @@ if(clickId== 'fluger' || clickId=='flugerm'){
 if(clickId== 'green' || clickId=='greenm'){
   $('#case_green').addClass('active');
 }
-
 $('#project_page').css('overflow', 'visible');
-
 $('#carousel_slider').fadeIn(4500); 
-
-// $('#carousel_slider').css("display", "block");
-$('#mobiles_footer').css('display', 'block');
-
-   
+$('#mobiles_footer').css('display', 'block');  
+$(".grey_back_cover").css("opacity", 0); 
      setTimeout(      
         function() {         
           wow = new WOW();
@@ -178,18 +110,18 @@ $('#mobiles_footer').css('display', 'block');
 
         }, 1000
      ); 
-
 }
 // change header color on scroll
 var scrolled;
 window.onscroll = function() {
     scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if(scrolled > 30){
-        $(".navbar-fixed-top").css({"background": "#fff "});
-        $(".navbar").css({"max-height": "4.5rem"})
+        $(".navbar-default").css({"background": "#fff "});
+        $("header").css({"min-height": "5rem"});
     }
     if(1 > scrolled){
-        $(".navbar-fixed-top").css({"background": "transparent"})         
+        $(".navbar-default").css({"background": "transparent"});
+        $("header").css({"min-height": "1rem"});         
     }
 
 }
@@ -241,9 +173,7 @@ $('.backtotop').click(function(){
 });
 $(".desktop_control").click(function(e){ 
    var a = $(".item.cover_desktop.active");
-    $(a).css("opacity", 0.08);
-    $(a).css("opacity", 0.05);
-    $(a).css("opacity", 0.01);
+    $(a).css("opacity", 0.022);
     var frase = $(a).find(".desktop_cover_title");
      $(frase).each(function(){
            $(this).css("display", "none");          
@@ -257,9 +187,6 @@ $(".desktop_control").click(function(e){
         }, 1500
   ); 
 });
-
-
-
 $(document).ready(function() {
  $(".vertical-tab-menu>.list-group>a").click(function(e) {
  e.preventDefault();
@@ -281,7 +208,6 @@ $("#send_order").on("mouseout", function(){
   $(".order_button_lines").css("background-color", '#000');
 });
 
-
 $(".desktop_cover_title").on("mouseover", function(){
 	$(this).parent().find('img').css("transform", "scale(0.9)");       
   
@@ -291,17 +217,10 @@ $(".desktop_cover_title").on("mouseout", function(){
      $(this).parent().find('img').css("transform", "scale(1)");   
   
 });
-
-
-
-
-
 $(".carousel-control").on("click", function(e){
   $(e.target).css("border-color", "#02eeda");
   $(e.target).css("background-color", "#02eeda");     
   $(e.target).css("color", "#fff");
-
-
   setTimeout(      
         function() { 
           $(e.target).css("border-color", "#d5d5d5");       

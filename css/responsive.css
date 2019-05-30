@@ -11,6 +11,17 @@ padding-top: 1.25rem;
 .project_logo_cover_desktop{
 font-size: 4rem;	
 }
+
+
+.pure_eight_block{
+background: url("../img/pure/eight_left_leaf.png") left /14.9375rem no-repeat,
+url("../img/pure/eight_leaf_right.png") right /16.0625rem no-repeat;
+}
+
+
+.fluger_project_description.river_padd_desc{
+margin-bottom: -3rem;
+}
 img.black_white_logo{
 height: 3.875rem;
 width: 3.875rem;
@@ -64,7 +75,6 @@ background-size:contain;
 min-height: auto;
 }
 h1.header__activity{
-margin-top: 5.1875rem;
 font-size: 2.25rem;
 line-height: 3.0625rem;
 }
@@ -81,10 +91,6 @@ color: #000;
 font-size: 1rem;
 line-height: 1.3125rem;
 }
-.team_block{
-height: 32.8125rem;  
-background-position: bottom center;
-} 
 .container-fluid.logos{
 min-height: 200px;
 margin-bottom: 2rem;
@@ -220,10 +226,7 @@ margin-left: 11.9%;
 padding-top: 4.875rem;
 height: auto;
 }
-.project_logo.green_case_logo{
-margin-top: 5.3125rem;
-margin-left: 2rem;
-}
+
 .project_short_description.river_short_desc{
 max-width: 29.375rem;
 padding-bottom: 7.375rem;
@@ -238,9 +241,7 @@ margin-bottom: 7.375rem;
 .slider_content_part{
 max-width: 77.625rem;
 }
-.logo_vertical.green_case_vertical{
-margin-left: 1rem;
-}
+
 .pure_first_block {   
 padding-top: 4.875rem;
 max-height: 28.375rem;    
@@ -280,7 +281,8 @@ width: 63%;
 max-width: 36.75rem;
 }
 .project_short_description.green_short_description {
-margin-top: 15%;
+position: relative;
+margin-top: 5.875rem;
 max-width: 35.75rem;
 }
 #carousel_management.desktop_management {
@@ -520,6 +522,33 @@ line-height: 12rem;
 img.projects_slides{
 max-width: 23.75rem;
 }
+.fluger_grey_bg{
+opacity: 0;
+}
+
+.slogan_container{
+	position: absolute;	
+	top:49%;
+}
+
+
+
+.pure_eight_block{
+position: relative;
+margin-bottom: 9.3125rem;
+background: url("../img/pure/eight_left_leaf.png") left /11rem no-repeat,
+url("../img/pure/eight_leaf_right.png") right /11rem no-repeat;
+}
+
+
+.fluger_project_description.river_padd_desc{
+margin-bottom: 0;
+}
+.green_logo {
+max-width: 10.3125rem;
+top: 1.9375rem;
+left: 2rem;
+}
 img.black_white_logo{
 height: 2.9375rem;
 width: 2.9375rem;
@@ -551,7 +580,6 @@ background-position: bottom center;
 h1.header__activity{
 font-size: 1.875rem;
 line-height: 2.5625rem;
-margin-top: 11.4375rem;
 display: inline-block;
 }
 h1.header__activity span{ 
@@ -572,18 +600,17 @@ position: relative;
 width: 14.3125rem;
 height: 2.5rem;
 }
-.team_block{
-height: 24.625rem;  
-} 
 .team_description {
 font-size: 0.875rem;
 line-height: 1.125rem;
 width: 18.25rem;
-max-width: 90%;
 margin-bottom: 1rem;
+position: relative;
+z-index: 13;
+max-width: 95%;
 }
 .team_description.right_position{
-max-width: 19.875rem;
+width: 19.875rem;
 }
 span.underlined_menu.project_page {
 width: 50%;
@@ -966,6 +993,16 @@ right: 3rem;
 h1.header__activity {
  margin-left: 1rem;
 }
+.logo_bg_about {
+    bottom: 34%;
+}
+.vertical-tab-menu div.list-group>a {
+    margin-bottom: 1rem;
+}
+
+.project_short_description.river_short_desc {
+    padding-bottom: 0;
+}
 }
 
 
@@ -976,18 +1013,10 @@ max-width: 17rem;
 .project_logo_cover_desktop {
 font-size: 2rem;
 }
-/*.chat_box {
-right: 0; 
-top: 17.625rem; 
-}*/
 .wrapper#main_page{
 background-image: url('../img/main1024.jpg');
 background-position : center;
 background-size: cover;
-}
-
-.slogan.slogan_left {
-padding-top: 19%;
 }
 .text_logo_green{
 font-size: 6.6875rem;
@@ -1019,6 +1048,34 @@ width: 70%;
 header.main_page {
 padding-top: 0;
 }
+.grey_back_cover{
+opacity: 0;
+}
+.green_logo {
+max-width: 5.6875rem;
+top: 2rem;
+left: -2rem;
+}
+.slider_content_part.green_first_block_content{
+width: 100vw;
+}
+.project_short_description.green_short_description {
+    margin-top: 1rem;
+    width: 90vw;    
+}
+.navbar.navbar-default {
+    padding-bottom: 0;
+}
+.command_block{
+	display: none;
+}
+.command_block_mobile{
+    display: block;
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	margin:auto;
+}
 div.project_slider {
     margin-top: 10%;
 }
@@ -1037,7 +1094,6 @@ float: left;
 width: auto;
 height: 3rem;
 }
-
 img.black_white_logo{
 display: none;
 }
@@ -1047,14 +1103,10 @@ height: 2.1875rem;
 width: 2.1875rem;
 margin-top: 0.5625rem;
 margin-left: 1.125rem;
-
 }
 .nav.navbar-nav > li{
 display: block;
 }
-
-
-
 .nav.navbar-nav > li > a.active_page:after {
 content: '';
 display: inline-block;
@@ -1088,7 +1140,6 @@ height: auto;
 position: relative;
 z-index: 89;
 background-color: #fff;
-/*padding-bottom: 2rem;*/
 }
 .main_page_navigation>ul.nav.navbar-nav{
 background-color: transparent;
@@ -1131,12 +1182,6 @@ padding-bottom: 0;
 .chat_box{
 display: none;
 }
-
-/*#first_page_body{
-overflow-y: visible;
-background-image: none;
-background-color: #fff;
-}*/
 .container-fluid.logos {
 min-height: 50px;
 margin-bottom: 1rem;
@@ -1192,21 +1237,33 @@ display: none;
 }
 .slogan{
 font-size: 1.75rem; 
+line-height: 2.1875rem;
 }
 header#about_page_header{
 padding-top: 0;
 padding-bottom: 0;
 }
-.slogan.slogan_left {
-padding-top: 20%;
-}
-.slogan {
-font-size: 2rem;
-}
 .slogan.slogan_right {
 text-align: right;   
 margin-left: 0;
+line-height: 2.1875rem;
 }
+
+.slogan.slogan_left {
+line-height: 2.1875rem;
+}
+
+.slogan_container{
+	position: absolute;	
+	top:63%;
+	right: 0;
+	left: 0;
+	left: 0;
+	z-index: 7;
+	width: 70%;
+}
+
+
 .col-md-12.team_description_block{
 width: 100vw;
 }
@@ -1289,9 +1346,11 @@ body.page_of_contacts,
 nav.navbar.navbar-default.mobile_grey
 {
 background-color: #f8f8f8;
+min-height: 5rem!important;
 }
-nav.navbar.navbar-default.mobile_grey{
-max-height: 2rem;
+header{
+	min-height: 7rem;
+	background-color: pink;
 }
 .contacts_form_submit.service_form{
 margin-top: 1rem;
@@ -1544,14 +1603,9 @@ font-size: 2.25rem;
 }
 .project_logo.green_case_logo {
 font-size: 2.25rem;
-line-height: 2.25rem;
-margin-top: 0;
-margin-left: -2rem;
-margin-top: 4rem;
+line-height: 4.9375rem;
 }
-.logo_vertical.green_case_vertical {
-margin-left: -1rem;
-}
+
 .green_fifth_block {
 position: relative;
 min-height: auto;
@@ -1571,6 +1625,8 @@ img.fluger_fifth_block_img_mobile{
 display: block;
 width: 100%;
 margin-bottom: 1rem;
+position: relative;
+z-index: 3;
 }
 img.fluger_second_img,
 img.fluger_fifth_block_img{
@@ -1695,25 +1751,6 @@ display: none;
 width: 100%;
 top: 12%;
 }
-.green_logo {
-width: 0; 
-height: 0;
-border: 4.5rem solid transparent;
-border-bottom-color: #87985d;
-position: absolute; 
-left: -3rem;
-top: -4rem;
-}
-.green_logo:after {
-content: "";
-width: 0; 
-height: 0;
-position: absolute; 
-left: -4.5rem; 
-top: 4.5rem;
-border: 4.5rem solid transparent;
-border-top-color: #87985d;
-}
 .third_block_first_item{
 margin-top: 1rem;
 width: 100%;
@@ -1815,15 +1852,10 @@ max-width: 11.4375rem;
 top: -1.3125rem;
 }
 .project_short_description.green_short_description {
-width: 96%;
+width: 90%;
+margin:auto;
 }
-.green_logo {
-left: -4rem;
-top: -3rem;
-}
-.logo_vertical.green_case_vertical {
-margin-left: -3rem;
-}
+
 .green_fourth_block {
 position: relative;
 height: auto;
@@ -1933,8 +1965,11 @@ top: 0;
 bottom: 0;
 left: 0;
 }
-.collapse.in {
-  padding-bottom: 2rem;  
+ul.nav.navbar-nav {
+  margin-top: 2rem; 
+}
+#transparent_nav{
+margin-top: 0;
 }
 .nav.navbar-nav{	
 min-height: 2rem;
@@ -2016,12 +2051,12 @@ min-width: 2.0625rem;
 background-color: transparent;
 }
 
-.team_block {
+/*.team_block {
 height:auto; 
 min-height: 28.625rem;
 background-image: url('../img/anout_team_mobile.jpg');
 background-size: cover;
-}
+}*/
 
 }
 @media screen and (max-width: 767px) and (orientation:landscape) { 
@@ -2034,15 +2069,36 @@ overflow: visible !important;
 button.navbar-toggle{
 display: none;
 }
+
+.slogan {
+    font-size: 2.4375rem;
+}
+
+
+
+.river_logo {
+    top: 2rem;
+}
+
+.text_logo_green {
+    font-size: 7rem;
+    letter-spacing: 0.3125rem;
+    line-height: 7.6875rem;
+}
+
+
+p.green_four_text.right {
+display: none;
+}
 .navbar-header {
 float: left;
 }
-.team_block {
+/*.team_block {
 height:auto; 
 min-height: 24.625rem;
 background-image: url('../img/anout_team_mobile.jpg');
 background-size: cover;
-}
+}*/
 .navbar-brand span{
 font-weight: normal;
 }
@@ -2144,7 +2200,7 @@ margin-top: 1rem;
 max-width: 69%;
 }
 h1.header__activity {
-margin-top: 4rem;
+/*margin-top: 4rem;*/
 font-size: 1.3rem;
 margin-left: 1rem;
 }
@@ -2188,7 +2244,7 @@ display: block!important;
     margin-bottom: 2.5rem;
 }
 h1.header__activity{
-top: 12rem;
+/*top: 12rem;*/
 left: -12.5rem;
 display: block;
 }
@@ -2209,10 +2265,10 @@ font-size: 1rem;
 .footer p.copywrite{
 font-size: 0.375rem;
 }
-.team_block{
+/*.team_block{
 height: 17.9375rem;
 box-sizing: border-box; 
-} 
+} */
 .text_logo_green{
 font-size: 3.125rem;
 letter-spacing: 0.25rem;

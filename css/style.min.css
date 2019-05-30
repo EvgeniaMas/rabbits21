@@ -250,12 +250,9 @@ display: block;
 cursor: pointer;
 transition: all 300ms ease-out;
 }
-
-
 .main_page_navigation > .nav.navbar-nav > li > a{
 padding-top: 1rem;	
 }
-
 ul.nav.navbar-nav{
 margin-left: 5.375rem;
 }
@@ -279,15 +276,12 @@ display: block;
 height: 0.25rem;
 width: 36%;
 }
-
 span.underlined_menu.main_page{
 width: 26%;	
 }
-
 span.underlined_menu.about_page{
 width: 29%;	
 }
-
 span.underlined_menu.contacts_page{
 width: 23%;	
 }
@@ -379,7 +373,7 @@ background-color: #fff;
 }
 h1.header__activity{
 font-family: 'Avenir-Next-Bold';  
-margin-top: 8.4375rem;
+margin-top: 18vh;
 font-size: 3rem;
 text-align: left;
 margin-left: 10vw;
@@ -455,14 +449,22 @@ background-size: cover;
 }
 /*//about us*/
 .team_block{
-background-image: url('../img/about_team.jpg');
-background-position : bottom center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 46.1875rem;
-z-index: 7;
 position: relative;
 }
+
+.command_block{
+	display: block;
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	margin:auto;
+}
+
+.command_block_mobile{
+	display: none;
+}
+
+
 .white_container{
 width: 100%;
 margin:auto;
@@ -490,10 +492,6 @@ right: 0;
 left: 0;
 bottom: 0;
 margin:auto;
-/*background-image: url('../img/about_grey_bg.png');   
-background-size: contain;
-background-position: bottom 41% left;
-background-repeat: no-repeat;*/
 z-index: 9;
 }
 .about_content_block{
@@ -502,6 +500,13 @@ position: relative;
 z-index: 9;
 width: 75.7%;
 margin: auto;  
+}
+.slogan_container{
+	position: absolute;	
+	top:56%;
+	right: 0;
+	left: 0;
+	z-index: 7;
 }
 .slogan{
 font-family: 'Avenir-Next-Bold';
@@ -514,7 +519,6 @@ margin-top: 0;
 margin-bottom: 0; 
 }
 .slogan.slogan_left{
-padding-top: 35.7%;
 line-height: 3.875rem;
 }
 .slogan.slogan_right{
@@ -590,27 +594,19 @@ text-align: center;
 position: relative;
 z-index: 4;
 }
-
 .container-fluid.logos{
 position: relative;
 z-index: 23;
-/*background-color: red;*/
-/*min-height: 200px;*/
 margin-bottom: 3rem;
-
 }
-
 .logo_bg_about{
 position: absolute;
-bottom:0;
+bottom:7%;
 left: 5%;
 display: block;
 width: 85vw;
 z-index: 2;
 }
-
-
-
 .team_description_block{
 position: relative;
 z-index: 9;
@@ -730,7 +726,7 @@ width: 80%;
 margin-bottom: 0;
 }
 .vertical-tab-menu div.list-group>a{
-/*margin-bottom: 0;*/
+margin-bottom: 3rem;
 margin-left: 1rem;
 }
 .vertical-tab-menu div.list-group>a:first-child{
@@ -1391,8 +1387,12 @@ z-index:5;
 }
 
 .project_logo.green_case_logo{
-margin-top: 8.3125rem;
-/*margin-left: 2rem;*/
+margin-top: 0;
+margin-left: 0;
+}
+
+.logo_vertical.green_case_vertical{
+margin-left: -0.5rem;
 }
 
 .river_logo{
@@ -1429,7 +1429,7 @@ width: 76%;
 }
 
 .project_short_description.green_short_description{
-max-width: 41.5rem;
+max-width: 58.75rem;
 }
 
 
@@ -1568,10 +1568,9 @@ max-width: 29.375rem;
 margin-bottom: 0;
 }
 
-
-
-
-
+.fluger_project_description.river_padd_desc{
+	margin-bottom: -5rem;
+}
 /*pure project*/
 .pure_first_block{
 position: relative;
@@ -1604,10 +1603,6 @@ left:0;
 right: 0;
 z-index: 4;
 }
-
-
-
-
 img.pure_third_img{
 position: relative;
 z-index: 5;	
@@ -1660,7 +1655,7 @@ margin-top: 4.5625rem;
 img.pure_six_block_flower{
 position: absolute;
 top: -15.9375rem;
-right: 0;
+right: 3rem;
 z-index: 5;
 max-width: 22.8125rem;
 display: block;
@@ -1679,6 +1674,10 @@ left:0;
 right: 0;
 z-index: 4;
 }
+
+
+
+
 .pure_seven_block>img.pure_main_block_bg{
 width: 80%;
 margin:auto;
@@ -1696,19 +1695,18 @@ z-index: 5;
 max-width: 20.5625rem;
 display: block;
 }
+
 .pure_eight_block{
 position: relative;
 margin-bottom: 9.3125rem;
-
-background: url("../img/pure/eight_left_leaf.png") left /180px no-repeat,
-url("../img/pure/eight_leaf_right.png") right /180px no-repeat;
+background: url("../img/pure/eight_left_leaf.png") left /18.9375rem no-repeat,
+url("../img/pure/eight_leaf_right.png") right /21.0625rem no-repeat;
 }
+
 .pure_eight_block>div.pure_dark_grey_bg{
 top: 58%;
 height: 42%;
 }
-
-
 
 /*флюгер */
 img.fluger_logo{
@@ -1730,17 +1728,13 @@ background-color: #f6f6f8;
 .fluger_second_block{
 position: relative;
 }
-
 .container.river_grey_bg{
 position: relative;
 }
-
-
-
 .fluger_grey_bg{
 position: absolute;
-height: 20%;
-min-height: 2rem;
+height: 4rem;
+/*min-height: 2rem;*/
 top: 0;
 right: 0;
 left: 0;
@@ -1817,27 +1811,16 @@ position: relative;
 background-color: #f6f6f8;
 padding-top: 8.3125rem;
 padding-top: 3rem;
-
 }
 .green_logo {
-width: 0; 
-height: 0;
-border: 8.5rem solid transparent;
-border-bottom-color: #87985d;
-position: absolute; 
-left: 2.4375rem;
-top: 0rem;
+display: block;
+max-width: 15.625rem;
+position: absolute;
+top: 1.25rem;
+left: 1.4375rem;
+z-index: 2;
 }
-.green_logo:after {
-content: "";
-width: 0; 
-height: 0;
-position: absolute; 
-left: -8.5rem; 
-top: 8.5rem;
-border: 8.5rem solid transparent;
-border-top-color: #87985d;
-}
+
 .green_second_block{
 position: relative;
 }
@@ -2203,7 +2186,5 @@ overflow: hidden;
 position: relative;
 z-index: 22;
 }
-
-
 
 

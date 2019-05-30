@@ -27,7 +27,7 @@
          <img class="white_black_logo" src="img/logo_moble.png" alt="21Rabbits"><span>21Rabbits</span>
       </a> 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul  class="nav navbar-nav">
             <li class="menus">
               <a class="first_point" href="index.html">Главная</a>   
             </li>
@@ -49,9 +49,10 @@
   </div>
 </header>
 <div id ="about_page_wrapper" class="wrapper">
-<div class="grey_bg"></div>
  <div class="container-fluid team_block">
-  <div class="container">
+  <img class="command_block" src="img/about_team.jpg" alt="Команда">
+   <img class="command_block_mobile" src="img/about_team_mobile.jpg" alt="Команда">
+  <div class="container slogan_container">
     <div class="col-md-12">
       <div class="col-md-7 col-xs-12">
         <p class="slogan slogan_left">Стратегия 21 века</p>
@@ -70,6 +71,7 @@
      </div>
   </div>
 <div class="container-fluid">
+  <div class="grey_bg"></div>
 <div class="container white_container">
 <div class="grey_block"></div>
    <div class="about_content_block"> 
@@ -93,7 +95,6 @@
      <p class="text_logo_green">21Rabbits</p>
       <img class="logo_bg_about" src="img/about_grey_bg.png" alt="Фон логотипа">
   </div>
-<!-- </div> -->
  <div class="col-md-12 team_description_block">
     <p class="team_description_text top_description">Это высококлассные специалисты, для которых  сложные проекты - новый вызов приложить все свои усилия, применить таланты и мастерство. С нами Вы можете рассчитывать на современный и эффективный дизайн, трендовые методы в создании веб-сайтов, лендингов и мобильных приложений. </p>
     <h2 class="team_special">Для Вас у нашей команды всегда готов особый подход </h2>
@@ -118,16 +119,17 @@
 
 <script src="js/juery.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/swipe.js"></script>
 <script src="js/index.js"></script>
 <script>
 $(document).ready(function() {
      var mql = window.matchMedia("(orientation: portrait)");
    if (document.documentElement.clientWidth<767){    
-       if(mql.matches) {
+       if(mql.matches) {  
        $('.wrapper').css('padding-top', 0);
      }
-     else{       
-       $('.wrapper').css('padding-top', margin_wrapper);       
+     else{         
+       $('.wrapper').css('padding-top', margin_wrapper);
      }
    }
    });
