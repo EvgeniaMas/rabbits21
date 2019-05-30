@@ -1348,10 +1348,7 @@ nav.navbar.navbar-default.mobile_grey
 background-color: #f8f8f8;
 min-height: 5rem!important;
 }
-header{
-	min-height: 7rem;
-	background-color: pink;
-}
+
 .contacts_form_submit.service_form{
 margin-top: 1rem;
 }
