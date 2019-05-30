@@ -212,6 +212,7 @@ z-index: 5;
 .navbar.navbar-default{
 max-width: 120rem;
 margin: auto;	
+
 }
 
 .logo_vertical_cover_desktop{
@@ -386,7 +387,6 @@ margin: auto;
 }
 header.main_page{
 background-color:transparent;
-padding-top: 1rem;
 }
 
 #project_page header{

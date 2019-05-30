@@ -1010,6 +1010,7 @@ fieldset[disabled] .checkbox label {
 }
 .collapse.in {
   display: block;
+  
 }
 tr.collapse.in {
   display: table-row;
