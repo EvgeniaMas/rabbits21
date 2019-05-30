@@ -11,14 +11,10 @@ padding-top: 1.25rem;
 .project_logo_cover_desktop{
 font-size: 4rem;	
 }
-
-
 .pure_eight_block{
 background: url("../img/pure/eight_left_leaf.png") left /14.9375rem no-repeat,
 url("../img/pure/eight_leaf_right.png") right /16.0625rem no-repeat;
 }
-
-
 .fluger_project_description.river_padd_desc{
 margin-bottom: -3rem;
 }
@@ -526,6 +522,8 @@ max-width: 23.75rem;
 opacity: 0;
 }
 
+
+
 .slogan_container{
 	position: absolute;	
 	top:49%;
@@ -986,6 +984,18 @@ min-height: 16rem;
 div.project_slider {
     margin-top: 30%;
 }
+
+h2.page_headline.take_design {
+    font-size: 2.15rem;
+    line-height: 2.4625rem;
+}
+
+.design_sell{
+display: none;
+}
+
+
+
 .chat_box{
 top: 29.9375rem;
 right: 3rem;
