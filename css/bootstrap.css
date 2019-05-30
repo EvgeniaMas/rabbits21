@@ -58,13 +58,14 @@ a:hover {
   .container {
     width: 90vw;
     max-width: 109.25rem;
-    min-width: 18.75rem;
+    min-width: 23.4375rem;
 }
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
   max-width: 120rem;
+  min-width: 23.4375rem;
 }
 .row {
   margin-left: -15px;

@@ -1225,13 +1225,9 @@ margin-top: 4rem;
 margin-right: 0;
 position: relative;
 }
-
-
 .nav.navbar-nav > li > .first_point{
 margin-top: 6.5rem;
 }
-
-
 .nav.navbar-nav > li > a.active_page:after {
 content: '';
 display: inline-block;
@@ -1265,8 +1261,15 @@ min-width: 100vw;
 height: auto;
 position: relative;
 z-index: 89;
-background-color: #f8f8f8;
+background-color: #fff;
 }
+
+
+.main_page_navigation>ul.nav.navbar-nav{
+	background-color: transparent;
+}
+
+
 .navbar-collapse {
 	min-width: 100vw;
 	margin:auto;
@@ -2295,16 +2298,27 @@ left: 0.125rem;
 
 
 @media screen and (max-width: 300px) {
-
-html, body{
-	min-height: 768px;
-	overflow: visible;
-	min-width: 300px;
+button.navbar-toggle{
+display: block!important;
 }
-
-	
-html{
-overflow-x: visible;
+.navbar.navbar-default {
+    max-width: 220px;
+    margin-left: 0;    
+}
+html, body, .wrapper
+{
+	min-height: 35.5rem;
+	overflow-x: visible;
+	overflow-y: visible;
+	min-width: 23.4375rem;
+}
+.wrapper#main_page {
+	min-height: 50.75rem;
+}
+#main_page {
+    background-image: url('../img/main768.jpg');
+    background-size: cover;
+    background-position: bottom center;
 }
 img.black_white_logo{
 height: 2.4375rem;
@@ -2315,7 +2329,6 @@ margin-left: 1rem;
 font-family:"Avenir-Heavy";	
 font-size: 1rem;
 }
-
 .footer p.studio,
 .footer p.copywrite{
 font-size: 0.375rem;
