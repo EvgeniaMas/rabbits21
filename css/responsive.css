@@ -2226,7 +2226,25 @@ min-width: 2.0625rem;
 display: none;
 }*/
 
-html, body, .wrapper
+
+.nav.navbar-nav > li > a {
+    font-size: 1rem;
+    line-height: 1.0625rem;
+    margin-top: 1rem;
+    margin-right: 0;
+    position: relative;
+}
+
+
+#main_page {
+   
+    background-position: center;
+    
+}
+
+
+
+/*html, body, .wrapper
 {
 	min-height: 35.5rem;
 	overflow-x: visible;
@@ -2236,7 +2254,7 @@ html, body, .wrapper
 .wrapper#main_page {
 	min-height: 50.75rem;
 	overflow-y:visible;
-}
+}*/
 
 
 
