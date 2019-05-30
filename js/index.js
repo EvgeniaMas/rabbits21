@@ -43,17 +43,16 @@ $(".back_to_covers").click(function(){
            $(this).removeClass("active");           
     });
 
-    $('html, body').animate({scrollTop:0}, 300);
-    if(document.documentElement.clientWidth > 768) {
-     $('#project_page').css('overflow', 'hidden');
-     $('#mobiles_footer').css('display', 'none');
-     // $(".desktop_cover_wrapper").fadeIn(3000); 
+    $("html, body").animate({scrollTop:0}, 300);
+    if(document.documentElement.clientWidth > 767) {
+     $("#project_page").css("overflow", "hidden");
+     $("#mobiles_footer").css("display", "none");     
      $(".desktop_cover_wrapper").fadeIn(2000);    
          
      }
      else{
        $("#mobile_cases").show(2000); 
-       $('#project_page').css('overflow', 'visible');
+       $("#project_page").css("overflow", "visible");
         
      }   
 });
@@ -76,7 +75,8 @@ $('.multi-item-carousel .item').each(function(){
   
    $(document).ready(function() {
      var mql = window.matchMedia("(orientation: portrait)");
-   var margin_wrapper = $('header').height();    
+   var margin_wrapper = $('header').height(); 
+
    // alert(margin_header);
    var margin_footer = $('.footer').height(); 
     // alert(margin_wrapper);
@@ -87,16 +87,26 @@ $('.multi-item-carousel .item').each(function(){
     
     
     // $('.mobile_wrapper').css('margin-top', margin_wrapper);
-   
-    if(document.documentElement.clientWidth < 768 && mql==true) { 
-     
-     $('.team_block').css('padding-top', 0);
-    }
+   // console.log(mql.matches);
 
-    else{
+
+
+    // if(mql.matches && document.documentElement.clientWidth >768) { 
+     
+    //  // $('.team_block').css('padding-top', margin_wrapper);
+    // }
+
+    // else if(!mql.matches && document.documentElement.clientWidth >768){
+    //   alert("Маленький горизонталь");
+
+    //   $('.wrapper').css('padding-top', margin_wrapper);
+    // }
+
+    // else{
+    //   alert("Большой " + margin_wrapper)
+    //   $('.wrapper').css('padding-top', margin_wrapper);
       
-      $('.team_block').css('padding-top', 170);
-    }
+    // }
    });
 
 function relocate(){

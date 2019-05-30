@@ -517,7 +517,6 @@ margin-left: -4rem;
 line-height: 12rem;
 }
 }
-
 @media screen and (max-width: 1024px) { 
 img.projects_slides{
 max-width: 23.75rem;
@@ -549,10 +548,7 @@ width: 44%;
 background-image: url('../img/main1024.jpg');
 background-position: bottom center;
 }
-header{
-padding-top: 1.0625rem; 
-padding-bottom: 2.3125rem;  
-}
+
 h1.header__activity{
 font-size: 1.875rem;
 line-height: 2.5625rem;
@@ -583,7 +579,8 @@ height: 24.625rem;
 .team_description {
 font-size: 0.875rem;
 line-height: 1.125rem;
-max-width: 18.25rem;
+width: 18.25rem;
+max-width: 90%;
 margin-bottom: 1rem;
 }
 .team_description.right_position{
@@ -614,7 +611,8 @@ padding-top: 2.5rem;
 .team_description_text {
 font-size: 1rem;
 line-height: 1.3125rem;
-max-width: 43.875rem;
+width: 43.875rem;
+max-width: 69%;
 }
 .logo_bg_about {
 width: 95vw;
@@ -956,6 +954,15 @@ margin-top: 4rem;
 min-height: 16rem;
 }
 }
+
+
+@media screen and (max-width: 1024px) and (orientation: portrait) { 
+div.project_slider {
+    margin-top: 30%;
+}
+}
+
+
 @media screen and (max-width: 992px) { 
 img.projects_slides{
 max-width: 17rem;
@@ -1011,7 +1018,9 @@ header.main_page {
 padding-top: 0;
 }
 
-
+div.project_slider {
+    margin-top: 10%;
+}
 
 
 .navbar {
@@ -1128,11 +1137,6 @@ display: none;
 overflow-y: visible;
 background-image: none;
 background-color: #fff;
-}
-.team_block {
-height:auto; 
-min-height: 18rem;
-background-image: url('../img/anout_team_mobile.jpg');
 }
 .container-fluid.logos {
 min-height: 50px;
@@ -1897,18 +1901,15 @@ margin-bottom: 3.5rem;
 margin-right: 0;
 position: relative;
 }
-
 .nav.navbar-nav > li > a.first_point{
 margin-top: 3.5rem;
 }
-
-
-
-#project_page header{
+#project_page header,
+.page_of_contacts header,
+.page_of_service header
+{
 background-color: #f8f8f8;
 }
-
-
 .nav.navbar-nav > li > a.active_page:after {
 content: '';
 display: inline-block;
@@ -1933,18 +1934,13 @@ top: 0;
 bottom: 0;
 left: 0;
 }
-
 .collapse.in {
-  padding-bottom: 2rem;
-  
+  padding-bottom: 2rem;  
 }
-
 .nav.navbar-nav{	
 min-height: 2rem;
 height: auto;
 }
-
-
 br.breaks{
 display: block;
 }
@@ -2024,7 +2020,12 @@ min-width: 2.0625rem;
 background-color: transparent;
 }
 
-
+.team_block {
+height:auto; 
+min-height: 28.625rem;
+background-image: url('../img/anout_team_mobile.jpg');
+background-size: cover;
+}
 
 }
 @media screen and (max-width: 767px) and (orientation:landscape) { 
@@ -2039,6 +2040,12 @@ display: none;
 }
 .navbar-header {
 float: left;
+}
+.team_block {
+height:auto; 
+min-height: 24.625rem;
+background-image: url('../img/anout_team_mobile.jpg');
+background-size: cover;
 }
 .navbar-brand span{
 font-weight: normal;

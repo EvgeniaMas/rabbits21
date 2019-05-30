@@ -119,6 +119,20 @@
 <script src="js/juery.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/index.js"></script>
+<script>
+$(document).ready(function() {
+     var mql = window.matchMedia("(orientation: portrait)");
+   if (document.documentElement.clientWidth<767){    
+       if(mql.matches) {
+       $('.wrapper').css('padding-top', 0);
+     }
+     else{       
+       $('.wrapper').css('padding-top', margin_wrapper);       
+     }
+   }
+   });
+
+</script>
 </body>
 </html>
 

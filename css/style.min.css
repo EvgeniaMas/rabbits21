@@ -1244,10 +1244,10 @@ padding-bottom: 1rem;
 font-size: 1rem;
 line-height: 1.25rem;
 font-family: 'Montserrat-Light';  
--moz-transform: translateY(-3.5rem);
--ms-transform: translateY(-3.5rem);
--webkit-transform: translateY(-3.5rem);
-transform: translateY(-3.5rem);
+-moz-transform: translateY(-3rem);
+-ms-transform: translateY(-3rem);
+-webkit-transform: translateY(-3rem);
+transform: translateY(-3rem);
 transition: all 0.3s;
 max-height: 1rem;
 text-align: left;
@@ -1270,7 +1270,7 @@ label input:focus {
 max-width: 100%;
 
 }
-label input:focus + .label-text {
+label input:valid + .label-text {
 color: #000;
 font-family: 'Montserrat-Light';  
 font-size: 13px;
