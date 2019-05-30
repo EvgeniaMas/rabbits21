@@ -76,7 +76,7 @@ $('.multi-item-carousel .item').each(function(){
    $(document).ready(function() {
      var mql = window.matchMedia("(orientation: portrait)");
    var margin_wrapper = $('header').height(); 
-
+   // alert(margin_wrapper);
    // alert(margin_header);
    var margin_footer = $('.footer').height(); 
     // alert(margin_wrapper);
@@ -241,7 +241,9 @@ $('.backtotop').click(function(){
 });
 $(".desktop_control").click(function(e){ 
    var a = $(".item.cover_desktop.active");
-    $(a).css("opacity", 0.12);
+    $(a).css("opacity", 0.08);
+    $(a).css("opacity", 0.05);
+    $(a).css("opacity", 0.01);
     var frase = $(a).find(".desktop_cover_title");
      $(frase).each(function(){
            $(this).css("display", "none");          

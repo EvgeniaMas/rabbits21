@@ -191,9 +191,8 @@ img.projects_slides:hover{
 -webkit-transform: scale(0.9);
 transform: scale(0.9);	
 }
-
 div.project_slider{
-margin-top: 10%;
+margin-top: 1%;
 }
 div.item.active {
 display: block;
@@ -212,9 +211,8 @@ z-index: 5;
 .navbar.navbar-default{
 max-width: 120rem;
 margin: auto;	
-
+padding-bottom: 3.0625rem;
 }
-
 .logo_vertical_cover_desktop{
 font-family: 'Avenir-Heavy';
 font-size: 1.25rem;
@@ -230,7 +228,6 @@ height: 5.375rem;
 width: 5.375rem;
 }
 #desktop_covers_manage{
-/*margin-top:  3.4375rem;*/ 
 padding-bottom: 1rem;
 width: 82.3%;
 }
@@ -242,9 +239,6 @@ border: none;
 position: relative;
 z-index: 101;
 }
-/*.navbar-nav {
-margin: 2.0625rem -15px 0 -15px;
-}*/
 .nav.navbar-nav > li > a {
 font-family: 'Avenir-Heavy';
 font-size: 1.5rem;
@@ -257,11 +251,14 @@ cursor: pointer;
 transition: all 300ms ease-out;
 }
 
+
+.main_page_navigation > .nav.navbar-nav > li > a{
+padding-top: 1rem;	
+}
+
 ul.nav.navbar-nav{
 margin-left: 5.375rem;
 }
-
-
 .nav.navbar-nav > li > a:hover{
 opacity: 0.5;  
 }
@@ -294,14 +291,9 @@ width: 29%;
 span.underlined_menu.contacts_page{
 width: 23%;	
 }
-
-
 span.underlined_menu.project_page{
 width: 23%;	
 }
-
-
-
 .nav.navbar-nav {
 float: none;
 text-align: center;
@@ -313,9 +305,6 @@ display: inline-block;
 span.mobile_menu_page{
 display: none;
 }
-/*.navbar.navbar-default.navbar-fixed-top{
-min-height: 96px;
-}*/
 .footer{
 background-color: #2f3b44;
 max-height: 8.125rem;
@@ -370,10 +359,8 @@ a.carousel-control:hover{
 border-color: #02eeda;
 }
 .nav.navbar-nav > li > a {
-
 padding-top: 2.0625rem; 
 }
-
 header{
 background-color: #fff;
 position: fixed;
@@ -381,22 +368,18 @@ right: 0;
 left: 0;
 top: 0;
 z-index: 99;
-
 max-width: 120rem;
 margin: auto; 
 }
 header.main_page{
 background-color:transparent;
 }
-
 #project_page header{
 background-color: #fff;
-/*min-height: 9.1875rem;*/
 }
 h1.header__activity{
 font-family: 'Avenir-Next-Bold';  
-/*margin-top: 27vh;*/
-margin-top: 11.125rem;
+margin-top: 8.4375rem;
 font-size: 3rem;
 text-align: left;
 margin-left: 10vw;
@@ -433,8 +416,8 @@ background-position: center;
 }
 .chat_box{
 position: absolute;
-right: 8.375rem;
-top: 11.125rem;
+right: 9.375rem;
+top: 21.125rem;
 }
 .chat_box_content{
 position: relative;
@@ -458,13 +441,9 @@ position: relative;
 box-sizing: border-box;
 z-index: 2;
 }
-
 .wrapper#main_page{
 min-height: 100vh;
 }
-
-
-
 #mobile_service_slider{
 min-height: 100%;
 position: relative;
@@ -1087,7 +1066,6 @@ margin:auto;
 border-radius: 0;
 padding: 0.6rem;
 box-sizing: border-box;
-min-width: 200px;
 width: 96%;
 outline: none;
 color:#000;
@@ -1761,15 +1739,14 @@ position: relative;
 
 .fluger_grey_bg{
 position: absolute;
-height: 30%;
-min-height: 200px;
+height: 20%;
+min-height: 2rem;
 top: 0;
 right: 0;
 left: 0;
 width: 100%;
 background-color: #f6f6f8;
 z-index: 1;
-display: none;
 }
 
 
