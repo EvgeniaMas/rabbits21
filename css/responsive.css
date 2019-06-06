@@ -2,14 +2,14 @@
 img.projects_slides{
 max-width: 28.6875rem;
 }
-.navbar.navbar-default{
-padding-bottom: 1.875rem;
-}
 .nav.navbar-nav > li > a {
 padding-top: 1.25rem; 
 }
 .project_logo_cover_desktop{
 font-size: 4rem;	
+}
+.green_logo {
+    top: -3rem;
 }
 .pure_eight_block{
 background: url("../img/pure/eight_left_leaf.png") left /14.9375rem no-repeat,
@@ -22,6 +22,7 @@ img.black_white_logo{
 height: 3.875rem;
 width: 3.875rem;
 }
+
 .navbar-brand> span { 
 font-size: 0.375rem;
 letter-spacing: 0.0425rem;
@@ -45,32 +46,18 @@ margin-left: 0;
 margin-right: 0;
 margin:auto;
 }
-span.underlined_menu.main_page{
-width: 33%;
-}
-span.underlined_menu.service_page{
-width: 19%;
-}
-span.underlined_menu.about_page{
-width: 35%;
-}
-span.underlined_menu.contacts_page{
-width: 21%;
-}
-span.underlined_menu.service_page{
-width: 47%;	
-}
 .footer p.studio,
 .footer p.copywrite{
 font-size: 0.875rem;
 }
-.wrapper#main_page{
+#main_page{
 background-size:contain;
 }
 #project_page header{
 min-height: auto;
 }
 h1.header__activity{
+top: 33.2%;	
 font-size: 2.25rem;
 line-height: 3.0625rem;
 }
@@ -79,8 +66,11 @@ font-size: 4.5rem;
 line-height: 4.875rem;
 }
 .chat_box{
-top: 13.4375rem;	
-right: 4.625rem;
+top: 35.2%;	
+right: 5.4vw;
+}
+.chat_box_content{
+width: 19.75rem;	
 }
 .rabbit_message {
 color: #000;
@@ -104,9 +94,10 @@ font-size: 1rem;
 line-height: 1;
 margin-bottom: 0.75rem;
 letter-spacing: normal;
+min-height:2.75rem;
 }
 .slogan{
-font-size: 4.5rem;
+font-size: 5.5rem;
 }
 .team_description {
 font-size: 1rem;
@@ -115,6 +106,7 @@ max-width: 25.125rem;
 }
 .text_logo_green{
 font-size: 13.125rem;
+line-height: 13.125rem;
 }
 .link_to_projects{
 padding-top: 4rem;
@@ -222,7 +214,6 @@ margin-left: 11.9%;
 padding-top: 4.875rem;
 height: auto;
 }
-
 .project_short_description.river_short_desc{
 max-width: 29.375rem;
 padding-bottom: 7.375rem;
@@ -237,7 +228,6 @@ margin-bottom: 7.375rem;
 .slider_content_part{
 max-width: 77.625rem;
 }
-
 .pure_first_block {   
 padding-top: 4.875rem;
 max-height: 28.375rem;    
@@ -281,6 +271,11 @@ position: relative;
 margin-top: 5.875rem;
 max-width: 35.75rem;
 }
+.white_text_container {
+margin-top: 0;
+}
+
+
 #carousel_management.desktop_management {
 min-height: 10rem;
 width: 84%;
@@ -337,10 +332,14 @@ top: 42%;
 .pale_green_second_leaf {
 display: block;
 position: absolute;
-right: 20%;
-top: 97%;    
+right: 10%;
+top: -2rem;    
 z-index: 7;
 max-height: 7.1875rem;
+}
+.green_third_block {
+padding-bottom: 2rem;
+z-index: 1;
 }
 .third_block_first_item {
 margin-top: 3.3125rem;
@@ -356,6 +355,11 @@ clear: both;
 position: relative;
 z-index: 8;
 }
+
+img.pale_green_second_leaf{
+display: block;
+}
+
 .green_main_page_img.third_block_second_item {
 margin-left: 3.875rem;
 max-width: 68.1875rem;
@@ -462,8 +466,7 @@ margin-left: 13.375rem;
 left: 0;
 }
 .multi-item-carousel> div.carousel-inner{
-margin-top: 2rem;
-min-height: 20rem;
+z-index: 107;
 }
 .col-xs-4.item_block:first-child>img {
 left: -60%;
@@ -478,20 +481,29 @@ top: 6.125rem;
 top: 6.125rem;
 }
 }
-@media screen and (max-width: 1400px) { 
-.chat_box{
-right: 2rem;
+@media screen and (max-width: 1700px) {
+img.pale_bg4{
+top: 32%;
+width: 15.5rem;
 }
+}
+@media screen and (max-width: 1400px) { 
 .text_logo_green{
 font-size: 11.125rem;
+line-height: 11.125rem;
 }
-.slogan.slogan_right {
-text-align: center;
-margin-left: 2vw;
+
+.logo_bg_about {
+    bottom: 15%;
+
 }
+
 .marked_text {
 font-size: 14rem;
 line-height: 14rem;
+}
+.slogan{
+font-size: 5rem;
 }
 }
 @media screen and (max-width: 1300px) { 
@@ -500,10 +512,14 @@ max-width: 26rem;
 }
 .text_logo_green{
 font-size: 11.3rem;
+line-height: 11.3rem;
 }
 .container-fluid.logos {
 min-height: 150px;
 margin-bottom: 1rem;
+}
+.slogan{
+font-size: 4.5rem;
 }
 }
 @media screen and (max-width: 1200px) { 
@@ -515,37 +531,40 @@ line-height: 12rem;
 }
 }
 @media screen and (max-width: 1024px) { 
+.vertical-tab-container{
+min-height: 22rem;
+}
 img.projects_slides{
 max-width: 23.75rem;
 }
-.fluger_grey_bg{
-opacity: 0;
+.logo_vertical{
+font-size: 0.875rem;
+margin-top: 1rem;
+}
+.nav.navbar-nav {
+padding-bottom: 1.5rem;
 }
 
-
-
+span.underlined_menu{
+width: 2.125rem;
+}
 .slogan_container{
-	position: absolute;	
-	top:49%;
+position: absolute;	
+top:49%;
 }
-
-
-
 .pure_eight_block{
 position: relative;
 margin-bottom: 9.3125rem;
 background: url("../img/pure/eight_left_leaf.png") left /11rem no-repeat,
 url("../img/pure/eight_leaf_right.png") right /11rem no-repeat;
 }
-
-
 .fluger_project_description.river_padd_desc{
 margin-bottom: 0;
 }
 .green_logo {
 max-width: 10.3125rem;
-top: 1.9375rem;
-left: 2rem;
+top: -1rem;
+left: -5.15625rem;
 }
 img.black_white_logo{
 height: 2.9375rem;
@@ -565,13 +584,7 @@ font-size: 0.875rem;
 margin-right: 1.1875rem;
 padding-top: 1.0625rem;
 }
-span.underlined_menu.main_page {
-width: 48%;
-}
-span.underlined_menu.contacts_page {
-width: 44%;
-}
-.wrapper#main_page{
+#main_page{
 background-image: url('../img/main1024.jpg');
 background-position: bottom center;
 }
@@ -589,14 +602,15 @@ color: #000;
 font-size: 0.75rem;
 line-height: 1.125rem;
 }
+h1.header__activity{
+top: 16.9375rem;
+}
 .chat_box{
 top: 16.9375rem;
-right: 2.9375rem;
+right: 4.6vw;
 }
-.chat_box_content {
-position: relative;
-width: 14.3125rem;
-height: 2.5rem;
+.chat_box_content{
+width: 14.3125rem;	
 }
 .team_description {
 font-size: 0.875rem;
@@ -609,9 +623,6 @@ max-width: 95%;
 }
 .team_description.right_position{
 width: 19.875rem;
-}
-span.underlined_menu.project_page {
-width: 50%;
 }
 .slogan{
 font-size: 3.4375rem; 
@@ -641,16 +652,19 @@ max-width: 69%;
 .logo_bg_about {
 width: 95vw;
 }
-span.underlined_menu.about_page {
-width: 57%;
-}
 .slogan.slogan_right {
-text-align: center;
+text-align: right;
 margin-left: 4vw;
 line-height: 3.4375rem;
 }
-.schema_block {
-height: 27rem;
+.stage.six_stage{
+float: right;
+margin-top: 3.625rem;
+margin-right: 6.9vw;
+}
+.stage.seven_stage{
+float: right;
+margin-right: 0;
 }
 a.list-group-item{
 margin-bottom: 0;
@@ -669,12 +683,12 @@ line-height: 3.4375rem;
 width: 95%;
 }
 p.sub_text{
-
 width: auto; 
 }
 .service_page_headline {
 font-size: 2.25rem;
 line-height: 2.5625rem;
+letter-spacing: 0;
 }
 p.service_stage_title {
 font-size: 0.75rem;
@@ -776,6 +790,8 @@ margin-bottom: 2rem;
 }
 p.close_full_slider {
 font-size: 1.125rem;
+top: 6rem;
+right: 2.6875rem;
 }
 .river_third_text {
 font-size: 0.875rem;
@@ -912,7 +928,7 @@ max-height: 9.5rem;
 }
 .pale_green_second_leaf {
 right: 10%;
-top: 94%;
+top: 0;
 max-height: 5.375rem;
 }
 .container.order_block.slider_down_container{
@@ -932,11 +948,12 @@ min-height: 7.0625rem;
 img.green_main_page_img.third_block_third_item {
 margin-right: 2.875rem;
 margin-top: 3.3125rem;
+margin-bottom: 1rem;
 max-width: 51rem;
 width: 100%;
 }
 img.pale_bg4 {
-top: 29.5%;
+top: 24.5%;
 width: 11.9375rem;
 }
 p.green_four_text, .white_half_text {
@@ -945,7 +962,7 @@ line-height: 1.25rem;
 width: 23.25rem;
 }
 .white_half {
-width: 100%;
+display: inline-block;
 }
 img.green_fourth_block_bg {
 max-width: 58.0625rem;
@@ -974,56 +991,59 @@ img.green_fifth_block_grid2 {
 width: 5.6875rem;
 }
 .multi-item-carousel> div.carousel-inner {
-margin-top: 4rem;
-min-height: 16rem;
 }
 }
-
-
 @media screen and (max-width: 1024px) and (orientation: portrait) { 
-div.project_slider {
-    margin-top: 30%;
+.schema_block {
+height: 22rem;
+background-size: 70%;
+background-position: center center;
+}
+.list-group-item.text-center.double_line{
+line-height: 1.5rem;	
 }
 
+br.about_team_break{
+display: none;
+}
 h2.page_headline.take_design {
-    font-size: 2.15rem;
-    line-height: 2.4625rem;
+font-size: 2.15rem;
+line-height: 2.4625rem;
 }
-
 .design_sell{
 display: none;
 }
-
-
-
 .chat_box{
 top: 29.9375rem;
-right: 3rem;
 }
 h1.header__activity {
- margin-left: 1rem;
+margin-left: 1rem;
 }
 .logo_bg_about {
-    bottom: 34%;
+bottom: 34%;
 }
 .vertical-tab-menu div.list-group>a {
-    margin-bottom: 1rem;
+margin-bottom: 1rem;
 }
-
 .project_short_description.river_short_desc {
-    padding-bottom: 0;
+padding-bottom: 0;
 }
 }
-
-
+@media screen and (max-width: 1024px) and (orientation: landscape) { 
+.schema_block {
+height: 32rem;
+background-size: 85%;
+background-position: top center;
+}
+}
 @media screen and (max-width: 992px) { 
 img.projects_slides{
-max-width: 17rem;
+max-width: 20rem;
 }
 .project_logo_cover_desktop {
 font-size: 2rem;
 }
-.wrapper#main_page{
+#main_page{
 background-image: url('../img/main1024.jpg');
 background-position : center;
 background-size: cover;
@@ -1058,6 +1078,31 @@ width: 70%;
 header.main_page {
 padding-top: 0;
 }
+.nav.navbar-nav {
+padding-bottom: 0;
+}
+
+.fluger_grey_bg {
+    height: 4rem;
+}
+
+
+
+#river_case_grey.container.river_grey_bg{
+width: 100%;
+min-height: 1rem;
+}
+.service_form_block{
+	margin-top: 3rem;
+}
+.green_fourth_block{
+position: relative;
+margin-top: 1.5rem;
+margin-bottom: 1.5rem;
+}
+#sent_message{
+font-size: 1.5rem;
+}
 .grey_back_cover{
 opacity: 0;
 }
@@ -1070,24 +1115,21 @@ left: -2rem;
 width: 100vw;
 }
 .project_short_description.green_short_description {
-    margin-top: 1rem;
-    width: 90vw;    
+margin-top: 1rem;
+width: 90vw;    
 }
 .navbar.navbar-default {
-    padding-bottom: 0;
+padding-bottom: 0;
 }
 .command_block{
-	display: none;
+display: none;
 }
 .command_block_mobile{
-    display: block;
-	position: relative;
-	z-index: 5;
-	width: 100%;
-	margin:auto;
-}
-div.project_slider {
-    margin-top: 10%;
+display: block;
+position: relative;
+z-index: 5;
+width: 100%;
+margin:auto;
 }
 .navbar {
 position: relative;
@@ -1161,7 +1203,7 @@ padding-right: 0;
 padding-left: 0;
 }
 ul.navbar-nav.transparent_menu{
-background-color: transparent;!important;	
+background-color: transparent!important;	
 }
 span.underlined_menu{
 display: none;
@@ -1207,12 +1249,12 @@ body#service_page
 background-color: #f6f6f8;
 }
 .about_content_block{
-width: 82%;
+width: 92%;
 }
 .text_logo_green{
 font-size: 3.625rem;
 letter-spacing: 0.3125rem;
-line-height: 4.6875rem;
+line-height: 3.625rem;
 }
 h2.team_special {
 font-family: 'Avenir-Next-Bold';
@@ -1242,9 +1284,6 @@ margin-top: 2rem;
 font-size: 0.8rem; 
 margin-bottom: 1.3125rem;
 }
-.empty_slogan{
-display: none;
-}
 .slogan{
 font-size: 1.75rem; 
 line-height: 2.1875rem;
@@ -1258,28 +1297,25 @@ text-align: right;
 margin-left: 0;
 line-height: 2.1875rem;
 }
-
 .slogan.slogan_left {
 line-height: 2.1875rem;
 }
-
 .slogan_container{
-	position: absolute;	
-	top:63%;
-	right: 0;
-	left: 0;
-	left: 0;
-	z-index: 7;
-	width: 70%;
+position: absolute;	
+top:59%;
+right: 0;
+left: 0;
+left: 0;
+z-index: 7;
+width: 70%;
 }
-
-
 .col-md-12.team_description_block{
 width: 100vw;
 }
 img.logo_bg_about{
 max-height: 160px;
 left: 0;
+bottom: 1%;
 }
 .link_to_projects{
 padding-top: 3.5rem;
@@ -1300,7 +1336,6 @@ hr.order_button_lines.right_line.contacts_lines,
 {
 display: none;
 }
-
 hr.order_button_lines{
 width: 80%;
 }
@@ -1358,7 +1393,6 @@ nav.navbar.navbar-default.mobile_grey
 background-color: #f8f8f8;
 min-height: 5rem!important;
 }
-
 .contacts_form_submit.service_form{
 margin-top: 1rem;
 }
@@ -1404,14 +1438,16 @@ width: 90%;
 }
 .contacts_information{
 min-height: 60px;
-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
 }
 hr.contact_data_line_right,
 hr.contact_data_line_left {
 display: inline-block;
 width: 2rem;
 height: 2px;    
-box-sizing: border-box;    
+-webkit-box-sizing: border-box;    
+        box-sizing: border-box;    
 }
 hr.contact_data_line_right,
 hr.contact_data_line_left{
@@ -1521,7 +1557,6 @@ z-index: 9;
 .river_fourth_block{
 margin-bottom: 0;
 }
-
 img.pure_logo{
 max-height:13.1875rem;	
 }
@@ -1563,10 +1598,6 @@ display: none;
 }
 .col-md-4.col-xs-5.service_sends{
 width: 100%;
-}
-.service_form_block{
-min-height: 3rem;
-margin-bottom: 3rem;
 }
 #service_mobile_tabs{
 width: 90%;
@@ -1612,7 +1643,6 @@ font-size: 2.25rem;
 font-size: 2.25rem;
 line-height: 4.9375rem;
 }
-
 .green_fifth_block {
 position: relative;
 min-height: auto;
@@ -1666,6 +1696,7 @@ margin-bottom:1rem;
 .manage_container.mobile_cover_manage{
 width: 50%;
 min-height: 3rem;
+margin-top: 3rem;
 margin-bottom: 3rem;
 }
 #mobile_cover_footer{
@@ -1749,7 +1780,7 @@ height: 90%;
 top: -2rem;
 }
 img.pale_bg4 {
-opacity: 0;
+display: none;
 }
 img.green_fifth_block_grid2 {
 display: none;
@@ -1781,9 +1812,6 @@ z-index: 2;
 .white_bg_block{
 position: relative;
 background-color: #eff7e5;
-}
-.white_half_text {
-display: none;
 }
 hr.carousel_full_line.order_button_lines.right_line,
 hr.carousel_full_line.order_button_lines.left_line
@@ -1834,8 +1862,7 @@ background-size: contain;
 background-position: right top;
 background-repeat: no-repeat;
 }
-.white_half_text_mobile {
-display: block;
+.white_half_text {
 font-family:"Montserrat-Light";
 color: #000;
 font-size: 1rem;
@@ -1861,12 +1888,13 @@ top: -1.3125rem;
 .project_short_description.green_short_description {
 width: 90%;
 margin:auto;
+margin-bottom: 0.5rem;
 }
-
 .green_fourth_block {
 position: relative;
 height: auto;
 margin-bottom: 1rem;
+background-color: #fff; 
 }
 .green_fifth_block {
 position: relative;
@@ -1886,7 +1914,11 @@ left: 0;
 z-index: 1;
 }
 .container.order_block.slider_down_container {
-margin-top: 3rem;
+background-color: #f9f9fa;
+display: flex;
+align-items: center;
+min-height: 6rem;
+position: relative;
 }
 img.green_fifth_block_grid{
 display: none;
@@ -1925,13 +1957,54 @@ top: 0.1625rem;
 left: 0.125rem;
 z-index: 105;
 }
+.white_half_text,
+p.green_four_text.left{
+display: block;
+    font-family: "Montserrat-Light";
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    max-width: 21.25rem;
+    margin-top: 2.125rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;	
+    position: relative;
+    z-index: 7;
+}
+p.green_four_text.left{
+	margin-top: 0;
+	width: 95vw;
+}
+.white_half_text{
+max-width: 88%;
+margin-left: 0;
+margin-top: 0;
+}
+img.pale_green_second_leaf_mobile{
+display: block;
+position: absolute;
+top:0;
+right: 0;
+max-width: 3.1875rem;
+z-index: 1;
+}
+img.pale_green_second_leaf{
+display: none;
+}
+.container.river_first_block,
+.container.fluger_first_block,
+.container.green_first_block {
+padding: 0;
+margin:0;
+width: 100vw;
+}
+
 }
 @media screen and (max-width: 767px) and (orientation: portrait) { 
 .footer p.studio,
 .footer p.copywrite{
 font-size: 0.375rem;
 }
-
 .nav.navbar-nav > li > a{
 font-size: 1.5rem;
 line-height:2.0625rem;
@@ -1973,7 +2046,7 @@ bottom: 0;
 left: 0;
 }
 ul.nav.navbar-nav {
-  margin-top: 2rem; 
+margin-top: 2rem; 
 }
 #transparent_nav{
 margin-top: 0;
@@ -1991,12 +2064,11 @@ margin-right: 0.2rem;
 .footer p.studio{
 margin-left: 0.2rem;
 }
-.wrapper#main_page{
+#main_page{
 background-image: url('../img/main768.jpg');
 background-size: cover;
 background-position:center;
 }
-
 h1.header__activity{
 font-size: 3rem;
 text-align: left;
@@ -2008,10 +2080,10 @@ display: inline-block;
 -webkit-transform: rotate(-90deg);
 -ms-transform: rotate(-90deg);
 transform: rotate(-90deg);
-margin-top: 0;
-top: 15rem;
+margin: 0;
+padding: 0;
 min-width: 28.75rem;
-right: 0rem;
+left: -8rem;
 display: block;
 }
 h1.header__activity span{
@@ -2028,9 +2100,15 @@ background-size: contain;
 }
 .text_logo_green{
 font-size: 3.125rem;
+line-height: 3.125rem;
 }
 .slogan.slogan_left {
 padding-top: 0;
+padding-left: 1rem;
+}
+.slogan.slogan_right {
+padding-top: 0;
+padding-right: 1rem;
 }
 .container.river_first_block,
 .container.fluger_first_block,
@@ -2058,13 +2136,6 @@ min-width: 2.0625rem;
 background-color: transparent;
 }
 
-/*.team_block {
-height:auto; 
-min-height: 28.625rem;
-background-image: url('../img/anout_team_mobile.jpg');
-background-size: cover;
-}*/
-
 }
 @media screen and (max-width: 767px) and (orientation:landscape) { 
 .navbar-collapse.collapse {
@@ -2077,35 +2148,76 @@ button.navbar-toggle{
 display: none;
 }
 
-.slogan {
-    font-size: 2.4375rem;
+.mobile_cover_title {
+    top: 0;
+    left: 8%;
+    padding-left: 8%;
 }
 
+.pure_eight_block {
+    position: relative;
+    background: url(../img/pure/eight_left_leaf.png) left /110px no-repeat,
+ url(../img/pure/eight_leaf_right.png) right /110px no-repeat;
+}
+
+
+.command_block_mobile{
+display: block;
+position: relative;
+z-index: 5;
+width: 100%;
+margin:auto;
+}
+.command_block{
+display: none;
+}
+
+
+.mobile_slider_covers {
+display: block;
+position: relative;
+z-index: 1;
+max-width: 70%!important;
+float: right;
+height: 7rem;
+}
+span.underlined_menu{
+display: block;
+width: 2rem;
+}
+.main_page_navigation > .nav.navbar-nav > li > a {
+padding-top: 0.5rem;
+}
+.slogan.slogan_right,
+.slogan.slogan_left {
+font-size: 2.8rem;
+line-height: 3rem;
+}
+
+
+img.fluger_second_img_mobile {
+    display: none;
+}
+
+img.fluger_second_img {
+    display: block;
+}
 
 
 .river_logo {
-    top: 2rem;
+top: 2rem;
 }
-
 .text_logo_green {
-    font-size: 7rem;
-    letter-spacing: 0.3125rem;
-    line-height: 7.6875rem;
+font-size: 5.5rem;
+letter-spacing: 0.3125rem;
+line-height: 5.5rem;
 }
-
-
 p.green_four_text.right {
 display: none;
 }
 .navbar-header {
 float: left;
 }
-/*.team_block {
-height:auto; 
-min-height: 24.625rem;
-background-image: url('../img/anout_team_mobile.jpg');
-background-size: cover;
-}*/
 .navbar-brand span{
 font-weight: normal;
 }
@@ -2135,29 +2247,6 @@ padding-right: 0!important
 .nav.navbar-nav > li > a.active_page{
 color: #02eeda!important;
 }
-span.underlined_menu{
-display: block;
-height: 0.125rem;
-background-color: #02eeda;
-margin-top: 0.2rem;
-}
-span.underlined_menu{
-display: block;
-height: 0.25rem;
-width: 36%;
-}
-span.underlined_menu.main_page{
-width: 26%;	
-}
-span.underlined_menu.about_page{
-width: 29%;	
-}
-span.underlined_menu.contacts_page{
-width: 23%;	
-}
-span.underlined_menu.project_page{
-width: 23%;	
-}
 .nav.navbar-nav{	
 min-height: 60px;
 max-height: 30px;
@@ -2173,7 +2262,6 @@ display: inline-block;
 span.mobile_menu_page{
 display: none;
 }
-
 img.green_main_page_img.third_block_first_item,
 img.green_main_page_img.third_block_second_item,
 img.green_main_page_img.third_block_third_item {
@@ -2192,7 +2280,7 @@ hr.carousel_full_line.order_button_lines.right_line,
 hr.carousel_full_line.order_button_lines.left_line{
 min-width: 8rem;
 }
-.wrapper#main_page{
+#main_page{
 background-image: url("../img/main.jpg");
 background-repeat: no-repeat;
 background-size: contain;
@@ -2207,7 +2295,7 @@ margin-top: 1rem;
 max-width: 69%;
 }
 h1.header__activity {
-/*margin-top: 4rem;*/
+top: 8rem;
 font-size: 1.3rem;
 margin-left: 1rem;
 }
@@ -2220,21 +2308,37 @@ line-height: 3.1rem;
 #carousel_management.desktop_management {
 width: 96%;   
 }
+.about_content_block{
+width: 96%;
+
+}
+
+
+
 }
 @media screen and (max-width: 380px) { 
 p.preview_text{
 font-size: 0.5rem; 
 }
-
 }
 @media screen and (max-width: 321px) {
+
+img.pale_green_second_leaf_mobile{
+display: none;
+}
+
+.white_half_text{
+max-width: 100%;
+}
+
+
 body, html,.wrapper{
 overflow-x: visible;
 overflow-y: visible;
 min-width: 20rem;
 min-height: 35.5rem;
 }
-.wrapper#main_page {
+#main_page {
 background-image: url('../img/main_xs.jpg');	
 background-repeat: no-repeat;
 background-size: cover;
@@ -2245,13 +2349,10 @@ min-height: 35.5rem;
 button.navbar-toggle{
 display: block!important;
 }
-
-
 .nav.navbar-nav > li > a {
-    margin-bottom: 2.5rem;
+margin-bottom: 2.5rem;
 }
 h1.header__activity{
-/*top: 12rem;*/
 left: -12.5rem;
 display: block;
 }
@@ -2262,7 +2363,6 @@ img.black_white_logo{
 height: 2.4375rem;
 width: 2.4375rem;
 margin-left: 1rem;
-
 }
 .mobile_menu_page{
 font-family:"Avenir-Heavy";	
@@ -2272,16 +2372,9 @@ font-size: 1rem;
 .footer p.copywrite{
 font-size: 0.375rem;
 }
-/*.team_block{
-height: 17.9375rem;
-box-sizing: border-box; 
-} */
-.text_logo_green{
-font-size: 3.125rem;
-letter-spacing: 0.25rem;
-}
 .text_logo_green {
 font-size: 3rem;
+line-height: 3rem;
 letter-spacing: 0.1rem;
 }
 #carousel_management.desktop_management {

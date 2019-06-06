@@ -1,7 +1,7 @@
 // static carousels
 $('.multi-item-carousel').carousel({
   interval: false
-});
+});  
 $('#carousel_slider').carousel({
          interval : false
 });
@@ -26,11 +26,12 @@ $(".back_to_covers").click(function(){
      $("#mobiles_footer").css("display", "none");     
      $(".desktop_cover_wrapper").fadeIn(2000);  
      $(".grey_back_cover").css("opacity", 1);
+     $('#wrapper_projects').css('background-color', 'transparent'); 
      }
      else{
        $("#mobile_cases").show(2000); 
        $("#project_page").css("overflow", "visible");
-        
+       $('#wrapper_projects').css('background-color', 'transparent');  
      }   
 });
 // cloning project covers 
@@ -73,15 +74,15 @@ $(".cover_desktop").click(function(e){
      	clickId = "green";
      }
    	
-   } 
-   var image= $(this).find('.item_block').find('img');
-   $(image).hide( "explode", {pieces: 33}, 3500 );
-    $(".desktop_cover_wrapper").hide(2000);
+   }    
+    $(".desktop_cover_wrapper").fadeOut();
     full_item_case(clickId); 
-    $(image).show( "explode", {pieces: 33}, 2000 );
+   
 
 });
 $(".mobile_slider_closed").click(function(e){ 
+
+  $("html, body").animate({scrollTop:0}, 300);
    var clickId = $(e.target).attr('id');
    $("#mobile_cases").hide(2500);
     full_item_case(clickId); 
@@ -103,6 +104,7 @@ $('#project_page').css('overflow', 'visible');
 $('#carousel_slider').fadeIn(4500); 
 $('#mobiles_footer').css('display', 'block');  
 $(".grey_back_cover").css("opacity", 0); 
+$('.wrapper').css('background-color', '#fff'); 
      setTimeout(      
         function() {         
           wow = new WOW();
@@ -117,6 +119,8 @@ window.onscroll = function() {
     scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if(scrolled > 30){
         $(".navbar-default").css({"background": "#fff "});
+        $("#main_page_navigation .navbar-default").css({"background": "transparent"});
+        
         $("header").css({"min-height": "5rem"});
     }
     if(1 > scrolled){
@@ -173,7 +177,7 @@ $('.backtotop').click(function(){
 });
 $(".desktop_control").click(function(e){ 
    var a = $(".item.cover_desktop.active");
-    $(a).css("opacity", 0.022);
+    $(a).css("opacity", 0);
     var frase = $(a).find(".desktop_cover_title");
      $(frase).each(function(){
            $(this).css("display", "none");          
@@ -188,34 +192,39 @@ $(".desktop_control").click(function(e){
   ); 
 });
 $(document).ready(function() {
+ $(".vertical-tab>.vertical-tab-content.active").css("top", 0);
+
+
  $(".vertical-tab-menu>.list-group>a").click(function(e) {
  e.preventDefault();
  $(this).siblings('a.active').removeClass("active");
  $(this).addClass("active");
  var index = $(this).index();
- $(".vertical-tab>.vertical-tab-content").removeClass("active");
+ $(".vertical-tab>.vertical-tab-content").removeClass("active").css("margin-top", "6rem").css("max-height", "100px");
  $(".vertical-tab>.vertical-tab-content").eq(index).addClass("active");
+
+   $('.vertical-tab>.vertical-tab-content.active').stop().animate({
+        marginTop: 0,
+        maxHeight: 600
+        },
+
+        1500);
+
  });
 });
 
-$("#send_order").on("mouseover", function(){
-       
+$("#send_order").on("mouseover", function(){       
   $(".order_button_lines").css("background-color", '#26f1bc');
 });
-
-$("#send_order").on("mouseout", function(){
-        
+$("#send_order").on("mouseout", function(){        
   $(".order_button_lines").css("background-color", '#000');
 });
-
 $(".desktop_cover_title").on("mouseover", function(){
-	$(this).parent().find('img').css("transform", "scale(0.9)");       
-  
+	$(this).parent().find('img').css("transform", "scale(0.9)");
 });
 
 $(".desktop_cover_title").on("mouseout", function(){
-     $(this).parent().find('img').css("transform", "scale(1)");   
-  
+     $(this).parent().find('img').css("transform", "scale(1)"); 
 });
 $(".carousel-control").on("click", function(e){
   $(e.target).css("border-color", "#02eeda");
@@ -229,78 +238,21 @@ $(".carousel-control").on("click", function(e){
          
         }, 800
   ); 
-
 });
-
-
 $(".carousel-control").on("mouseover", function(){
   $(this).css("border-color", "#02eeda");
 });
 
-$(".carousel-control").on("mouseout", function(){
-        
+$(".carousel-control").on("mouseout", function(){        
   $(this).css("border-color", "#d5d5d5");
 });
-
-
 $(".button_full_slider").on("click", function(){
   $(".button_full_slider").css("color", "#02eeda");
 });
-
-
 $(".contacts_form_submit").on("click", function(){
   $(this).css("border-color", "#26f1bc");
 });
 
 
-  var text = 'Привет! Я вижу, что ты ищешь';
-  var text2 = 'кого-то, чтобы ';
-  var text3= 'создать свой сайт';
-  var text4= '.';
-  var delay = 200; 
-  var elem = $('#message'); 
-  var elem2 = $('#message2');
-  var elem3 = $('#message3');
-  var elem4 = $('#message4');
-  var print_text = function(text, elem, delay){  
-    if(text.length > 0) {    
-      elem.append(text[0]);      
-      setTimeout(      
-        function() {        
-          print_text(text.slice(1), elem, delay); 
-        }, delay        
-      );      
-    }    
-  }
-  print_text(text, elem, delay);
-   setTimeout(      
-        function() {        
-          print_text(text2, elem2, delay);          
-        }, 6500
-  );
-  setTimeout(      
-        function() {        
-          print_text(text3, elem3, delay);          
-        }, 9500
-  ); 
-    setTimeout(      
-        function() {        
-          print_text(text4, elem4, delay);          
-        }, 13000
-  ); 
-
-
-// window.onresize = message;
-//     function message() {
-//        if(document.documentElement.clientWidth > 768) {          
-
-//            $("#carousel_slider").css("display", "none");
-//            $(".desktop_cover_wrapper").css("display", "block");
-//         }
-//         else{
-//             $("#carousel_slider").css("display", "none");
-//            $("#mobile_cases").css("display", "block");
-//            }
-           
-//         }
-     
+ 
+ 

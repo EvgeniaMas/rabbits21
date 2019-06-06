@@ -55,7 +55,7 @@
 <div class="container contacts_form">
   <h2 class="page_headline take_design">Заберите у нас свой стильный и<br class="design_sell">  эффективно продающий дизайн!</h2>
   <h2 class="page_headline mobile_design ">Ваш новый дизайн ждет!</h2> 
-    <p id="sent_message">Спасибо за заявку! Мы скоро с Вами свяжемся!</p>
+    <p id="sent_message">Спасибо за заявку!<br> Мы скоро с Вами свяжемся!</p>
    <form id="contacts_form" class="contacts__form"  method="POST">
     <label>
     <input class="contacts_input required_data" name="user_name" type="text" required="required" placeholder="Даша" />
@@ -78,7 +78,7 @@
          <input class="contacts_input required_data contacts_small_input_right"  name="comments" type="text" required="required" placeholder="Хочу сайт"/>
           <div class="label-text">Комментарий</div>
         </label>        
-        <button class="contacts_form_submit draw maker service_form" type="submit">Отправить</button>           
+        <button id="send_letter" class="contacts_form_submit draw maker service_form" type="submit">Отправить</button>           
 </form> 
 <div class="error"></div>
 </div>
@@ -135,8 +135,7 @@
     </div> 
    </div> <!-- wrapper -->   
 </div>
-</div> <!-- поставила после чека -->
-
+</div> 
 <footer class="container-fluid footer">
   <div class="container footer_block">
      <div class="col-md-4 col-xs-5">
@@ -150,15 +149,13 @@
     </div>
  </div>
 </footer>  
-
-
 <script src="js/juery.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/jquery.maskedinput.min.js" ></script>
 <script>
 //Маска для телефона
 $(function() {
-    $("input[type='tel']").mask('+7(999) 999-99-99');   
+    $("input[type='tel']").mask('+7 (999) 999-99-99');   
 });  
 $(document).on('click', 'input[type="tel"]', function(){
 $(this).focus();

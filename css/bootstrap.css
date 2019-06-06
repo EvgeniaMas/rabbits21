@@ -1346,7 +1346,16 @@ tbody.collapse.in {
   float: left;
   width: 5.375rem;
   height: 5.375rem;
+  position: relative;
+  z-index: 105;
+  cursor: pointer;
+  transition: all 400ms ease-out;
 }
+
+.navbar-brand:hover {
+opacity: 0.5; 
+}
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
@@ -1394,11 +1403,17 @@ tbody.collapse.in {
   margin-left: 0.8rem;
   min-width: 3.9rem; 
   margin-top: 1rem;  
-  background-color: transparent;
+  background-color: red;
   border: none;
   cursor: pointer;
   z-index: 104;
 }
+
+#main_page_navigation> .navbar-toggle{
+  margin-top: 1.3rem;  
+}
+
+
 
 .mobile_menu_page{
   font-family:"Avenir-Heavy";

@@ -42,9 +42,22 @@ $(document).ready(function() {
                     else {                                     
                      $("input").each(function () {
                        $(this).data("defvalue", this.value);
-                    });                                     
+                    });  
+
+                   $("#send_letter").addClass('sent_letter')
+
                   $("#contacts_form").css("display", "none");
-                  $("#sent_message").css("display", "block");                                  
+                  $("#sent_message").css("display", "block"); 
+
+
+                    setTimeout(      
+                   function() {  
+                   $("#send_letter").removeClass('sent_letter') 
+                   $("#sent_message").css("display", "none");      
+                   $("#contacts_form").css("display", "block");
+                   
+                       }, 4000        
+                   );                                       
                            
                     }
                 },
