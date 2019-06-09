@@ -1403,7 +1403,7 @@ opacity: 0.5;
   margin-left: 0.8rem;
   min-width: 3.9rem; 
   margin-top: 1rem;  
-  background-color: red;
+  background-color: transparent!important;
   border: none;
   cursor: pointer;
   z-index: 104;

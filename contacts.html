@@ -58,12 +58,12 @@
     <p id="sent_message">Спасибо за заявку!<br> Мы скоро с Вами свяжемся!</p>
    <form id="contacts_form" class="contacts__form"  method="POST">
     <label>
-    <input class="contacts_input required_data" name="user_name" type="text" required="required" placeholder="Даша" />
+    <input class="contacts_input required_data" name="user_name" type="text" required="required" />
     <div class="label-text">Имя</div>
     </label> 
       <div class="col-md-6 col-xs-6 divided_input">
          <label>
-         <input class="contacts_input required_data contacts_small_input_left" name="user_mail" type="email" required="required" placeholder="daria_daria20@mail.ru"/> 
+         <input class="contacts_input required_data contacts_small_input_left" name="user_mail" type="email" required="required" /> 
           <div class="label-text">Email</div>
            </label>
         </div>
@@ -155,7 +155,8 @@
 <script>
 //Маска для телефона
 $(function() {
-    $("input[type='tel']").mask('+7 (999) 999-99-99');   
+$.mask.definitions['~']='[+-]';    
+$("input[type='tel']").mask('+7   (999)  999-99-99');  
 });  
 $(document).on('click', 'input[type="tel"]', function(){
 $(this).focus();

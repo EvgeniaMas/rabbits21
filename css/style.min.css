@@ -587,25 +587,29 @@ max-width: 55.5rem;
 }
 .text_logo_green{
 font-family: 'Futura';
+position: absolute;
+bottom: 0;
+right: 0;
+left:0;
 font-size: 18.125rem;
-line-height: 18.125rem;
+line-height: 80%;
 letter-spacing: 1.75rem;
 text-transform: uppercase;
 margin-left: -7.5rem;
 color: #02eeda;
 margin:auto;
 text-align: center;
-position: relative;
 z-index: 4;
 }
 .container-fluid.logos{
 position: relative;
 z-index: 23;
 margin-bottom: 3rem;
+height: 18.125rem;
 }
 .logo_bg_about{
 position: absolute;
-bottom:8%;
+bottom:0%;
 left: 5%;
 display: block;
 width: 85vw;
@@ -2216,4 +2220,8 @@ position: absolute;
 top: -1.5rem;
 left: -7.312rem;
 z-index: 2;
+}
+
+br.about_team_break2{
+display: none;
 }

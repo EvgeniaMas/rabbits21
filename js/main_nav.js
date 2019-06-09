@@ -24,7 +24,7 @@ var menu = $('.collapse');
   var text2 = 'кого-то, чтобы ';
   var text3= 'создать свой сайт';
   var text4= '.';
-  var delay = 200; 
+  var delay = 100; 
   var elem = $('#message'); 
   var elem2 = $('#message2');
   var elem3 = $('#message3');
@@ -43,16 +43,16 @@ var menu = $('.collapse');
    setTimeout(      
         function() {        
           print_text(text2, elem2, delay);          
-        }, 6500
+        }, 3500
   );
   setTimeout(      
         function() {        
           print_text(text3, elem3, delay);          
-        }, 9500
+        }, 5000
   ); 
     setTimeout(      
         function() {        
           print_text(text4, elem4, delay);          
-        }, 13000
+        }, 7000
   ); 
 

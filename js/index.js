@@ -118,14 +118,18 @@ var scrolled;
 window.onscroll = function() {
     scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if(scrolled > 30){
-        $(".navbar-default").css({"background": "#fff "});
+        $(".navbar-default").css({"background": "rgba(255,255,255, 0.8)"});
+        $("header").css({"background": "transparent"});
         $("#main_page_navigation .navbar-default").css({"background": "transparent"});
         
         $("header").css({"min-height": "5rem"});
     }
     if(1 > scrolled){
         $(".navbar-default").css({"background": "transparent"});
-        $("header").css({"min-height": "1rem"});         
+        $("header").css({"min-height": "1rem"});
+        if(document.documentElement.clientWidth > 767) {  
+        $(".about_page_menu").css({"background": "#fff"});
+        }  
     }
 
 }
